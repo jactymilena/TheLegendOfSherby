@@ -20,11 +20,11 @@ begin
             x"0c6624" when code = x"7"  else -- vert foret
             x"22b14c" when code = x"8"  else -- vert buisson
             x"8A5132" when code = x"9"  else -- brun
-            x"FF7F2F" when code = x"10" else -- orange
-            x"FFF200" when code = x"11" else -- jaune
-            x"66696B" when code = x"12" else -- gris 
-            x"000000" when code = x"13" else -- undefined
-            x"000000" when code = x"14" else -- undefined
-            x"000000" when code = x"15" else -- undefined
+            x"FF7F2F" when code = x"A" else -- orange
+            x"FFF200" when code = x"B" else -- jaune
+            x"66696B" when code = x"C" else -- gris 
+            x"000000" when code = x"D" else -- undefined
+            x"000000" when code = x"E" else -- undefined
+            x"000000" when code = x"F" else -- undefined
             x"000000"; -- undefined
 end Behavioral;
