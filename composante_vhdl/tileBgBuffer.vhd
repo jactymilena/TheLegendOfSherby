@@ -61,6 +61,15 @@ signal TuilesMemory : Tuiles256 := (
 X"9999999999999999", -- gazon vert buisson tuile 0
 X"cccccccccccccccc",-- chemin jaune tuile 1
 X"3333333333333333", -- eau bleu pale tuile 2
+X"4444444444444444", -- rouge tuile 3
+X"5555555555555555", -- rose  tuile 4
+X"6666666666666666", -- beige tuile 5
+X"7777777777777777", -- Lime tuile 6
+X"8888888888888888", -- vert foret tuile 7
+X"aaaaaaaaaaaaaaaa", -- Brun tuile 8
+X"dddddddddddddddd", -- Gris tuile 9
+X"eeeeeeeeeeeeeeee", -- Bleu foncé tuile 10
+
 
 
 others => X"000000000000000");
@@ -79,13 +88,6 @@ begin
 ----pixel_X => pixel_X,
 ----pixel_Y => pixel_Y,
 --tileId => X"00"
-----inColorCode => remplirCC,
-----outColorCode => colorCode
---);
---tile1: tile  Port map (
-----pixel_X => pixel_X,
-----pixel_Y => pixel_Y,
---tileId => X"01"
 ----inColorCode => remplirCC,
 ----outColorCode => colorCode
 --);
