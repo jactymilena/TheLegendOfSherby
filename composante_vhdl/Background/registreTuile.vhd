@@ -13,8 +13,8 @@ entity registreTuile is
             setTuileY : in STD_LOGIC_VECTOR (8 downto 0);
             SetTileId : in STD_LOGIC_VECTOR (7 downto 0);
             
-            colX      : in STD_LOGIC_VECTOR (4 downto 0);
-            rangerY   : in STD_LOGIC_VECTOR (4 downto 0);
+            colX      : in STD_LOGIC_VECTOR (4 downto 0) := "00000";
+            rangerY   : in STD_LOGIC_VECTOR (4 downto 0)  := "00000";
             tileId    : out STD_LOGIC_VECTOR (7 downto 0));
 --            tuileX    : out std_logic_vector (8 downto 0);
 --            tuileY    : out std_logic_vector (8 downto 0));
@@ -27,11 +27,11 @@ signal regTuileId : RegistreTileId := (
  );
 
 
-signal colonne, ranger : integer;
+signal colonne, ranger : integer := 0;
 
 begin
 --entré
-regTuileId(to_integer(unsigned(setTuileX(8 downto 3))), to_integer(unsigned(setTuileY(8 downto 3)))) <= SetTileId;
+regTuileId(to_integer(unsigned(setTuileX(8 downto 4))), to_integer(unsigned(setTuileY(8 downto 4)))) <= SetTileId;
 
 
 process(clk)

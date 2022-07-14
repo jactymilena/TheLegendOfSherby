@@ -38,7 +38,7 @@ entity BackgroundManager is
            SetTuileX : in STD_LOGIC_VECTOR (8 downto 0);
            SetTuileY : in STD_LOGIC_VECTOR (8 downto 0);
            TuileId : in STD_LOGIC_VECTOR (7 downto 0);
-           colorCode : out STD_LOGIC_VECTOR (3 downto 0));
+           colorCode : out STD_ULOGIC_VECTOR (3 downto 0));
 end BackgroundManager;
 
 architecture Behavioral of BackgroundManager is
@@ -57,7 +57,7 @@ component tileBgBuffer is
             pixel_X : in STD_LOGIC_VECTOR (3 downto 0);
             pixel_Y : in STD_LOGIC_VECTOR (3 downto 0);
             tileId : in STD_LOGIC_VECTOR (7 downto 0);
-           colorCode : out STD_LOGIC_VECTOR (3 downto 0));
+           colorCode : out STD_ULOGIC_VECTOR (3 downto 0));
            
 end component;
 component registreTuile is
@@ -75,7 +75,7 @@ component registreTuile is
            
 end component;
 
-signal sel_tileX, sel_tileY : STD_LOGIC_VECTOR (8 downto 0);              
+signal sel_tileX, sel_tileY : STD_LOGIC_VECTOR (4 downto 0);              
 signal sel_pixelX, sel_pixelY : STD_LOGIC_VECTOR (3 downto 0);  
 signal s_tileId: STD_LOGIC_VECTOR (7 downto 0);
 begin
