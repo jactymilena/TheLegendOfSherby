@@ -32,9 +32,30 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 package tuile_package is
---  Port ( );
+-- constant _CC   : std_ulogic_vector( 3 downto 0 ) := X"0"; 
+ constant NOIR_CC   : std_ulogic_vector( 3 downto 0 ) := "0001";
+ constant BLANC_CC  : std_ulogic_vector( 3 downto 0 ) := X"2";
+ constant BLEU1_CC  : std_ulogic_vector( 3 downto 0 ) := X"3";
+ constant ROUGE_CC  : std_ulogic_vector( 3 downto 0 ) := X"4";
+ constant ROSE_CC   : std_ulogic_vector( 3 downto 0 ) := X"5";
+ constant BEIGE_CC  : std_ulogic_vector( 3 downto 0 ) := X"6";
+ constant LIME_CC   : std_ulogic_vector( 3 downto 0 ) := X"7";
+ constant VERT1_CC  : std_ulogic_vector( 3 downto 0 ) := X"8";
+ constant VERT2_CC  : std_ulogic_vector( 3 downto 0 ) := X"9";
+ constant BRUN_CC   : std_ulogic_vector( 3 downto 0 ) := X"a";
+ constant ORANGE_CC   : std_ulogic_vector( 3 downto 0 ) := X"b";
+ constant JAUNE_CC   : std_ulogic_vector( 3 downto 0 ) := X"c";
+  constant GRIS_CC   : std_ulogic_vector( 3 downto 0 ) := X"d";
+ constant BLEU2_CC   : std_ulogic_vector( 3 downto 0 ) := X"e";
+ -- constant _CC   : std_ulogic_vector( 3 downto 0 ) := X"f"; 
+
 type ccTile is array(0 to 255) of std_ulogic_vector(3 downto 0);
 type RegistreTileId is array(0 to 32, 0 to 32) of std_ulogic_vector(7 downto 0);
+
+
+type tableauCouleur is array (0 to 255) of std_ulogic_vector(3 downto 0);
+type TuilesTableau is array(0 to 255) of tableauCouleur;
+
 end package;
 
 package body tuile_package is
