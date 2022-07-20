@@ -1,6 +1,7 @@
 #include "Character.h"
+#include "Actor.h"
 
-class Character {
+class Character : public Actor {
 private:
 	int speed;
 

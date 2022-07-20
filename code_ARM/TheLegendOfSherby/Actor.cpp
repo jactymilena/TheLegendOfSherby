@@ -2,11 +2,11 @@
 
 class Actor {
 private:
-	int actorID;
+	int actorId;
 	bool actif;
 	int posX;
 	int posY;
-	int tileID;
+	int tileId;
 
 public:
 	// Constructers
@@ -21,9 +21,9 @@ public:
 	int getTileId() { return tileID; }
 
 	// set functions
-	void setActorId(int aId) { actorID = aId; }
+	void setActorId(int aId) { actorId = aId; }
 	void setActif(bool a) { actif = a; }
 	void setPosX(int x) { posX = x; }
 	void setPosY(int y) { posY = y; }
-	void setTileId(int tId) { tileID = tId; }
+	void setTileId(int tId) { tileId = tId; }
 };
