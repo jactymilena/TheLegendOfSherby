@@ -1,0 +1,1 @@
+-wto "b4daef0712d348ff8b7dc4a42146fcd7" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "MEF_fp_tb_behav" "xil_defaultlib.MEF_fp_tb" -log "elaborate.log" 
