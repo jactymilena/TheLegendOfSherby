@@ -1,6 +1,7 @@
 #include "Game.h"
 #include "Actor.h"
 #include "Background.h"
+#include "StateGame.h"
 
 class Game
 {
@@ -13,6 +14,7 @@ private:
 public:
 	Game(){}
 	~Game(){}
+
 	void chageState(StateGame s){}
 	void recieveControllerInfo(){}
 	void detectCollision(){}

@@ -145,8 +145,12 @@
     <ClInclude Include="Chest.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="GameOnState.h" />
+    <ClInclude Include="GameOvertState.h" />
     <ClInclude Include="HealtPoint.h" />
     <ClInclude Include="Link.h" />
+    <ClInclude Include="MenuPlayState.h" />
+    <ClInclude Include="StateGame.h" />
     <ClInclude Include="Sword.h" />
     <ClInclude Include="Tile.h" />
   </ItemGroup>
@@ -157,8 +161,12 @@
     <ClCompile Include="Chest.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameOnState.cpp" />
+    <ClCompile Include="GameOvertState.cpp" />
     <ClCompile Include="HealtPoint.cpp" />
     <ClCompile Include="Link.cpp" />
+    <ClCompile Include="MenuPlayState.cpp" />
+    <ClCompile Include="StateGame.cpp" />
     <ClCompile Include="Sword.cpp" />
     <ClCompile Include="Tile.cpp" />
   </ItemGroup>
