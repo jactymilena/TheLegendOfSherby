@@ -1,9 +1,12 @@
 #include "StateGame.h"
 
 class GameOnState : public StateGame {
+public:
 	GameOnState();
+	GameOnState(Game g);
 	~GameOnState();
-	virtual void buttonPress();
-	virtual void joystickButtonPress();
-	virtual void joystickMove();
+
+	void buttonPress();
+	void joystickButtonPress();
+	void joystickMove();
 };

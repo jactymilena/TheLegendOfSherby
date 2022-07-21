@@ -13,93 +13,123 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Actor">
+      <UniqueIdentifier>{d92fb96b-29a6-4c6a-bbbb-8e0bb72de677}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\StateGame">
+      <UniqueIdentifier>{09beb2db-c9df-493d-a29d-7c0e763e53ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\StateLink">
+      <UniqueIdentifier>{8f6af7c2-c42f-4594-953b-0b26221ca055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Actor">
+      <UniqueIdentifier>{70d7ae77-97b6-4945-9e57-ad58c9d5c57e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\StateGame">
+      <UniqueIdentifier>{269e9f8a-9472-4677-9425-c345d0be4409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\StateLink">
+      <UniqueIdentifier>{fe2f4970-59b2-4f46-8e92-439e47dbd56e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Actor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Character.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Link.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Sword.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="HealtPoint.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Chest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Background.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Tile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Actor.cpp">
+      <Filter>Source Files\Actor</Filter>
     </ClCompile>
-    <ClCompile Include="StateGame.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Chest.cpp">
+      <Filter>Source Files\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Source Files\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Link.cpp">
+      <Filter>Source Files\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Source Files\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="HealtPoint.cpp">
+      <Filter>Source Files\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Sword.cpp">
+      <Filter>Source Files\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\StateGame</Filter>
     </ClCompile>
     <ClCompile Include="GameOnState.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\StateGame</Filter>
     </ClCompile>
     <ClCompile Include="GameOvertState.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\StateGame</Filter>
     </ClCompile>
     <ClCompile Include="MenuPlayState.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\StateGame</Filter>
+    </ClCompile>
+    <ClCompile Include="StateGame.cpp">
+      <Filter>Source Files\StateGame</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuCalibrateState.cpp">
+      <Filter>Source Files\StateGame</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuQuitState.cpp">
+      <Filter>Source Files\StateGame</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Actor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Character.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Link.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Sword.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="HealtPoint.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Chest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Background.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Tile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Game.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Actor.h">
+      <Filter>Header Files\Actor</Filter>
     </ClInclude>
-    <ClInclude Include="StateGame.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Chest.h">
+      <Filter>Header Files\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Link.h">
+      <Filter>Header Files\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Sword.h">
+      <Filter>Header Files\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\StateGame</Filter>
     </ClInclude>
     <ClInclude Include="GameOnState.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\StateGame</Filter>
     </ClInclude>
     <ClInclude Include="GameOvertState.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\StateGame</Filter>
     </ClInclude>
     <ClInclude Include="MenuPlayState.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\StateGame</Filter>
+    </ClInclude>
+    <ClInclude Include="StateGame.h">
+      <Filter>Header Files\StateGame</Filter>
+    </ClInclude>
+    <ClInclude Include="HealtPoint.h">
+      <Filter>Header Files\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Header Files\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuQuitState.h">
+      <Filter>Header Files\StateGame</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuCalibrateState.h">
+      <Filter>Header Files\StateGame</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

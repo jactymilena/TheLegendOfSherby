@@ -1,9 +1,14 @@
 #include "GameOvertState.h"
+#include "Game.h"
 
 class GameOvertState : public StateGame {
-	GameOvertState() {}
+protected:
+	Game game;
+	
+public:
+	GameOvertState(Game g) { game = g; }
 	~GameOvertState() {}
-	virtual void buttonPress() {}
-	virtual void joystickButtonPress() {}
-	virtual void joystickMove() {}
+	void buttonPress() {}
+	void joystickButtonPress() {}
+	void joystickMove() {}
 };

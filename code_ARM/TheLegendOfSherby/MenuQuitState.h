@@ -1,6 +1,7 @@
 #include "StateGame.h"
 
 class MenuQuitState : public StateGame {
+public:
 	MenuQuitState();
 	~MenuQuitState();
 	virtual void buttonPress();

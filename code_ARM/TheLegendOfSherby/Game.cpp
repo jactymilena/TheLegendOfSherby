@@ -15,7 +15,7 @@ public:
 	Game(){}
 	~Game(){}
 
-	void chageState(StateGame s){}
+	void changeState(StateGame s){}
 	void recieveControllerInfo(){}
 	void detectCollision(){}
 

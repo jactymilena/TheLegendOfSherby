@@ -1,9 +1,14 @@
 #include "MenuCalibrateState.h"
+#include "Game.h"
 
 class MenuCalibrateState : public StateGame {
-	MenuCalibrateState() {}
+protected:
+	Game game;
+
+public:
+	MenuCalibrateState(Game g) { game = g; }
 	~MenuCalibrateState() {}
-	virtual void buttonPress() {}
-	virtual void joystickButtonPress() {}
-	virtual void joystickMove() {}
+	void buttonPress() {}
+	void joystickButtonPress() {}
+	void joystickMove() {}
 };

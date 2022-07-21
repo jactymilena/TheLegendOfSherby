@@ -149,7 +149,9 @@
     <ClInclude Include="GameOvertState.h" />
     <ClInclude Include="HealtPoint.h" />
     <ClInclude Include="Link.h" />
+    <ClInclude Include="MenuCalibrateState.h" />
     <ClInclude Include="MenuPlayState.h" />
+    <ClInclude Include="MenuQuitState.h" />
     <ClInclude Include="StateGame.h" />
     <ClInclude Include="Sword.h" />
     <ClInclude Include="Tile.h" />
@@ -165,7 +167,9 @@
     <ClCompile Include="GameOvertState.cpp" />
     <ClCompile Include="HealtPoint.cpp" />
     <ClCompile Include="Link.cpp" />
+    <ClCompile Include="MenuCalibrateState.cpp" />
     <ClCompile Include="MenuPlayState.cpp" />
+    <ClCompile Include="MenuQuitState.cpp" />
     <ClCompile Include="StateGame.cpp" />
     <ClCompile Include="Sword.cpp" />
     <ClCompile Include="Tile.cpp" />

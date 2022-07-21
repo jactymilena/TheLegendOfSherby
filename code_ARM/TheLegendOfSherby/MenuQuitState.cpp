@@ -1,9 +1,14 @@
 #include "MenuQuitState.h"
+#include "Game.h"
 
 class MenuQuitState : public StateGame {
-	MenuQuitState() {}
+protected:
+	Game game;
+
+public:
+	MenuQuitState(Game g) { game = g; }
 	~MenuQuitState() {}
-	virtual void buttonPress() {}
-	virtual void joystickButtonPress() {}
-	virtual void joystickMove() {}
+	void buttonPress() {}
+	void joystickButtonPress() {}
+	void joystickMove() {}
 };
