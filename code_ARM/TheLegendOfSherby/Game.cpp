@@ -2,6 +2,7 @@
 #include "Actor.h"
 #include "Background.h"
 #include "StateGame.h"
+#include <cstdio>
 
 class Game
 {
@@ -24,4 +25,8 @@ public:
 
 	void setCurrentBackground(int i) { currentBackground = i; }
 	void removeLife(){}
+
+	static int main() {
+		printf("allo");
+	}
 };

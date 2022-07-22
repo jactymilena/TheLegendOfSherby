@@ -1,13 +1,14 @@
 #include "Link.h"
 #include "Character.h"
 #include "HealtPoint.h"
+#include "StateLink.h"
 
 #define TILEID_COEURROSE 1
 #define TILEID_COEURROUGE 2
 
 class Link : public Character {
 private:
-	StateCharacter state;
+	StateLink state;
 	HealtPoint coeurs[3];
 
 public:
@@ -15,13 +16,14 @@ public:
 	// constructers
 	Link() {
 		for (int i = 0; i < sizeof(coeurs); i++) {
-			coeurs[i] = new HealtPoint();
+			HealtPoint hp;
+			coeurs[i] = hp;
 		}
 	}
 	~Link() {}
 
 	// functions 
-	void changeState(StateCharacter s) {}
+	void changeState(StateLink s) {}
 	void attack() {}
 
 	// retourne 1 si game over

@@ -11,7 +11,5 @@ public:
 	void setSpeed(int s);
 
 	// other function
-	void move();
-	void die();
-
+	void move(int direction);
 };

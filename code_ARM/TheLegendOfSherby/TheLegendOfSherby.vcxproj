@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Actor.h" />
+    <ClInclude Include="AttackState.h" />
     <ClInclude Include="Background.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="Chest.h" />
@@ -148,16 +149,20 @@
     <ClInclude Include="GameOnState.h" />
     <ClInclude Include="GameOvertState.h" />
     <ClInclude Include="HealtPoint.h" />
+    <ClInclude Include="IdleState.h" />
     <ClInclude Include="Link.h" />
     <ClInclude Include="MenuCalibrateState.h" />
     <ClInclude Include="MenuPlayState.h" />
     <ClInclude Include="MenuQuitState.h" />
+    <ClInclude Include="MoveState.h" />
     <ClInclude Include="StateGame.h" />
+    <ClInclude Include="StateLink.h" />
     <ClInclude Include="Sword.h" />
     <ClInclude Include="Tile.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="AttackState.cpp" />
     <ClCompile Include="Background.cpp" />
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="Chest.cpp" />
@@ -166,11 +171,14 @@
     <ClCompile Include="GameOnState.cpp" />
     <ClCompile Include="GameOvertState.cpp" />
     <ClCompile Include="HealtPoint.cpp" />
+    <ClCompile Include="IdleState.cpp" />
     <ClCompile Include="Link.cpp" />
     <ClCompile Include="MenuCalibrateState.cpp" />
     <ClCompile Include="MenuPlayState.cpp" />
     <ClCompile Include="MenuQuitState.cpp" />
+    <ClCompile Include="MoveState.cpp" />
     <ClCompile Include="StateGame.cpp" />
+    <ClCompile Include="StateLink.cpp" />
     <ClCompile Include="Sword.cpp" />
     <ClCompile Include="Tile.cpp" />
   </ItemGroup>

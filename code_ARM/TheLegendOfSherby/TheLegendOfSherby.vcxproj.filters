@@ -81,6 +81,18 @@
     <ClCompile Include="MenuQuitState.cpp">
       <Filter>Source Files\StateGame</Filter>
     </ClCompile>
+    <ClCompile Include="AttackState.cpp">
+      <Filter>Source Files\StateLink</Filter>
+    </ClCompile>
+    <ClCompile Include="IdleState.cpp">
+      <Filter>Source Files\StateLink</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveState.cpp">
+      <Filter>Source Files\StateLink</Filter>
+    </ClCompile>
+    <ClCompile Include="StateLink.cpp">
+      <Filter>Source Files\StateLink</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Background.h">
@@ -130,6 +142,18 @@
     </ClInclude>
     <ClInclude Include="MenuCalibrateState.h">
       <Filter>Header Files\StateGame</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackState.h">
+      <Filter>Header Files\StateLink</Filter>
+    </ClInclude>
+    <ClInclude Include="IdleState.h">
+      <Filter>Header Files\StateLink</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveState.h">
+      <Filter>Header Files\StateLink</Filter>
+    </ClInclude>
+    <ClInclude Include="StateLink.h">
+      <Filter>Header Files\StateLink</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

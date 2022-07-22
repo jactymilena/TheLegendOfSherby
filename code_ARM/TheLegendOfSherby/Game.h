@@ -13,5 +13,7 @@ public:
 	Background getCurrentBackground();
 	void setCurrentBackground(Background b);
 	void removeLife();
+
+	static int main();
 };
 
