@@ -1,4 +1,6 @@
 class StateGame {
+private:
+	Game game;
 public:
 	StateGame();
 	StateGame(Game g);

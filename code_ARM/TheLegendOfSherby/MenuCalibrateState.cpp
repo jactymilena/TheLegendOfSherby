@@ -1,16 +1,19 @@
 #include "MenuCalibrateState.h"
 #include "Game.h"
+#include "MenuPlayState.h"
+#include "GameOnState.h"
 
-class MenuCalibrateState : public StateGame {
-protected:
-	Game game;
+	MenuCalibrateState::MenuCalibrateState() {}
+	MenuCalibrateState::MenuCalibrateState(Game g) { game = g; }
+	MenuCalibrateState::~MenuCalibrateState() {}
 
-public:
-	MenuCalibrateState() {}
-	MenuCalibrateState(Game g) { game = g; }
-	~MenuCalibrateState() {}
+	//pop the calibrate effect
+	void MenuCalibrateState::buttonPress() {
+	}
 
-	void buttonPress() {}
-	void joystickButtonPress() {}
-	void joystickMove() {}
-};
+	void MenuCalibrateState::joystickButtonPress() {}
+
+	void MenuCalibrateState::joystickMove() {
+		GameOnState on(game);
+		game.changeState(on);
+	}

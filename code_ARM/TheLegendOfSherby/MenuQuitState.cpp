@@ -1,16 +1,19 @@
 #include "MenuQuitState.h"
 #include "Game.h"
+#include "MenuCalibrateState.h"
+#include "GameOnState.h"
 
-class MenuQuitState : public StateGame {
-protected:
-	Game game;
+	MenuQuitState::MenuQuitState() {}
+	MenuQuitState::MenuQuitState(Game g) { game = g; }
+	MenuQuitState::~MenuQuitState() {}
 
-public:
-	MenuQuitState(Game g) { game = g; }
-	MenuQuitState() {}
-	~MenuQuitState() {}
+	void MenuQuitState::buttonPress() {
+	}
+	void MenuQuitState::joystickButtonPress() {}
 
-	void buttonPress() {}
-	void joystickButtonPress() {}
-	void joystickMove() {}
-};
+	//si on move le joystick on va vers MenuCalibrate
+	void MenuQuitState::joystickMove() {
+		MenuCalibrateState calibrate(game);
+		game.changeState(calibrate);
+	}
+

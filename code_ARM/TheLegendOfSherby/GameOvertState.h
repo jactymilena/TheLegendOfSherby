@@ -1,6 +1,8 @@
 #include "StateGame.h"
 
 class GameOvertState : public StateGame {
+private:
+	Game game;
 public:
 	GameOvertState();
 	GameOvertState(Game g);

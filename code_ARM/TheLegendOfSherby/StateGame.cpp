@@ -1,21 +1,13 @@
 #include "StateGame.h"
 #include "Game.h"
 
-class StateGame {
-protected:
-	Game game;
+	StateGame::StateGame() {}
+	StateGame::StateGame(Game g) {}
+	StateGame::~StateGame() {}
 
-public:
-	StateGame() {}
-	StateGame(Game g) {}
-	~StateGame() {}
+	void StateGame::setGame(Game g) { game = g; }
+	Game StateGame::getGame() { return game; }
 
-	void setGame(Game g) { game = g; }
-	Game getGame() { return game; }
-
-	void buttonPress() {};
-	void joystickButtonPress() {};
-	void joystickMove() {};
-};
-
-
+	void StateGame::buttonPress() {};
+	void StateGame::joystickButtonPress() {};
+	void StateGame::joystickMove() {};
