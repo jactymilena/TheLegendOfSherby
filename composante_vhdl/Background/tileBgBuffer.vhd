@@ -110,9 +110,184 @@ signal TuilesBuffer : TuilesTableau := (
     x"2", x"1", x"1", x"2", x"2", x"2", x"2", x"2",x"2",x"2", x"2", x"2", x"2", x"1", x"1", x"2",
     x"2", x"1", x"1", x"2", x"2", x"2", x"2", x"2",x"2",x"2", x"2", x"2", x"2", x"1", x"1", x"2",
     x"2", x"1", x"1", x"2", x"2", x"2", x"2", x"2",x"2",x"2", x"2", x"2", x"2", x"1", x"1", x"2",
-    x"2", x"1", x"1", x"2", x"2", x"2", x"2", x"2",x"2",x"2", x"2", x"2", x"2", x"1", x"1", x"2"  ),-- M pour menu tuile 13  
-    
-others =>  (others => x"0")
+    x"2", x"1", x"1", x"2", x"2", x"2", x"2", x"2",x"2",x"2", x"2", x"2", x"2", x"1", x"1", x"2"  ),-- M pour menu tuile 13,
+	(x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"), -- Y pour play tuile 14
+	(x"1", x"1", x"1", x"1", x"1", ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, ROUGE_CC, x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, ROUGE_CC, x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"), -- P pour play tuile 15
+	(x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, x"1", x"1", x"1"), -- L POUR PLAY TUILE 16
+	(x"1", x"1", x"1", x"1", ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, ROUGE_CC, x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1", x"1", x"1", ROUGE_CC, x"1", x"1", x"1", x"1"), -- A pour play tuile 17
+	(BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BRUN_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC
+	, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, BEIGE_CC, BRUN_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, BEIGE_CC, BRUN_CC, ORANGE_CC, ORANGE_CC
+	, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, BRUN_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC
+	, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, BRUN_CC, BRUN_CC, BRUN_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC
+	, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC
+	, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BRUN_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC
+	, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, BEIGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, BEIGE_CC, BRUN_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, BEIGE_CC
+	, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, BEIGE_CC, BRUN_CC, ORANGE_CC, ORANGE_CC, BEIGE_CC, ORANGE_CC
+	, ORANGE_CC, ORANGE_CC, BEIGE_CC, BRUN_CC, BRUN_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, BEIGE_CC, BRUN_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC
+	, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, BRUN_CC, BRUN_CC, BRUN_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC
+	, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC
+	, BEIGE_CC, BEIGE_CC, BRUN_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC
+	, ORANGE_CC, ORANGE_CC, BEIGE_CC, BRUN_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, BEIGE_CC, BRUN_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC
+	, ORANGE_CC, ORANGE_CC, ORANGE_CC, BRUN_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC
+	, BEIGE_CC, ORANGE_CC, BRUN_CC, BRUN_CC, BRUN_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, ORANGE_CC, BEIGE_CC, BEIGE_CC, BRUN_CC, ORANGE_CC
+	, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC), -- Brick tuile 18
+	(VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC
+	, VERT2_CC, x"1", x"1", VERT2_CC, x"1", x"1", x"1", VERT2_CC, x"1", x"1", x"1", x"1", VERT2_CC, x"1", x"1", VERT2_CC
+	, VERT2_CC, VERT2_CC, x"1", x"1", x"1", x"1", x"1", VERT2_CC, VERT2_CC, VERT2_CC, x"1", x"1", VERT2_CC, x"1", x"1", VERT2_CC
+	, VERT2_CC, VERT2_CC, VERT2_CC, x"1", x"1", x"1", VERT2_CC, x"1", x"1", VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, x"1", x"1", VERT2_CC
+	, VERT2_CC, x"1", VERT2_CC, x"1", x"1", x"1", VERT2_CC, x"1", x"1", VERT2_CC, x"1", x"1", x"1", x"1", x"1", VERT2_CC
+	, VERT2_CC, VERT2_CC, VERT2_CC, x"1", x"1", VERT2_CC, VERT2_CC, x"1", x"1", VERT2_CC, x"1", x"1", x"1", x"1", VERT2_CC, VERT2_CC
+	, VERT2_CC, VERT2_CC, x"1", x"1", x"1", VERT2_CC, x"1", x"1", x"1", VERT2_CC, x"1", x"1", x"1", x"1", VERT2_CC, VERT2_CC
+	, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, x"1", x"1", x"1", VERT2_CC, VERT2_CC, x"1", x"1", x"1", x"1", VERT2_CC, VERT2_CC
+	, VERT2_CC, x"1", x"1", x"1", VERT2_CC, VERT2_CC, x"1", VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, x"1", x"1", VERT2_CC, VERT2_CC
+	, VERT2_CC, x"1", x"1", x"1", x"1", VERT2_CC, VERT2_CC, x"1", x"1", x"1", VERT2_CC, x"1", VERT2_CC, x"1", VERT2_CC, VERT2_CC
+	, VERT2_CC, x"1", VERT2_CC, x"1", VERT2_CC, VERT2_CC, x"1", x"1", x"1", x"1", VERT2_CC, x"1", VERT2_CC, x"1", VERT2_CC, VERT2_CC
+	, VERT2_CC, x"1", VERT2_CC, x"1", VERT2_CC, x"1", x"1", x"1", x"1", VERT2_CC, x"1", x"1", VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC
+	, VERT2_CC, VERT2_CC, VERT2_CC, x"1", VERT2_CC, x"1", x"1", x"1", VERT2_CC, VERT2_CC, x"1", x"1", x"1", x"1", VERT2_CC, VERT2_CC
+	, VERT2_CC, VERT2_CC, x"1", x"1", VERT2_CC, x"1", x"1", VERT2_CC, VERT2_CC, x"1", x"1", x"1", x"1", x"1", x"1", VERT2_CC
+	, VERT2_CC, VERT2_CC, VERT2_CC, x"1", VERT2_CC, x"1", x"1", VERT2_CC, x"1", x"1", x"1", x"1", x"1", x"1", VERT2_CC, VERT2_CC
+	, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC, VERT2_CC), -- Bush tuile 19
+	(x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, x"1"
+	, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, x"1", x"1", JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, JAUNE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", JAUNE_CC, JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, x"1"
+	, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"), -- coffre tuile 20
+	(BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BRUN_CC, ORANGE_CC, GRIS_CC, BEIGE_CC, BRUN_CC, BEIGE_CC, BRUN_CC
+	, BRUN_CC, BEIGE_CC, GRIS_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BRUN_CC, GRIS_CC, BEIGE_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BEIGE_CC, ORANGE_CC, BRUN_CC
+	, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BEIGE_CC, ORANGE_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC
+	, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BRUN_CC, BRUN_CC, BEIGE_CC, GRIS_CC, BRUN_CC, BRUN_CC, BRUN_CC
+	, BEIGE_CC, ORANGE_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, GRIS_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BEIGE_CC
+	, BEIGE_CC, GRIS_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BEIGE_CC, BRUN_CC, GRIS_CC, BEIGE_CC, BRUN_CC
+	, BRUN_CC, BEIGE_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BRUN_CC, BEIGE_CC, ORANGE_CC, BRUN_CC
+	, BRUN_CC, BEIGE_CC, BRUN_CC, BRUN_CC, BEIGE_CC, GRIS_CC, BRUN_CC, BRUN_CC, BRUN_CC, ORANGE_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BEIGE_CC
+	, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BEIGE_CC, GRIS_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BRUN_CC, BRUN_CC
+	, BRUN_CC, BRUN_CC, BEIGE_CC, GRIS_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, ORANGE_CC, BEIGE_CC, BEIGE_CC, BRUN_CC, BEIGE_CC
+	, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, ORANGE_CC, BRUN_CC, BEIGE_CC, GRIS_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BEIGE_CC, GRIS_CC, BEIGE_CC, ORANGE_CC
+	, BRUN_CC, BEIGE_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC
+	, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC
+	, BEIGE_CC, BRUN_CC, ORANGE_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, GRIS_CC, BRUN_CC, BRUN_CC, BEIGE_CC, ORANGE_CC
+	, BRUN_CC, BEIGE_CC, GRIS_CC, BRUN_CC, BRUN_CC, BRUN_CC, GRIS_CC, BEIGE_CC, BRUN_CC, GRIS_CC, BEIGE_CC, BEIGE_CC, GRIS_CC, BRUN_CC, BEIGE_CC, BRUN_CC
+	, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, BEIGE_CC, BEIGE_CC, BEIGE_CC, BRUN_CC, BRUN_CC, BEIGE_CC, BRUN_CC, ORANGE_CC, ORANGE_CC, BRUN_CC, BEIGE_CC, GRIS_CC), -- dirt tuile 21
+	(x"2", GRIS_CC, GRIS_CC, GRIS_CC, x"1", x"1", x"1", GRIS_CC, GRIS_CC, x"2", x"2", x"2", x"2", GRIS_CC, x"1", x"2"
+	, x"1", x"1", x"1", x"1", x"2", x"2", x"2", x"1", GRIS_CC, GRIS_CC, GRIS_CC, x"2", GRIS_CC, x"1", x"1", x"2"
+	, x"2", x"2", x"2", GRIS_CC, GRIS_CC, x"2", GRIS_CC, GRIS_CC, x"1", x"1", x"1", GRIS_CC, GRIS_CC, x"1", GRIS_CC, GRIS_CC
+	, x"2", x"2", x"2", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1", x"2", GRIS_CC, x"1", x"1", GRIS_CC, GRIS_CC, GRIS_CC
+	, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1", x"2", x"2", x"2", GRIS_CC, GRIS_CC, x"1", GRIS_CC, GRIS_CC
+	, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1", GRIS_CC, GRIS_CC, x"2", GRIS_CC, GRIS_CC, GRIS_CC, x"1", x"1", x"1"
+	, GRIS_CC, GRIS_CC, GRIS_CC, x"1", x"1", x"1", x"1", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1", x"1", GRIS_CC
+	, x"1", x"1", x"1", x"1", GRIS_CC, GRIS_CC, x"2", x"1", x"1", x"1", GRIS_CC, GRIS_CC, x"1", x"1", x"2", GRIS_CC
+	, GRIS_CC, GRIS_CC, GRIS_CC, x"1", x"1", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1", x"1", GRIS_CC, x"2", x"2", GRIS_CC
+	, x"2", GRIS_CC, GRIS_CC, GRIS_CC, x"1", x"1", x"1", GRIS_CC, x"2", x"1", x"1", x"1", x"1", GRIS_CC, GRIS_CC, GRIS_CC
+	, x"2", x"2", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1", GRIS_CC, x"1", x"1", GRIS_CC, GRIS_CC, x"1", x"1", GRIS_CC, GRIS_CC
+	, x"2", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1", x"1", x"1", x"2", x"2", GRIS_CC, GRIS_CC, x"1", x"1", GRIS_CC
+	, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1", x"1", GRIS_CC, x"2", x"2", GRIS_CC, GRIS_CC, x"1", x"1", x"1"
+	, x"1", x"1", x"1", x"1", x"1", x"1", x"1", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1", x"1", GRIS_CC, x"1"
+	, x"2", x"2", x"2", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1", x"1", GRIS_CC, GRIS_CC, GRIS_CC, x"1", GRIS_CC, GRIS_CC, x"2"
+	, x"2", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1", GRIS_CC, GRIS_CC, x"1", GRIS_CC, x"2", x"2"), -- rocks tuile 22
+	(GRIS_CC, GRIS_CC, GRIS_CC, x"1", x"2", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1", x"2", GRIS_CC, GRIS_CC, GRIS_CC
+	, GRIS_CC, x"2", GRIS_CC, x"1", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1", GRIS_CC, GRIS_CC, x"2", GRIS_CC
+	, x"2", GRIS_CC, GRIS_CC, x"1", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC
+	, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"2", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"2", x"1", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1"
+	, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"2", GRIS_CC, x"1", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"2", GRIS_CC, GRIS_CC, x"1"
+	, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"2", GRIS_CC, GRIS_CC, x"1", GRIS_CC, GRIS_CC, GRIS_CC, x"2", GRIS_CC, GRIS_CC, GRIS_CC, x"1"
+	, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, GRIS_CC, GRIS_CC, GRIS_CC, x"1", x"2", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1", x"2", GRIS_CC, GRIS_CC, GRIS_CC
+	, GRIS_CC, GRIS_CC, GRIS_CC, x"1", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"2", GRIS_CC, GRIS_CC, x"1", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC
+	, GRIS_CC, GRIS_CC, GRIS_CC, x"1", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"2", GRIS_CC, x"1", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC
+	, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"2", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1", x"2", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1"
+	, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"2", GRIS_CC, GRIS_CC, x"1", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1"
+	, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"1", GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, GRIS_CC, x"2", x"1"
+	, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"), -- stone wall tuile 23
+	(BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC
+	, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC
+	, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, x"2", x"2", x"2", x"2", BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC
+	, x"2", x"2", x"2", x"2", x"2", BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, x"2", x"2", x"2", x"2", x"2", x"2", x"2"
+	, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC
+	, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC
+	, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, x"2", x"2", x"2", x"2", BLEU1_CC, BLEU1_CC, BLEU1_CC
+	, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC
+	, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC
+	, BLEU1_CC, BLEU1_CC, BLEU1_CC, x"2", x"2", x"2", x"2", x"2", x"2", x"2", BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC
+	, x"2", x"2", x"2", BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, x"2", x"2", x"2", x"2", x"2", x"2"
+	, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC
+	, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC
+	, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC
+	, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, BLEU1_CC, x"2", x"2", x"2", BLEU1_CC, BLEU1_CC
+	, x"2", x"2", x"2", x"2", x"2", x"2", x"2", x"2", x"2", x"2", x"2", BLEU1_CC, BLEU1_CC, BLEU1_CC, x"2", x"2"), -- water tuile 24
+	others =>  (others => x"0")
 );
 
 
