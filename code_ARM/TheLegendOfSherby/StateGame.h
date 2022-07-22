@@ -7,8 +7,8 @@ public:
 	void setGame(Game g);
 	Game getGame();
 	
-	virtual void buttonPress() = 0;
-	virtual void joystickButtonPress() = 0;
-	virtual void joystickMove() = 0;
+	void buttonPress();
+	void joystickButtonPress();
+	void joystickMove();
 };
 
