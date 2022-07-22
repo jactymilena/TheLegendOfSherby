@@ -3,10 +3,12 @@
 class MenuCalibrateState : public StateGame {
 public:
 	MenuCalibrateState();
+	MenuCalibrateState(Game g);
 	~MenuCalibrateState();
-	virtual void buttonPress();
-	virtual void joystickButtonPress();
-	virtual void joystickMove();
+
+	void buttonPress();
+	void joystickButtonPress();
+	void joystickMove();
 };
 
 

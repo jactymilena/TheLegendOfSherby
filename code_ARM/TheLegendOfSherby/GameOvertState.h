@@ -1,10 +1,13 @@
 #include "StateGame.h"
 
 class GameOvertState : public StateGame {
+public:
 	GameOvertState();
+	GameOvertState(Game g);
 	~GameOvertState();
-	virtual void buttonPress();
-	virtual void joystickButtonPress();
-	virtual void joystickMove();
+	
+	void buttonPress();
+	void joystickButtonPress();
+	void joystickMove();
 };
 

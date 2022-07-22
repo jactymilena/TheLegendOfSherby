@@ -7,7 +7,9 @@ protected:
 	
 public:
 	GameOvertState(Game g) { game = g; }
+	GameOvertState() {}
 	~GameOvertState() {}
+
 	void buttonPress() {}
 	void joystickButtonPress() {}
 	void joystickMove() {}

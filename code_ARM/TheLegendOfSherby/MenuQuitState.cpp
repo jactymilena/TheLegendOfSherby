@@ -7,7 +7,9 @@ protected:
 
 public:
 	MenuQuitState(Game g) { game = g; }
+	MenuQuitState() {}
 	~MenuQuitState() {}
+
 	void buttonPress() {}
 	void joystickButtonPress() {}
 	void joystickMove() {}

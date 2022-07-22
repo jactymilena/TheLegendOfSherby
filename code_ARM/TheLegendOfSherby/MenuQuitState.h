@@ -3,9 +3,11 @@
 class MenuQuitState : public StateGame {
 public:
 	MenuQuitState();
+	MenuQuitState(Game g);
 	~MenuQuitState();
-	virtual void buttonPress();
-	virtual void joystickButtonPress();
-	virtual void joystickMove();
+
+	void buttonPress();
+	void joystickButtonPress();
+	void joystickMove();
 };
 

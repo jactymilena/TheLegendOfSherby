@@ -7,12 +7,14 @@ protected:
 	Game game;
 
 public:
+	MenuPlayState() {}
 	MenuPlayState(Game g) { game = g; }
 	~MenuPlayState() {}
 
+
 	void buttonPress() {
-		GameOnState gamon(game);
-		game.chageState(gameon);
+		GameOnState gameOn(game);
+		//game.changeState(gameOn);
 	}
 	
 	void joystickButtonPress() {}
