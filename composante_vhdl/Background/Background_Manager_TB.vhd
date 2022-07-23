@@ -43,6 +43,7 @@ signal s_setTileId: STD_LOGIC_VECTOR (7 downto 0);
 signal s_setTileX, s_setTileY : STD_LOGIC_VECTOR (8 downto 0);
 signal s_colorCode: STD_ULOGIC_VECTOR (3 downto 0);
 signal globalX, globalY : integer := 0;
+signal s_setBg :  STD_LOGIC_VECTOR(3 downto 0) := "0000";
 
 component BackgroundManager is
     Port ( clk      : in std_ulogic;
@@ -50,7 +51,8 @@ component BackgroundManager is
            PositionY : in STD_LOGIC_VECTOR (8 downto 0);
            SetTuileX : in STD_LOGIC_VECTOR (8 downto 0);
            SetTuileY : in STD_LOGIC_VECTOR (8 downto 0);
-           TuileId : in STD_LOGIC_VECTOR (7 downto 0);
+           TuileId   : in STD_LOGIC_VECTOR (7 downto 0);
+ 	   SetMap    : in  STD_LOGIC_VECTOR(3 downto 0);
            colorCode : out STD_ULOGIC_VECTOR (3 downto 0));
 end component;
 
@@ -63,6 +65,7 @@ PositionY  => s_PositionY,
 SetTuileX  => s_setTileX,
 SetTuileY  => s_setTileY,
 TuileId    => s_setTileId,
+SetMap     => s_setBg,
 colorCode  => s_colorCode
 );
 
@@ -93,16 +96,17 @@ tb : PROCESS
 
 s_PositionX <= std_logic_vector(TO_UNSIGNED(globalX, s_PositionX'length ));
 s_PositionY <= std_logic_vector(TO_UNSIGNED(globalY, s_PositionY'length ));
---globalX <= TO_INTEGER(unsigned(s_PositionX));
---globalY <= TO_INTEGER(unsigned(s_PositionY));
+
+
 position: process
 begin
 loop
     wait for c_clk_p_Period;
-    globalX <= (globalX+1) mod 32;
-    if(globalX = 0) then 
-        globalY <= (globalY+1) mod 32;
+    globalX <= (globalX+1) mod 256;
+    if(globalX = 255) then 
+        globalY <= (globalY+1) mod 224;
     end if;
+   
 end loop;
 
 end process;
