@@ -3,7 +3,7 @@
 Game::Game() {}
 Game::~Game() {}
 
-void Game::changeState(StateGame s) {}
+void Game::changeState(StateGame* ptr_s) {}
 void Game::recieveControllerInfo() {}
 void Game::detectCollision() {}
 

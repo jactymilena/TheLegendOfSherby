@@ -5,7 +5,7 @@
 
 class Game {
 private:
-	StateGame state;
+	StateGame* ptr_state;
 	Actor registreActor[12];
 	Background registreBackground[10];
 	int currentBackground;
@@ -18,7 +18,7 @@ public:
 	Background getCurrentBackground();
 	void setCurrentBackground(int i);
 
-	void changeState(StateGame s);
+	void changeState(StateGame* ptr_s);
 	void recieveControllerInfo();
 	void detectCollision();
 	void removeLife();
