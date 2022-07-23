@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Actors">
+      <UniqueIdentifier>{0a887ea5-918a-49d5-89f9-15b1f68302bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Actors">
+      <UniqueIdentifier>{def86021-ea21-4bb6-b51f-c4530c1070bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\StateLink">
+      <UniqueIdentifier>{6b96037a-be61-4a70-8f85-aba06136e780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\StateGame">
+      <UniqueIdentifier>{3bac73de-6465-477a-a79b-e1c6a7f28560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\StateLink">
+      <UniqueIdentifier>{3a35687d-103f-4f45-b81c-4d8b00fab175}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\StateGame">
+      <UniqueIdentifier>{6647007a-f135-4c57-acc4-6b81d637fdfa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LegendOfSherby.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor.cpp">
+      <Filter>Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="Chest.cpp">
+      <Filter>Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="HealtPoint.cpp">
+      <Filter>Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="Link.cpp">
+      <Filter>Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="Sword.cpp">
+      <Filter>Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackState.cpp">
+      <Filter>Source Files\StateLink</Filter>
+    </ClCompile>
+    <ClCompile Include="IdleState.cpp">
+      <Filter>Source Files\StateLink</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveState.cpp">
+      <Filter>Source Files\StateLink</Filter>
+    </ClCompile>
+    <ClCompile Include="StateLink.cpp">
+      <Filter>Source Files\StateLink</Filter>
+    </ClCompile>
+    <ClCompile Include="Background.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\StateGame</Filter>
+    </ClCompile>
+    <ClCompile Include="StateGame.cpp">
+      <Filter>Source Files\StateGame</Filter>
+    </ClCompile>
+    <ClCompile Include="StateGameOn.cpp">
+      <Filter>Source Files\StateGame</Filter>
+    </ClCompile>
+    <ClCompile Include="StateGameOver.cpp">
+      <Filter>Source Files\StateGame</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMenuPlay.cpp">
+      <Filter>Source Files\StateGame</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMenuQuit.cpp">
+      <Filter>Source Files\StateGame</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Actor.h">
+      <Filter>Header Files\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Header Files\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Chest.h">
+      <Filter>Header Files\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="HealtPoint.h">
+      <Filter>Header Files\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Link.h">
+      <Filter>Header Files\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Sword.h">
+      <Filter>Header Files\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="StateLink.h">
+      <Filter>Header Files\StateLink</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackState.h">
+      <Filter>Header Files\StateLink</Filter>
+    </ClInclude>
+    <ClInclude Include="IdleState.h">
+      <Filter>Header Files\StateLink</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveState.h">
+      <Filter>Header Files\StateLink</Filter>
+    </ClInclude>
+    <ClInclude Include="Background.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StateGame.h">
+      <Filter>Header Files\StateGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\StateGame</Filter>
+    </ClInclude>
+    <ClInclude Include="StateGameOn.h">
+      <Filter>Header Files\StateGame</Filter>
+    </ClInclude>
+    <ClInclude Include="StateGameOver.h">
+      <Filter>Header Files\StateGame</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMenuPlay.h">
+      <Filter>Header Files\StateGame</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMenuQuit.h">
+      <Filter>Header Files\StateGame</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
