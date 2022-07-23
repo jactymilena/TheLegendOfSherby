@@ -14,11 +14,11 @@ public:
 	~Actor() {}
 
 	// get functions
-	int getActorId() { return actorID; }
+	int getActorId() { return actorId; }
 	bool getActif() { return actif; }
 	int getPosX() { return posX; }
 	int getPosY() { return posY; }
-	int getTileId() { return tileID; }
+	int getTileId() { return tileId; }
 
 	// set functions
 	void setActorId(int aId) { actorId = aId; }
