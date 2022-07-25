@@ -8,25 +8,25 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\iamya\\.nuget\\packages\\": {},
+    "C:\\Users\\jacty\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\github\\TheLegendOfSherby\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+      "projectUniqueName": "C:\\Users\\jacty\\OneDrive\\Desktop\\GI_S4_E22\\Projet\\TheLegendOfSherby\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
       "projectName": "WinFormsApp1",
-      "projectPath": "C:\\github\\TheLegendOfSherby\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
-      "packagesPath": "C:\\Users\\iamya\\.nuget\\packages\\",
-      "outputPath": "C:\\github\\TheLegendOfSherby\\WinFormsApp1\\WinFormsApp1\\obj\\",
+      "projectPath": "C:\\Users\\jacty\\OneDrive\\Desktop\\GI_S4_E22\\Projet\\TheLegendOfSherby\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+      "packagesPath": "C:\\Users\\jacty\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jacty\\OneDrive\\Desktop\\GI_S4_E22\\Projet\\TheLegendOfSherby\\WinFormsApp1\\WinFormsApp1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\iamya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jacty\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -63,12 +63,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.21, 3.1.21]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -77,7 +71,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

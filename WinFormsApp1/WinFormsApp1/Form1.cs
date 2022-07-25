@@ -43,51 +43,58 @@ namespace WinFormsApp1
                     for (int j = 0; j < img.Height; j++)
                     {
                         Color pixel = img.GetPixel(j, i);
-                        string color = pixel.Name.Substring(2);
-                        switch (color)
+                        string color;
+                        if (pixel.Name == "0")
                         {
-                            case "000000":
-                                output += ", x\"1\"";
-                                break;
-                            case "ffffff":
-                                output += ", x\"2\"";
-                                break;
-                            case "00a2e8":
-                                output += ", BLEU1_CC";
-                                break;
-                            case "ed1a2c":
-                                output += ", ROUGE_CC";
-                                break;
-                            case "c85086":
-                                output += ", ROSE_CC";
-                                break;
-                            case "f7ab79":
-                                output += ", BEIGE_CC";
-                                break;
-                            case "b4e61d":
-                                output += ", LIME_CC";
-                                break;
-                            case "0c6624":
-                                output += ", VERT2_CC";
-                                break;
-                            case "22b14d":
-                                output += ", VERT1_CC";
-                                break;
-                            case "8a5132":
-                                output += ", BRUN_CC";
-                                break;
-                            case "ff7f2f":
-                                output += ", ORANGE_CC";
-                                break;
-                            case "fff200":
-                                output += ", JAUNE_CC";
-                                break;
-                            case "66696b":
-                                output += ", GRIS_CC";
-                                break;
-                            default:
-                                output += ", x\"1\"";
-                                break;
+                            output += ", TRANS_CC";
+                        }
+                        else {
+                            color = pixel.Name.Substring(2);
+                            switch (color)
+                            {
+                                case "000000":
+                                    output += ", NOIR_CC";
+                                    break;
+                                case "ffffff":
+                                    output += ", BLANC_CC";
+                                    break;
+                                case "00a2e8":
+                                    output += ", BLEU1_CC";
+                                    break;
+                                case "ed1a2c":
+                                    output += ", ROUGE_CC";
+                                    break;
+                                case "c85086":
+                                    output += ", ROSE_CC";
+                                    break;
+                                case "f7ab79":
+                                    output += ", BEIGE_CC";
+                                    break;
+                                case "b4e61d":
+                                    output += ", LIME_CC";
+                                    break;
+                                case "0c6624":
+                                    output += ", VERT2_CC";
+                                    break;
+                                case "22b14d":
+                                    output += ", VERT1_CC";
+                                    break;
+                                case "8a5132":
+                                    output += ", BRUN_CC";
+                                    break;
+                                case "ff7f2f":
+                                    output += ", ORANGE_CC";
+                                    break;
+                                case "fff200":
+                                    output += ", JAUNE_CC";
+                                    break;
+                                case "66696b":
+                                    output += ", GRIS_CC";
+                                    break;
+                                default:
+                                    output += ", x\"1\"";
+                                    break;
+                            }
                         }
                     }
                     output += "\n";
