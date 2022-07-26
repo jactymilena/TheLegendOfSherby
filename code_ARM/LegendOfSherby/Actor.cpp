@@ -2,6 +2,10 @@
 
 // Constructers
 Actor::Actor() {}
+Actor::Actor(int x, int y) {
+	posX = x;
+	posY = y;
+}
 Actor::~Actor() {}
 
 // get functions

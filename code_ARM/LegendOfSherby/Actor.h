@@ -10,6 +10,7 @@ private:
 public:
 	// Constructers
 	Actor();
+	Actor(int x, int y);
 	~Actor();
 
 	// get functions

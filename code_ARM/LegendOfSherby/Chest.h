@@ -3,7 +3,8 @@
 
 class Chest : public Actor {
 public:
-	Chest();
+	Chest(int x, int y);
 	~Chest();
+	void openChest();
 };
 
