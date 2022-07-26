@@ -1,36 +1,53 @@
 #include "Link.h"
+#include <ostream>
 
-#define TILEID_COEURROSE 1
-#define TILEID_COEURROUGE 2
+#define COEUR_ROSE 1
+#define COEUR_ROUGE 2
 
-Link::Link() {
-	/*for (int i = 0; i < sizeof(coeurs); i++) {
-		HealtPoint hp;
-		coeurs[i] = hp;
-	}*/
+Link::Link(int x, int y, Sword s) {
+	setPosX(x);
+	setPosY(y);
+	sword = s;
+
+	coeurs[0].setPosX(0);
+	coeurs[0].setPosY(0);
+	coeurs[1].setPosX(2);
+	coeurs[1].setPosY(0);
+	coeurs[2].setPosX(4);
+	coeurs[2].setPosY(0);
 }
 Link::~Link() {}
 
 // functions 
 void Link::changeState(StateLink s) {}
-void Link::attack() {}
 
 // retourne 1 si game over
 bool Link::loseHeart() {
-	/*for (int i = sizeof(coeurs); i > 0; i--) {
-		if (coeurs[i - 1].getTileId == TILEID_COEURROUGE) {
-			coeurs[i - 1].setTileId(TILEID_COEURROSE);
+	for (int i = sizeof(coeurs); i > 0; i--) {
+		if (coeurs[i - 1].getTileId() == COEUR_ROUGE) {
+			coeurs[i - 1].setTileId(COEUR_ROSE);
 			return false;
 		}
-	}*/
+	}
 	// game over	
 	return true;
 }
 void Link::gainHeart() {
-	/*for (int i = 0; i < sizeof(coeurs); i++) {
-		if (coeurs[i].getTileId == TILEID_COEURROUGE) {
-			coeurs[i].setTileId(TILEID_COEURROSE);
+	for (int i = 0; i < sizeof(coeurs); i++) {
+		if (coeurs[i].getTileId() == COEUR_ROSE) {
+			coeurs[i].setTileId(COEUR_ROUGE);
+			return;
 		}
-	}*/
+	}
 }
 
+HealtPoint* Link::getCoeurs() {
+	return coeurs;
+}
+
+void Link::attack() {
+	sword.attack();
+}
+
+void Link::setSwoard(Sword s) { sword = s; }
+Sword Link::getSword() { return Sword(); }

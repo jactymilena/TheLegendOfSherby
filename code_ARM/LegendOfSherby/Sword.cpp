@@ -20,6 +20,7 @@ void Sword::attack() {
     setActif(true);
     std::cout << "Actif = " << getActif() << "\n";
 
+    std::cout << "wait for 2 seconds...";
     std::this_thread::sleep_for(std::chrono::milliseconds(2000));
 
     setActif(false);
