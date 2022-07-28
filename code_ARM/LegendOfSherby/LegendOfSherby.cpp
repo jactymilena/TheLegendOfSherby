@@ -9,7 +9,7 @@
 using namespace std;
 
 
-void LinkAttack(Link l, Chest c) {
+Link Chest LinkAttack(Link l, Chest c) {
     cout << "Link Attack\n";
 
     l.attack();
