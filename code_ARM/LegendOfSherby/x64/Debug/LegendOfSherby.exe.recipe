@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\git\s4\projet\TheLegendOfSherby\code_ARM\x64\Debug\LegendOfSherby.exe</FullPath>
+      <FullPath>C:\github\TheLegendOfSherby\code_ARM\x64\Debug\LegendOfSherby.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
