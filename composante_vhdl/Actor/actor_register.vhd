@@ -22,6 +22,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
+use work.tuile_package.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -48,7 +49,6 @@ entity actor_register is
            o_tid                : out STD_LOGIC_VECTOR (7 downto 0);
            o_pixel_x            : out STD_LOGIC_VECTOR (3 downto 0);
            o_pixel_y            : out STD_LOGIC_VECTOR (3 downto 0));
-           
 end actor_register;
 
 architecture Behavioral of actor_register is
@@ -66,7 +66,8 @@ architecture Behavioral of actor_register is
                o_tid            : out STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
                o_pix_x          : out STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
                o_pix_y          : out STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-               o_hit            : out STD_LOGIC := '0');
+               o_hit            : out STD_LOGIC := '0';
+               o_actif          : out STD_LOGIC := '0');
     end component;
     
     component selecteurActeur is
@@ -75,110 +76,35 @@ architecture Behavioral of actor_register is
     end component;
     
     -- Identifiant des tuiles des 12 acteurs
-    signal s_tid_a0   : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
-    signal s_tid_a1   : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
-    signal s_tid_a2   : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
-    signal s_tid_a3   : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
-    signal s_tid_a4   : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
-    signal s_tid_a5   : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
-    signal s_tid_a6   : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
-    signal s_tid_a7   : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
-    signal s_tid_a8   : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
-    signal s_tid_a9   : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
-    signal s_tid_a10  : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
-    signal s_tid_a11  : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
+    signal s_tid_arr : tableauTileId;
     
+    -- Pixels X  et Y en sortie des 12 acteurs
+    signal s_pix_x : tableauPixels;
+    signal s_pix_y : tableauPixels;
     
-    -- Pixels X en sortie des 12 acteurs
-    signal s_x_a0   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_x_a1   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_x_a2   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_x_a3   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_x_a4   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_x_a5   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_x_a6   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_x_a7   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_x_a8   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_x_a9   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_x_a10  : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_x_a11  : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    
-    -- Pixels Y en sortie des 12 acteurs
-    signal s_y_a0   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_y_a1   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_y_a2   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_y_a3   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_y_a4   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_y_a5   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_y_a6   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_y_a7   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_y_a8   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_y_a9   : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_y_a10  : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-    signal s_y_a11  : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');   
-
-    signal s_hit               : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
+    signal s_hit               : STD_LOGIC_VECTOR (11 downto 0) := (others => '0');
     signal s_tid               : STD_LOGIC_VECTOR (7 downto 0);
     signal s_is_actif          : STD_LOGIC;
     signal s_select_actor_id   : STD_LOGIC_VECTOR (3 downto 0);
     signal s_curr_actor_id     : STD_LOGIC_VECTOR (3 downto 0);
     signal s_curr_actor_id_i   : INTEGER;
+    signal s_select_index      : INTEGER;
 
 begin
     process(s_select_actor_id)
     begin
-        case (s_select_actor_id) is 
-          when "0000" =>
-            o_tid       <= s_tid_a0; 
-            o_pixel_x   <= s_x_a0;
-            o_pixel_y   <= s_x_a0;
-          when "0001" => 
-            o_tid       <= s_tid_a1; 
-            o_pixel_x   <= s_x_a1;
-            o_pixel_y   <= s_x_a1;
-          when "0010" => 
-            o_tid       <= s_tid_a2; 
-            o_pixel_x   <= s_x_a2;
-            o_pixel_y   <= s_x_a2;
-          when "0011" => 
-            o_tid       <= s_tid_a3; 
-            o_pixel_x   <= s_x_a3;
-            o_pixel_y   <= s_x_a3;
-          when "0100" => 
-            o_tid       <= s_tid_a4; 
-            o_pixel_x   <= s_x_a4;
-            o_pixel_y   <= s_x_a4;            
-          when "0101" => 
-            o_tid       <= s_tid_a5; 
-            o_pixel_x   <= s_x_a5;
-            o_pixel_y   <= s_x_a5; 
-          when "0110" => 
-            o_tid       <= s_tid_a6;
-            o_pixel_x   <= s_x_a6;
-            o_pixel_y   <= s_x_a6; 
-          when "0111" => 
-            o_tid       <= s_tid_a7; 
-            o_pixel_x   <= s_x_a7;
-            o_pixel_y   <= s_x_a7; 
-          when "1000" => 
-            o_tid       <= s_tid_a8; 
-            o_pixel_x   <= s_x_a8;
-            o_pixel_y   <= s_x_a8;            
-          when "1001" => 
-            o_tid <= s_tid_a9; 
-            o_pixel_x   <= s_x_a9;
-            o_pixel_y   <= s_x_a9;       
-          when "1010" => 
-            o_tid <= s_tid_a10; 
-            o_pixel_x   <= s_x_a10;
-            o_pixel_y   <= s_x_a10;   
-          when "1011" => 
-            o_tid <= s_tid_a11; 
-            o_pixel_x   <= s_x_a11;
-            o_pixel_y   <= s_x_a11;     
-          when others =>
-       
-       end case;
+        for s_select_index in 0 to 11 loop
+            if(to_integer(unsigned(s_select_actor_id)) = s_select_index) then
+                o_tid       <= s_tid_arr(s_select_index); 
+                o_pixel_x   <= s_pix_x(s_select_index);
+                o_pixel_y   <= s_pix_y(s_select_index);
+                exit; -- break for loop
+            end if;
+        
+            
+        end loop;
+        
+
     end process;
     
     
@@ -188,9 +114,7 @@ begin
             s_curr_actor_id <= std_logic_vector(TO_UNSIGNED(s_curr_actor_id_i, s_curr_actor_id'length));
         end loop;
     end process;
-    
-    
-    
+   
     inst_select :  selecteurActeur 
         Port map ( 
             hits    => s_hit,
@@ -209,9 +133,9 @@ begin
                i_curr_actor_id  => i_actor_id,
                i_we_pos         => i_actorSetPos_we,
                i_we_tile        => i_actorSetTile_we,
-               o_tid            => s_tid_a0,
-               o_pix_x          => s_x_a0,
-               o_pix_y          => s_y_a0,
+               o_tid            => s_tid_arr(0),
+               o_pix_x          => s_pix_x(0),  
+               o_pix_y          => s_pix_y(0),  
                o_hit            => s_hit(0)
         );
         
@@ -226,9 +150,9 @@ begin
                i_curr_actor_id  => i_actor_id,
                i_we_pos         => i_actorSetPos_we,
                i_we_tile        => i_actorSetTile_we,
-               o_tid            => s_tid_a0,
-               o_pix_x          => s_x_a0,
-               o_pix_y          => s_y_a0,
+               o_tid            => s_tid_arr(1),
+               o_pix_x          => s_pix_x(1),  
+               o_pix_y          => s_pix_y(1),  
                o_hit            => s_hit(1)
         );
         
@@ -243,9 +167,9 @@ begin
                i_curr_actor_id  => i_actor_id,
                i_we_pos         => i_actorSetPos_we,
                i_we_tile        => i_actorSetTile_we,
-               o_tid            => s_tid_a0,
-               o_pix_x          => s_x_a0,
-               o_pix_y          => s_y_a0,
+               o_tid            => s_tid_arr(2),
+               o_pix_x          => s_pix_x(2),  
+               o_pix_y          => s_pix_y(2),  
                o_hit            => s_hit(2)
         );   
         
@@ -260,9 +184,9 @@ begin
                i_curr_actor_id  => i_actor_id,
                i_we_pos         => i_actorSetPos_we,
                i_we_tile        => i_actorSetTile_we,
-               o_tid            => s_tid_a0,
-               o_pix_x          => s_x_a0,
-               o_pix_y          => s_y_a0,
+               o_tid            => s_tid_arr(3),
+               o_pix_x          => s_pix_x(3),  
+               o_pix_y          => s_pix_y(3),  
                o_hit            => s_hit(3)
         ); 
     
@@ -277,9 +201,9 @@ begin
                    i_curr_actor_id  => i_actor_id,
                    i_we_pos         => i_actorSetPos_we,
                    i_we_tile        => i_actorSetTile_we,
-                   o_tid            => s_tid_a0,
-                   o_pix_x          => s_x_a0,
-                   o_pix_y          => s_y_a0,
+                   o_tid            => s_tid_arr(4),
+                   o_pix_x          => s_pix_x(4),  
+                   o_pix_y          => s_pix_y(4),  
                    o_hit            => s_hit(4)
             ); 
 
@@ -294,9 +218,9 @@ begin
                    i_curr_actor_id  => i_actor_id,
                    i_we_pos         => i_actorSetPos_we,
                    i_we_tile        => i_actorSetTile_we,
-                   o_tid            => s_tid_a0,
-                   o_pix_x          => s_x_a0,
-                   o_pix_y          => s_y_a0,
+                   o_tid            => s_tid_arr(5),
+                   o_pix_x          => s_pix_x(5),  
+                   o_pix_y          => s_pix_y(5),  
                    o_hit            => s_hit(5)
             ); 
             
@@ -311,9 +235,9 @@ begin
                    i_curr_actor_id  => i_actor_id,
                    i_we_pos         => i_actorSetPos_we,
                    i_we_tile        => i_actorSetTile_we,
-                   o_tid            => s_tid_a0,
-                   o_pix_x          => s_x_a0,
-                   o_pix_y          => s_y_a0,
+                   o_tid            => s_tid_arr(6),
+                   o_pix_x          => s_pix_x(6),  
+                   o_pix_y          => s_pix_y(6),  
                    o_hit            => s_hit(6)
             );
 
@@ -328,9 +252,9 @@ begin
                      i_curr_actor_id  => i_actor_id,
                      i_we_pos         => i_actorSetPos_we,
                      i_we_tile        => i_actorSetTile_we,
-                     o_tid            => s_tid_a0,
-                     o_pix_x          => s_x_a0,
-                     o_pix_y          => s_y_a0,
+                     o_tid            => s_tid_arr(7),
+                     o_pix_x          => s_pix_x(7),  
+                     o_pix_y          => s_pix_y(7),  
                      o_hit            => s_hit(7)
               );
 
@@ -345,9 +269,9 @@ begin
                      i_curr_actor_id  => i_actor_id,
                      i_we_pos         => i_actorSetPos_we,
                      i_we_tile        => i_actorSetTile_we,
-                     o_tid            => s_tid_a0,
-                     o_pix_x          => s_x_a0,
-                     o_pix_y          => s_y_a0,
+                     o_tid            => s_tid_arr(8),
+                     o_pix_x          => s_pix_x(8),  
+                     o_pix_y          => s_pix_y(8),  
                      o_hit            => s_hit(8)
               );   
 
@@ -362,9 +286,9 @@ begin
                      i_curr_actor_id  => i_actor_id,
                      i_we_pos         => i_actorSetPos_we,
                      i_we_tile        => i_actorSetTile_we,
-                     o_tid            => s_tid_a0,
-                     o_pix_x          => s_x_a0,
-                     o_pix_y          => s_y_a0,
+                     o_tid            => s_tid_arr(9),
+                     o_pix_x          => s_pix_x(9),  
+                     o_pix_y          => s_pix_y(9),  
                      o_hit            => s_hit(9)
               ); 
 
@@ -379,9 +303,9 @@ begin
                          i_curr_actor_id  => i_actor_id,
                          i_we_pos         => i_actorSetPos_we,
                          i_we_tile        => i_actorSetTile_we,
-                         o_tid            => s_tid_a0,
-                         o_pix_x          => s_x_a0,
-                         o_pix_y          => s_y_a0,
+                         o_tid            => s_tid_arr(10),
+                         o_pix_x          => s_pix_x(10),  
+                         o_pix_y          => s_pix_y(10),  
                          o_hit            => s_hit(10)
                   ); 
 
@@ -396,9 +320,9 @@ begin
                          i_curr_actor_id  => i_actor_id,
                          i_we_pos         => i_actorSetPos_we,
                          i_we_tile        => i_actorSetTile_we,
-                         o_tid            => s_tid_a0,
-                         o_pix_x          => s_x_a0,
-                         o_pix_y          => s_y_a0,
+                         o_tid            => s_tid_arr(11),
+                         o_pix_x          => s_pix_x(11),  
+                         o_pix_y          => s_pix_y(11),  
                          o_hit            => s_hit(11)
                   ); 
 

@@ -45,7 +45,7 @@ package tuile_package is
  constant BRUN_CC   : std_ulogic_vector( 3 downto 0 ) := X"a";
  constant ORANGE_CC   : std_ulogic_vector( 3 downto 0 ) := X"b";
  constant JAUNE_CC   : std_ulogic_vector( 3 downto 0 ) := X"c";
-  constant GRIS_CC   : std_ulogic_vector( 3 downto 0 ) := X"d";
+ constant GRIS_CC   : std_ulogic_vector( 3 downto 0 ) := X"d";
  constant BLEU2_CC   : std_ulogic_vector( 3 downto 0 ) := X"e";
  -- constant _CC   : std_ulogic_vector( 3 downto 0 ) := X"f"; 
 
@@ -54,6 +54,8 @@ type RegistreTileId is array(0 to 32, 0 to 32) of std_ulogic_vector(7 downto 0);
 
 
 type tableauCouleur is array (0 to 255) of std_ulogic_vector(3 downto 0);
+type tableauTileid is array (0 to 11) of std_logic_vector(7 downto 0);
+type tableauPixels is array (0 to 11) of std_logic_vector(3 downto 0);
 type TuilesTableau is array(0 to 255) of tableauCouleur;
 
 end package;
