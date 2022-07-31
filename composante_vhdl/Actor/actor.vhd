@@ -50,7 +50,8 @@ end actor;
 
 architecture Behavioral of actor is   
 
-    signal s_tid    : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
+    signal s_tid        : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
+    signal s_actor_id   :STD_LOGIC_VECTOR (3 downto 0);
     
     signal s_pos_x  : INTEGER := 0;
     signal test     : INTEGER := 0;
@@ -82,23 +83,30 @@ begin
         end if;
     end process;
     
+    
+    -- write-enable set actor id
+--    process(i_we_actor_id)
+--    begin
+--        if(i_we_actor_id = '1') then
+--            s_actor_id <= i_actor_id;
+--        end if;
+--    end process;
+    
     -- Comparateur
-    process(i_curr_actor_id, i_gb_x, i_gb_y)
+    process(i_gb_x, i_gb_y)
     begin
-        if(i_curr_actor_id = i_actor_id) then
-            
-            if(((s_pos_x <= s_gb_x) and (s_pos_x + 16 > s_gb_x)) and
-              ((s_pos_y <= s_gb_y) and (s_pos_y + 16 > s_gb_y))) then 
-                o_hit <= '1';                
-                test3 <= std_logic_vector(TO_UNSIGNED(2-0,test3'length));       -- 2 - 0 = 2
-                test <= 2 - 0;                                                  -- 2 - 0 = 2
-                test2 <= (s_gb_x) - (s_pos_x);                                  -- 2 - 0 = 1
-                o_pix_x <= std_logic_vector(TO_UNSIGNED((s_gb_x) - (s_pos_x), o_pix_x'length));
-                o_pix_y <= std_logic_vector(TO_UNSIGNED((s_gb_y) - (s_pos_y), o_pix_y'length));
-            else
-                o_hit <= '0';
-            end if;
+        if(((s_pos_x <= s_gb_x) and (s_pos_x + 16 > s_gb_x)) and
+          ((s_pos_y <= s_gb_y) and (s_pos_y + 16 > s_gb_y))) then 
+            o_hit <= '1';                
+            test3 <= std_logic_vector(TO_UNSIGNED(2-0,test3'length));       -- 2 - 0 = 2
+            test <= 2 - 0;                                                  -- 2 - 0 = 2
+            test2 <= (s_gb_x) - (s_pos_x);                                  -- 2 - 0 = 1
+            o_pix_x <= std_logic_vector(TO_UNSIGNED((s_gb_x) - (s_pos_x), o_pix_x'length));
+            o_pix_y <= std_logic_vector(TO_UNSIGNED((s_gb_y) - (s_pos_y), o_pix_y'length));
+        else
+            o_hit <= '0';
         end if;
+        
     end process;
    
 end Behavioral;
