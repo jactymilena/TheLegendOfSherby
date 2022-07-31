@@ -51,6 +51,20 @@ void displayLink(Link l) {
     std::cout << "============================================================\n\n";
 }
 
+void displayMap(Background* backgroundManager, int mapIndex) {
+    backgroundManager->setMapIndex(mapIndex);
+    int tile_32 = 0;
+    while (backgroundManager->hasMoreTile())
+    {
+        tile_32++;
+        if (tile_32 == 32) {
+            tile_32 = 0;
+            std::cout << "\n";
+        }
+        std::cout << backgroundManager->getNextTile();
+    }
+}
+
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // MAIN
 /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -59,8 +73,11 @@ int main()
 {
     cout << "Start game!\n\n";
     Game game();
+    Background* backgroundManager = Background::getBackgroundManager();
+    displayMap(backgroundManager, 0);
 
     cout << "Ajout d'un chest : ";
+
     Chest chest(0, 0);
     cout << "Tile chest fermee = " << chest.getTileId() << "\n\n";
     
@@ -87,7 +104,7 @@ int main()
     collisionLinkEnemy(link, enemy);
     displayLink(link);
     
-
+    delete backgroundManager;
 }
 
 

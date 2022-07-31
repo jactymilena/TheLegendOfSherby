@@ -29,8 +29,14 @@ private:
 	static const int BLEU2_CC = 14;
 	int mapIndex = 0;
 	int tileIndex;
-	static int background[1][1024];
+	static int backgrounds[1][1024];
 public:
+	Background();
+	static Background* background;
+	~Background();
+	static Background* getBackgroundManager();
+	void setMapIndex(int index);
+	void resetMapTileIndex();
 	int getNextTile();
 	bool hasMoreTile();
 	int nextMapTrigger(int x,int y);

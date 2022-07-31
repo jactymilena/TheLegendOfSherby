@@ -1,6 +1,6 @@
 #include "Background.h"
 
-int Background::background[1][1024] = { BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK
+int Background::backgrounds[1][1024] = { BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK
 , BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK
 , BRICK, BRICK, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT
 , BRICK, BRICK, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT, DIRT
@@ -34,13 +34,41 @@ int Background::background[1][1024] = { BRICK, BRICK, BRICK, BRICK, BRICK, BRICK
 , BRICK, BRICK, DIRT, DIRT, DIRT, DIRT, DIRT, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK, BRICK
  };
 
+Background* Background::background = nullptr;
+
 int Background::nextMapTrigger(int x, int y) {
 	return 0;
 }
 
+void Background::resetMapTileIndex() {
+	tileIndex = -1;
+}
+
+Background::Background()
+{
+}
+
+Background::~Background()
+{
+}
+
+Background* Background::getBackgroundManager()
+{
+	if (background == nullptr) {
+		background = new Background();
+	}
+	return background;
+}
+
+void Background::setMapIndex(int index)
+{
+	this->mapIndex = index;
+	this->tileIndex = -1;
+}
+
 int Background::getNextTile() {
 	tileIndex++;
-	return this->background[mapIndex][tileIndex];
+	return this->backgrounds[mapIndex][tileIndex];
 }
 
 bool Background::hasMoreTile() {
