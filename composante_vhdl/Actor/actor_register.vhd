@@ -44,7 +44,7 @@ entity actor_register is
            i_we_tile            : in STD_LOGIC;
            i_tid                : in STD_LOGIC_VECTOR (7 downto 0);
            i_clk                : in STD_LOGIC;
-           o_actor_actif        : in STD_LOGIC;
+           o_actor_actif        : out STD_LOGIC;
            o_tid                : out STD_LOGIC_VECTOR (7 downto 0);
            o_pixel_x            : out STD_LOGIC_VECTOR (3 downto 0);
            o_pixel_y            : out STD_LOGIC_VECTOR (3 downto 0));
@@ -61,9 +61,11 @@ architecture Behavioral of actor_register is
            i_curr_actor_id  : in STD_LOGIC_VECTOR (3 downto 0);
            i_we_pos         : in STD_LOGIC;
            i_we_tile        : in STD_LOGIC;
+           i_we_actif       : in STD_LOGIC;
            o_tid            : out STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
            o_pix_x          : out STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
            o_pix_y          : out STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
+           o_actif          : out STD_LOGIC;
            o_hit            : out STD_LOGIC := '0'); -- quand a 1, l'acteur se trouve a la pos globale
     end component;
     
@@ -73,6 +75,7 @@ architecture Behavioral of actor_register is
     end component;
 
     signal s_hit               : STD_LOGIC_VECTOR (11 downto 0) := (others => '0');
+    signal s_actif             : STD_LOGIC_VECTOR (11 downto 0) := (others => '0');
 
     -- Identifiant des tuiles des 12 acteurs
     signal s_tid_arr                : tableauTileId;
@@ -111,20 +114,23 @@ begin
             i_curr_actor_id =>   i_actor_id,  
             i_we_pos        =>   i_we_pos,
             i_we_tile       =>   i_we_tile,
+            i_we_actif      =>   i_we_actif,
             o_tid           =>   s_tid_arr(I),
             o_pix_x         =>   s_pix_x_arr(I),   
             o_pix_y         =>   s_pix_y_arr(I),
-            o_hit           =>   s_hit(I)
+            o_hit           =>   s_hit(I),
+            o_actif         =>   s_actif(I)
         );
    end generate gen_actor_inst;
        
-   process(s_select_actor_id)               -- AJOUTER ACTIF QUI SORT DE L'ACTEUR
+   process(s_select_actor_id)               
    begin
         for s_select_index in 0 to 11 loop
             if(to_integer(unsigned(s_select_actor_id)) = s_select_index) then
-                o_tid       <= s_tid_arr(s_select_index); 
-                o_pixel_x   <= s_pix_x_arr(s_select_index);
-                o_pixel_y   <= s_pix_y_arr(s_select_index);
+                o_tid           <= s_tid_arr(s_select_index); 
+                o_pixel_x       <= s_pix_x_arr(s_select_index);
+                o_pixel_y       <= s_pix_y_arr(s_select_index);
+                o_actor_actif   <= s_actif(s_select_index);
                 exit; -- break for loop
             end if;
         end loop;

@@ -42,16 +42,18 @@ entity actor is
            i_curr_actor_id  : in STD_LOGIC_VECTOR (3 downto 0);
            i_we_pos         : in STD_LOGIC;
            i_we_tile        : in STD_LOGIC;
+           i_we_actif       : in STD_LOGIC;
            o_tid            : out STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
            o_pix_x          : out STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
            o_pix_y          : out STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
+           o_actif          : out STD_LOGIC;
            o_hit            : out STD_LOGIC := '0'); -- quand a 1, l'acteur se trouve a la pos globale
 end actor;
 
 architecture Behavioral of actor is   
 
     signal s_tid        : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
-    signal s_actor_id   :STD_LOGIC_VECTOR (3 downto 0);
+    signal s_actif      : STD_LOGIC := '0';
     
     signal s_pos_x  : INTEGER := 0;
     signal test     : INTEGER := 0;
@@ -62,9 +64,10 @@ architecture Behavioral of actor is
     signal test3          : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
 
 begin
-    s_gb_x <= TO_INTEGER(UNSIGNED(i_gb_x));
-    s_gb_y <= TO_INTEGER(UNSIGNED(i_gb_y));
-    o_tid <= s_tid;
+    s_gb_x  <= TO_INTEGER(UNSIGNED(i_gb_x));
+    s_gb_y  <= TO_INTEGER(UNSIGNED(i_gb_y));
+    o_tid   <= s_tid;
+    o_actif <= s_actif;
     
     -- write-enable set position
     process(i_we_pos)
@@ -85,12 +88,10 @@ begin
     
     
     -- write-enable set actor id
---    process(i_we_actor_id)
---    begin
---        if(i_we_actor_id = '1') then
---            s_actor_id <= i_actor_id;
---        end if;
---    end process;
+    process(i_we_actif)
+    begin
+        s_actif <= i_we_actif;
+    end process;
     
     -- Comparateur
     process(i_gb_x, i_gb_y)

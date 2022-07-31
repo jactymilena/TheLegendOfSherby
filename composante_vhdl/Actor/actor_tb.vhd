@@ -39,19 +39,21 @@ end actor_tb;
 architecture Behavioral of actor_tb is
 
     component actor is
-        Port ( i_gb_x           : in STD_LOGIC_VECTOR (8 downto 0);
-               i_gb_y           : in STD_LOGIC_VECTOR (8 downto 0);
-               i_set_x          : in STD_LOGIC_VECTOR (8 downto 0);
-               i_set_y          : in STD_LOGIC_VECTOR (8 downto 0);
-               i_tid            : in STD_LOGIC_VECTOR (7 downto 0);
-               i_actor_id       : in STD_LOGIC_VECTOR (3 downto 0);
-               i_curr_actor_id  : in STD_LOGIC_VECTOR (3 downto 0);
-               i_we_pos         : in STD_LOGIC;
-               i_we_tile        : in STD_LOGIC;
-               o_tid            : out STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
-               o_pix_x          : out STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-               o_pix_y          : out STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-               o_hit            : out STD_LOGIC := '0'); -- quand a 1, l'acteur se trouve a la pos globale
+    Port ( i_gb_x           : in STD_LOGIC_VECTOR (8 downto 0);
+           i_gb_y           : in STD_LOGIC_VECTOR (8 downto 0);
+           i_set_x          : in STD_LOGIC_VECTOR (8 downto 0);
+           i_set_y          : in STD_LOGIC_VECTOR (8 downto 0);
+           i_tid            : in STD_LOGIC_VECTOR (7 downto 0);
+           i_actor_id       : in STD_LOGIC_VECTOR (3 downto 0);
+           i_curr_actor_id  : in STD_LOGIC_VECTOR (3 downto 0);
+           i_we_pos         : in STD_LOGIC;
+           i_we_tile        : in STD_LOGIC;
+           i_we_actif       : in STD_LOGIC;
+           o_tid            : out STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
+           o_pix_x          : out STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
+           o_pix_y          : out STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
+           o_actif          : out STD_LOGIC;
+           o_hit            : out STD_LOGIC := '0'); -- quand a 1, l'acteur se trouve a la pos globale
     end component;
     
     -- signaux en sortie
@@ -59,6 +61,7 @@ architecture Behavioral of actor_tb is
     signal sim_pix_x        : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
     signal sim_pix_y        : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
     signal sim_hit          : STD_LOGIC := '0'; 
+    signal sim_actif          : STD_LOGIC := '0'; 
     
     -- signaux en entree
     signal test_gb_x              : INTEGER;
@@ -72,6 +75,7 @@ architecture Behavioral of actor_tb is
     signal test_curr_actor_id     : STD_LOGIC_VECTOR (3 downto 0);
     signal test_we_pos            : STD_LOGIC;
     signal test_we_tile           : STD_LOGIC;
+    signal test_we_actif           : STD_LOGIC;
     
     CONSTANT PERIOD    : time := 10 ns;
     
@@ -88,10 +92,12 @@ begin
            i_curr_actor_id  => test_curr_actor_id,
            i_we_pos         => test_we_pos,       
            i_we_tile        => test_we_tile,      
+           i_we_actif       => test_we_actif,      
            o_tid            => sim_tid,  
            o_pix_x          => sim_pix_x,
            o_pix_y          => sim_pix_y,
-           o_hit            => sim_hit  
+           o_hit            => sim_hit,  
+           o_actif          => sim_actif
     );
     
     
@@ -103,7 +109,7 @@ begin
      test_set_y         <= "000000000";
      test_we_pos        <= '1';
      test_we_tile       <= '1';
-     test_tid           <= "00000000";
+     test_tid           <= "00000001";
      test_actor_id      <= "0000";
      test_curr_actor_id <= "0000";
      
@@ -119,8 +125,8 @@ begin
    END PROCESS;
    
     
-    test_gb_x_b <= std_logic_vector(TO_UNSIGNED(test_gb_x, test_gb_x_b'length ));
-    test_gb_y_b <= std_logic_vector(TO_UNSIGNED(test_gb_y, test_gb_y_b'length ));
+    test_gb_x_b <= std_logic_vector(TO_UNSIGNED(test_gb_x, test_gb_x_b'length));
+    test_gb_y_b <= std_logic_vector(TO_UNSIGNED(test_gb_y, test_gb_y_b'length));
     
  
    
