@@ -85,6 +85,23 @@ signal tiles_buffer  : TuilesTableau := (
         VERT1_CC, VERT1_CC, VERT1_CC, VERT1_CC, VERT1_CC, VERT1_CC, VERT1_CC, NOIR_CC, ROSE_CC, NOIR_CC, VERT1_CC, VERT1_CC, VERT1_CC, VERT1_CC, VERT1_CC, VERT1_CC,
         VERT1_CC, VERT1_CC, VERT1_CC, VERT1_CC, VERT1_CC, VERT1_CC, VERT1_CC, VERT1_CC, NOIR_CC, VERT1_CC, VERT1_CC, VERT1_CC, VERT1_CC, VERT1_CC, VERT1_CC, VERT1_CC
     ), 
+    ( -- coffre
+    x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, x"1"
+	, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, x"1", x"1", JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, JAUNE_CC, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", JAUNE_CC, JAUNE_CC, x"1"
+	, x"1", JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, JAUNE_CC, x"1"
+	, x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1", x"1"), 
     others =>  (others => x"0")
 );
 begin
