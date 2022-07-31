@@ -10,6 +10,8 @@ private:
 	Sword sword;
 
 public:
+	int tileId = 10;
+
 	// constructers
 	Link(int x, int y, Sword s);
 	~Link();
