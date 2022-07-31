@@ -51,7 +51,7 @@ package tuile_package is
  -- constant _CC   : std_ulogic_vector( 3 downto 0 ) := X"f"; 
 
 type ccTile is array(0 to 255) of std_ulogic_vector(3 downto 0);
-type RegistreTileId is array(0 to 32, 0 to 32) of std_ulogic_vector(7 downto 0);
+type RegistreTileId is array(0 to 32, 0 to 32) of std_logic_vector(7 downto 0);
 
 
 type tableauCouleur is array (0 to 255) of std_ulogic_vector(3 downto 0);
