@@ -54,13 +54,13 @@ architecture Behavioral of actor_tb is
                o_hit            : out STD_LOGIC := '0'); -- quand a 1, l'acteur se trouve a la pos globale
     end component;
     
-    -- signaux de sortie
+    -- signaux en sortie
     signal sim_tid          : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
     signal sim_pix_x        : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
     signal sim_pix_y        : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
     signal sim_hit          : STD_LOGIC := '0'; 
     
-    -- signaux d'entree
+    -- signaux en entree
     signal test_gb_x              : INTEGER;
     signal test_gb_y              : INTEGER;
     signal test_gb_x_b            : STD_LOGIC_VECTOR (8 downto 0);
@@ -95,7 +95,7 @@ begin
     );
     
     
-    tb : PROCESS
+   tb : PROCESS
    BEGIN
      
      wait for PERIOD;  
@@ -108,8 +108,8 @@ begin
      test_curr_actor_id <= "0000";
      
      wait for PERIOD;  
-     test_set_x         <= "000000000";
-     test_set_y         <= "000000001";
+     test_set_x         <= "000000001";
+     test_set_y         <= "000000000";
      test_we_pos        <= '0';
      test_we_tile       <= '0';
      test_tid           <= "00000000";
