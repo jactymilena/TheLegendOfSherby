@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="pain_system-bitFile" value="${project_loc:pain}/_ide/bitstream/Exercice2_bd_wrapper.bit"/>
+	<item key="pain_system-bmmFile" value=""/>
+	<item key="pain_system-target" value="Local"/>
+	<item key="pain_system-device" value="Auto Detect"/>
+	<item key="pain_system-partial_bit" value="false"/>
+	<item key="pain_system-skip_rev_check" value="false"/>
+	<item key="programfpga.sdxproject" value="pain_system"/>
+	<item key="devices_info_Local" value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Zybo Z7 210351A77E63A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Zybo Z7-210351A77E63A-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-Zybo Z7-210351A77E63A-13722093-0&quot;}}]}"/>
+</section>
