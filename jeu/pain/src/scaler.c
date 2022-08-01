@@ -31,9 +31,10 @@ void setScalerInputRes(XVprocSs* vpssPtr)
 		Stream.Timing.HActive = 256;
 		Stream.Timing.VActive = 224;
 		Stream.ColorFormatId  = XVIDC_CSF_RGB;
-		Stream.ColorDepth = static_cast<XVidC_ColorDepth>(vpssPtr->Config.ColorDepth);
-		Stream.PixPerClk = static_cast<XVidC_PixelsPerClock>(vpssPtr->Config.PixPerClock);
-
+		//Stream.ColorDepth = static_cast<XVidC_ColorDepth>(vpssPtr->Config.ColorDepth);
+		//Stream.PixPerClk = static_cast<XVidC_PixelsPerClock>(vpssPtr->Config.PixPerClock);
+		Stream.ColorDepth     = vpssPtr->Config.ColorDepth;
+		Stream.PixPerClk      = vpssPtr->Config.PixPerClock;
 
 		Stream.FrameRate      = XVIDC_FR_60HZ;
 		Stream.IsInterlaced   = 0;
@@ -53,9 +54,10 @@ void setScalerOutputRes(XVprocSs* vpssPtr)
 		Stream.Timing.HActive = 1280;
 		Stream.Timing.VActive = 720;
 		Stream.ColorFormatId  = XVIDC_CSF_RGB;
-		Stream.ColorDepth = static_cast<XVidC_ColorDepth>(vpssPtr->Config.ColorDepth);
-		Stream.PixPerClk = static_cast<XVidC_PixelsPerClock>(vpssPtr->Config.PixPerClock);
-
+		//Stream.ColorDepth = static_cast<XVidC_ColorDepth>(vpssPtr->Config.ColorDepth);
+		//Stream.PixPerClk = static_cast<XVidC_PixelsPerClock>(vpssPtr->Config.PixPerClock);
+		Stream.ColorDepth     = vpssPtr->Config.ColorDepth;
+		Stream.PixPerClk      = vpssPtr->Config.PixPerClock;
 
 		Stream.FrameRate      = XVIDC_FR_60HZ;
 		Stream.IsInterlaced   = 0;
