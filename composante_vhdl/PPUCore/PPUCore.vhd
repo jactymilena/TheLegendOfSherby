@@ -38,7 +38,8 @@ entity PPUCore is
            o_actor_y : out STD_LOGIC_VECTOR (8 downto 0);
            o_actor_actif : out std_logic;
            o_actor_id: out STD_LOGIC_VECTOR (26 downto 23);
-           o_tile_id: out STD_LOGIC_VECTOR (25 downto 18)
+           o_ActorTile_id : out STD_LOGIC_VECTOR (25 downto 18);
+           o_BgTile_id : out STD_LOGIC_VECTOR (25 downto 18)
            );
 end PPUCore;
 
@@ -50,5 +51,6 @@ begin
     o_actor_y       <= i_instruction(8 downto 0);
     o_actor_actif   <= i_instruction(22);
     o_actor_id      <= i_instruction(26 downto 23);
-    o_tile_id       <= i_instruction(22 downto 15);
+    o_ActorTile_id       <= i_instruction(22 downto 15);
+    o_BgTile_id       <= i_instruction(25 downto 18);
 end Behavioral;
