@@ -90,6 +90,9 @@
     <ClCompile Include="StateMenuQuit.cpp">
       <Filter>Source Files\StateGame</Filter>
     </ClCompile>
+    <ClCompile Include="API.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actor.h">
@@ -145,6 +148,9 @@
     </ClInclude>
     <ClInclude Include="StateMenuQuit.h">
       <Filter>Header Files\StateGame</Filter>
+    </ClInclude>
+    <ClInclude Include="API.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
