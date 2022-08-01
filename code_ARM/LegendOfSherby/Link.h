@@ -24,4 +24,8 @@ public:
 	void attack();
 	void setSwoard(Sword s);
 	Sword getSword();
+	void deplacementGauche();
+	void deplacementDroit();
+	void deplacementHaut();
+	void deplacementBas();
 };
