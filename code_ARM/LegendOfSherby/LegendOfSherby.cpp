@@ -8,38 +8,57 @@
 #include "Game.h"
 using namespace std;
 
+// faire le scroll
 
 
-/*
-Link Chest LinkAttack(Link l, Chest c) {
+bool collision(int x1, int y1, int x2, int y2) {
+    bool condition1 = ((x1 - 16) <= x2) && (x2 <= (x1 + 16)); // x1-16 < x2 < x1+16
+    bool condition2 = ((y1 - 16) <= y2) && (y2 <= (y1 + 16)); // y1-16 < y2 < y1+16
+
+    if (condition1 && condition2) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+void LinkAttack(Link* l, Chest* c, Enemy* e) {
     cout << "Link Attack\n";
 
-    l.attack();
-    if ((c.getPosX() == l.getSword().getPosX()) && (c.getPosY() == l.getSword().getPosY())) {
+    l->attack();
+    // detection collision avec chest
+    //if ((c->getPosX() == l->getSword().getPosX()) && (c->getPosY() == l->getSword().getPosY())) {
+    if (collision(c->getPosX(), c->getPosY(), l->getPosX(), l->getPosY())) {
         std::cout << "Sword and Chest in the same tile, so open chest\n";
-        c.openChest();
-        cout << "Tile chest ouvert = " << c.getTileId() << "\n";
+        c->openChest();        
     }
-    return l;
-}*/
 
-bool collisionLinkEnemy(Link l , Enemy e) {
-    if ((l.getPosX() == e.getPosX()) && (l.getPosY() == e.getPosY())) {
+    // detection collision avec enemy
+    if (collision(e->getPosX(), e->getPosY(), l->getSword().getPosX(), l->getSword().getPosY())) {}
+}
+
+bool collisionLinkEnemy(Link* l , Enemy* e) {
+    if ((l->getPosX() == e->getPosX()) && (l->getPosY() == e->getPosY())) {
         cout << "Collision between Link and Enemy detected\n";
-        if (l.loseHeart()) {
+        if (l->loseHeart()) {
             cout << "Link has no more hp\n";
             cout << "GAME OVER\n";
             return true;
         }
     }
+    else {
+        cout << "No collision between Link and Enemy detected\n";
+    }
+    
     return false;
 }
 
-void displayLink(Link l) {
+void displayLink(Link* l) {
     std::cout << "============================================================\n";
     std::cout << "Link\n";
     std::cout << "============================================================\n";
-    HealtPoint* hp_p = l.getCoeurs();
+    HealtPoint* hp_p = l->getCoeurs();
 
     for (int i = 0; i < 3; i++) {
         std::cout << "Tile coeur " << i << " : ";
@@ -63,6 +82,7 @@ void displayMap(Background* backgroundManager, int mapIndex) {
         }
         std::cout << backgroundManager->getNextTile();
     }
+    std::cout << "\n";
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -74,35 +94,47 @@ int main()
     cout << "Start game!\n\n";
     Game game();
     Background* backgroundManager = Background::getBackgroundManager();
-    displayMap(backgroundManager, 0);
+    //displayMap(backgroundManager, 0);
 
-    cout << "Ajout d'un chest : ";
+    //cout << "Ajout d'un chest : ";
 
-    Chest chest(0, 0);
-    cout << "Tile chest fermee = " << chest.getTileId() << "\n\n";
+    Chest* chest = new Chest(0, 0);
+    //cout << "Tile chest fermee = " << chest->getTileId() << "\n\n";
     
     cout << "Ajout de Link avec son epee\n";
 
     Sword s(0, 0);
-    Link link(0, 0, s);
-    displayLink(link);
+    Link* link = new Link(0, 0, s);
+    //displayLink(link);
 
     //LinkAttack(link, chest);
+    //cout << "Tile chest apres attack = " << chest->getTileId() << "\n";
 
 
     cout << "\nAjout d'un enemy\n";
-    Enemy enemy(6, 6);
+    Enemy* enemy = new Enemy(6, 6);
     collisionLinkEnemy(link, enemy);
 
+    /* Collision Link&Enemy (Link meurt)
     cout << "\nDeplacement de Link\n";
-    link.setPosX(6);
-    link.setPosY(6);
+    link->setPosX(8);
+    link->setPosY(6);
+    link->deplacementGauche();
+
     collisionLinkEnemy(link, enemy);
     displayLink(link);
     collisionLinkEnemy(link, enemy);
     displayLink(link);
     collisionLinkEnemy(link, enemy);
     displayLink(link);
+    */
+
+    // Collision Link&Enemy (Enemy meurt)
+    cout << "\nDeplacement de Link\n";
+    link->setPosX(9);
+    link->setPosY(6);
+    link->deplacementGauche();
+    
     
     delete backgroundManager;
 }

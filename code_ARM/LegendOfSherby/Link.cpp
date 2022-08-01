@@ -26,7 +26,11 @@ bool Link::loseHeart() {
 	for (int i = sizeof(coeurs); i > 0; i--) {
 		if (coeurs[i - 1].getTileId() == COEUR_ROUGE) {
 			coeurs[i - 1].setTileId(COEUR_ROSE);
-			return false;
+			
+			if ((i - 1) == 0) {
+				// game over
+				return true; 
+			} else { return false; }
 		}
 	}
 	// game over	
@@ -51,3 +55,20 @@ void Link::attack() {
 
 void Link::setSwoard(Sword s) { sword = s; }
 Sword Link::getSword() { return Sword(); }
+
+void Link::deplacementGauche() {
+	setPosX(getPosX() - 2);
+	sword.setPosX(getPosX() - 1);
+}
+void Link::deplacementDroit() {
+	setPosX(getPosX() + 2);
+	sword.setPosX(getPosX() + 1);
+}
+void Link::deplacementHaut() {
+	setPosY(getPosY() - 2);
+	sword.setPosY(getPosY() - 1);
+}
+void Link::deplacementBas() {
+	setPosY(getPosY() + 2);
+	sword.setPosY(getPosY() + 1);
+}
