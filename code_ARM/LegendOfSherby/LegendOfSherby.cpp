@@ -70,6 +70,10 @@ void displayLink(Link* l) {
     std::cout << "============================================================\n\n";
 }
 
+void displayLinkPosition(Link link) {
+    
+}
+
 void displayMap(Background* backgroundManager, int mapIndex) {
     backgroundManager->setMapIndex(mapIndex);
     int tile_32 = 0;
@@ -80,6 +84,7 @@ void displayMap(Background* backgroundManager, int mapIndex) {
             tile_32 = 0;
             std::cout << "\n";
         }
+        // sends out the ids for the tile 
         std::cout << backgroundManager->getNextTile();
     }
     std::cout << "\n";

@@ -13,7 +13,7 @@ connect -url tcp:127.0.0.1:3121
 targets -set -nocase -filter {name =~"APU*"}
 rst -system
 after 3000
-targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF242DA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF242DA-13722093-0"}
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF246BA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF246BA-13722093-0"}
 fpga -file C:/github/TheLegendOfSherby/jeu/test/pain/_ide/bitstream/ppu_wrapper.bit
 targets -set -nocase -filter {name =~"APU*"}
 loadhw -hw C:/github/TheLegendOfSherby/jeu/test/ppu_wrapper/export/ppu_wrapper/hw/ppu_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs

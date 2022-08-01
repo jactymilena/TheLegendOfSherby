@@ -1,6 +1,10 @@
 #include "API.h"
-#include "xil_types.h"
-#include "xstatus.h"
+#include "scaler.h"
+#include "vdma.h"
+#include "xil_printf.h"
+#include "mycolorRegister.h"
+
+#define INSTRUCTION_BASEADDR 0x43C00000
 
 const int API::SET_POST_BACKGROUND = 1;
 const int API::SET_ACTOR_ACTIVE = 6;
@@ -14,7 +18,7 @@ void API::sendBackgroundGlobalOpcode(int opcode, int tile_id, int global_x, int 
 	int opcode_ = opcode << 27;
 	int tile_id_ = tile_id << 18;
 	int global_x_ = global_x << 9;
-	//Xil_Out32((XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR) + (0), (u32)(opcode_ + tile_id_ + global_x_ + global_y));
+	Xil_Out32((INSTRUCTION_BASEADDR) + (0), (u32)(opcode_ + tile_id_ + global_x_ + global_y));
 }
 
 void API::sendActorRelativeOpcode(int opcode, int actor_id, int tile_id, int relative_x, int relative_y)
@@ -23,7 +27,7 @@ void API::sendActorRelativeOpcode(int opcode, int actor_id, int tile_id, int rel
 	int actor_id_ = actor_id << 23;
 	int tile_id_ = tile_id << 15;
 	int relative_x_ = relative_x << 7;
-	//Xil_Out32((XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR) + (0), (u32)(opcode_ + actor_id_ + tile_id_ + relative_x_ + relative_y));
+	Xil_Out32((INSTRUCTION_BASEADDR) + (0), (u32)(opcode_ + actor_id_ + tile_id_ + relative_x_ + relative_y));
 }
 
 
@@ -34,5 +38,5 @@ static void sendActorGlobalOpCode(int opcode, int actor_id, bool active, int glo
 	int actor_id_ = actor_id << 23;
 	int active_ = active_int << 22;
 	int global_x_ = global_x << 9;
-	//Xil_Out32((XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR) + (0), (u32)(opcode_ + actor_id_ + active_ + global_x_ + global_y));
+	Xil_Out32((INSTRUCTION_BASEADDR) + (0), (u32)(opcode_ + actor_id_ + active_ + global_x_ + global_y));
 }

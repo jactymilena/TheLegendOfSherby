@@ -5,13 +5,15 @@
 #include "sleep.h"
 #include "api.h"
 #include "background.h"
+#define INSTRUCTION_BASEADDR 0x43C00000
 
 
 void displayMap(Background* backgroundManager, int mapIndex) {
     backgroundManager->setMapIndex(mapIndex);
-    while (backgroundManager->hasMoreTile())
-    {
-		Xil_Out32((XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR) + (0), (u32)(backgroundManager->getNextTile()));
+    for(int y = 0; y < 32; y++) {
+    	for(int x = 0; x < 32; x++) {
+        	API::sendBackgroundGlobalOpcode(API::SET_POST_BACKGROUND, backgroundManager->getNextTile(), x * 16, y * 16);
+    	}
     }
 }
 
@@ -28,17 +30,12 @@ int main() {
     int colorB = 0x0000FF00;
     MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 4, colorB);
 
+    // ajout du background
     Background* backgroundManager = Background::getBackgroundManager();
+    displayMap(backgroundManager, 0);
 
-    while (1) {
-        displayMap(backgroundManager, 0);
-    //if (counter == tick) {
-   // 		Xil_Out32((XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR) + (0), (u32)(colorA));
-//			colorA = colorA + 0x200;
-	//		counter = 0;
-  //  	}
-   // 	counter++;
-    }
-
+    // ajout du personnage
+    API::sendActorRelativeOpcode(API::CHANGE_TILE_FOR_ACTOR, 0, 2, 0, 0);
+    API::sendActorGlobalOpCode(API::SET_POS_XY_ACTOR, 0, 1, 64, 64);
     return 0;
 }

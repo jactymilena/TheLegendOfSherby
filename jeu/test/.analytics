@@ -17,3 +17,16 @@ timestamp=[2022-07-31 20:18:56], mode=BUILD, duration=0:00:03.103, duration_ms=3
 timestamp=[2022-07-31 21:08:07], mode=BUILD, duration=0:00:01.491, duration_ms=1491, data={name=pain, configuration=Debug, clean_build=false}
 timestamp=[2022-07-31 21:08:41], mode=BUILD, duration=0:00:01.634, duration_ms=1634, data={name=pain, configuration=Debug, clean_build=false}
 timestamp=[2022-07-31 21:09:54], mode=BUILD, duration=0:00:01.679, duration_ms=1679, data={name=pain, configuration=Debug, clean_build=false}
+timestamp=[2022-07-31 22:10:43], mode=WORKBENCH_START, duration=0:00:14.539, duration_ms=14539, data={}
+timestamp=[2022-07-31 22:10:44], mode=WORKBENCH_UI_INIT, duration=0:00:01.740, duration_ms=1740, data={editors_count=12, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,pain,pain_system,ppu_wrapper}
+timestamp=[2022-07-31 22:10:45], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.221, duration_ms=221, data={}
+timestamp=[2022-07-31 22:26:10], mode=BUILD, duration=0:00:02.215, duration_ms=2215, data={name=pain, configuration=Debug, clean_build=false}
+timestamp=[2022-07-31 22:26:29], mode=BUILD, duration=0:00:01.007, duration_ms=1007, data={name=pain, configuration=Debug, clean_build=false}
+timestamp=[2022-07-31 22:30:20], mode=BUILD, duration=0:00:02.932, duration_ms=2932, data={name=pain, configuration=Debug, clean_build=false}
+timestamp=[2022-07-31 22:34:09], mode=BUILD, duration=0:00:01.715, duration_ms=1715, data={name=pain, configuration=Debug, clean_build=false}
+timestamp=[2022-07-31 22:43:54], mode=BUILD, duration=0:00:02.261, duration_ms=2261, data={name=pain, configuration=Debug, clean_build=false}
+timestamp=[2022-07-31 22:51:05], mode=BUILD, duration=0:00:00.568, duration_ms=568, data={name=pain, configuration=Debug, clean_build=false}
+timestamp=[2022-07-31 22:55:35], mode=WORKBENCH_START, duration=0:00:14.586, duration_ms=14586, data={}
+timestamp=[2022-07-31 22:55:36], mode=WORKBENCH_UI_INIT, duration=0:00:01.126, duration_ms=1126, data={editors_count=8, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,pain,pain_system,ppu_wrapper}
+timestamp=[2022-07-31 22:55:37], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.105, duration_ms=105, data={}
+timestamp=[2022-07-31 23:22:55], mode=BUILD, duration=0:00:03.036, duration_ms=3036, data={name=pain, configuration=Debug, clean_build=false}
