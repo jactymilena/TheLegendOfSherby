@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="API.cpp" />
     <ClCompile Include="AttackState.cpp" />
     <ClCompile Include="Background.cpp" />
     <ClCompile Include="Character.cpp" />
@@ -161,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actor.h" />
+    <ClInclude Include="API.h" />
     <ClInclude Include="AttackState.h" />
     <ClInclude Include="Background.h" />
     <ClInclude Include="Character.h" />

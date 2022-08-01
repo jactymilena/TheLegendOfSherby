@@ -9,3 +9,6 @@ timestamp=[2022-07-31 17:58:58], mode=WORKBENCH_START, duration=0:00:17.898, dur
 timestamp=[2022-07-31 17:58:59], mode=WORKBENCH_UI_INIT, duration=0:00:01.517, duration_ms=1517, data={editors_count=8, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,pain,pain_system,ppu_wrapper}
 timestamp=[2022-07-31 17:58:59], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.257, duration_ms=257, data={}
 timestamp=[2022-07-31 18:05:22], mode=BUILD, duration=0:00:04.723, duration_ms=4723, data={name=pain, configuration=Debug, clean_build=false}
+timestamp=[2022-07-31 18:33:54], mode=WORKBENCH_START, duration=0:00:07.569, duration_ms=7569, data={}
+timestamp=[2022-07-31 18:33:55], mode=WORKBENCH_UI_INIT, duration=0:00:00.879, duration_ms=879, data={editors_count=0, platform_editors_count=0, projects_count=1, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles}
+timestamp=[2022-07-31 18:33:59], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:04.093, duration_ms=4093, data={}
