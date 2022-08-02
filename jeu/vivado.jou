@@ -2,14 +2,17 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Aug  1 17:03:42 2022
-# Process ID: 14176
-# Current directory: C:/github/TheLegendOfSherby/jeu
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7880 C:\github\TheLegendOfSherby\jeu\Atelier2.xpr
-# Log file: C:/github/TheLegendOfSherby/jeu/vivado.log
-# Journal file: C:/github/TheLegendOfSherby/jeu\vivado.jou
+# Start of session at: Sun Jul 31 22:39:46 2022
+# Process ID: 23388
+# Current directory: C:/Workspace/Atelier2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25136 C:\Workspace\Atelier2\Atelier2.xpr
+# Log file: C:/Workspace/Atelier2/vivado.log
+# Journal file: C:/Workspace/Atelier2\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/github/TheLegendOfSherby/jeu/Atelier2.xpr
-update_module_reference Exercice2_bd_testPatternGenerator_0_0
+open_project C:/Workspace/Atelier2/Atelier2.xpr
+open_bd_design {C:/Workspace/Atelier2/Atelier2.srcs/sources_1/bd/Exercice2_bd/Exercice2_bd.bd}
 update_compile_order -fileset sources_1
+regenerate_bd_layout -routing
+undo
+synth_design -rtl -rtl_skip_mlo -name rtl_1
