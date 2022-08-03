@@ -10,7 +10,7 @@ architecture Behavioral of color_converter is
 
 begin
     color <= 
-            x"C85087" when code = x"0"  else    
+            x"C85087" when code = x"0"  else    -- transparent
             x"000000" when code = x"1"  else    -- noire              
             x"FFFFFF" when code = x"2"  else    -- blanc              
             x"00A2E8" when code = x"3"  else    -- bleu pale  

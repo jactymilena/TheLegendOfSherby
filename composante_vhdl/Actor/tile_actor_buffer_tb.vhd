@@ -72,6 +72,10 @@ BEGIN
          wait for PERIOD;
          pixel_x_test <= "0000";   
          pixel_y_test <= "0001";
+         tile_id_test <= "00000001";         
+         wait for PERIOD;
+         pixel_x_test <= "0010";   
+         pixel_y_test <= "1000";
          tile_id_test <= "00000001";
 
                   
