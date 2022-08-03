@@ -21,7 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use IEEE.STD_LOGIC_UNSIGNED.ALL;  -- pour les additions avec les offsets
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -160,40 +160,40 @@ end process;
            o_rst224 <= '0';
            o_en256 <= '0';
            o_rst256 <= '0';
-           o_PositionX <= "000000000";
-           o_PositionY <= "000000000";
+           o_PositionX <= i_OffsetX + i_cpt256;
+           o_PositionY <= i_OffsetY + i_cpt224;
                    
         when start_line =>
            o_en224 <= '0';
            o_rst224 <= '0';
            o_en256 <= '1';
            o_rst256 <= '0';
-           o_PositionX <= "000000000";
-           o_PositionY <= "000000000";
+           o_PositionX <= i_OffsetX + i_cpt256;
+           o_PositionY <= i_OffsetY + i_cpt224;
            
         when idle =>
            o_en224 <= '0';
            o_rst224 <= '0';
            o_en256 <= '1';
            o_rst256 <= '0';
-           o_PositionX <= "000000000";
-           o_PositionY <= "000000000";
+           o_PositionX <= i_OffsetX + i_cpt256;
+           o_PositionY <= i_OffsetY + i_cpt224;
            
         when end_line =>
            o_en224 <= '0';
            o_rst224 <= '0';
            o_en256 <= '1';
            o_rst256 <= '1';
-           o_PositionX <= "000000000";
-           o_PositionY <= "000000000";
+           o_PositionX <= i_OffsetX + i_cpt256;
+           o_PositionY <= i_OffsetY + i_cpt224;
            
         when end_frame =>
            o_en224 <= '0';
            o_rst224 <= '1';
            o_en256 <= '0';
            o_rst256 <= '0';
-           o_PositionX <= "000000000";
-           o_PositionY <= "000000000";
+           o_PositionX <= i_OffsetX + i_cpt256;
+           o_PositionY <= i_OffsetY + i_cpt224;
            
         when others =>
            o_en224 <= '0';
