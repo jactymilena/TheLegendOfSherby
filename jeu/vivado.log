@@ -2,64 +2,43 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sun Jul 31 22:39:46 2022
-# Process ID: 23388
-# Current directory: C:/Workspace/Atelier2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25136 C:\Workspace\Atelier2\Atelier2.xpr
-# Log file: C:/Workspace/Atelier2/vivado.log
-# Journal file: C:/Workspace/Atelier2\vivado.jou
+# Start of session at: Wed Aug  3 16:13:17 2022
+# Process ID: 3020
+# Current directory: C:/GitHub/TheLegendOfSherby/jeu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18208 C:\GitHub\TheLegendOfSherby\jeu\Atelier2.xpr
+# Log file: C:/GitHub/TheLegendOfSherby/jeu/vivado.log
+# Journal file: C:/GitHub/TheLegendOfSherby/jeu\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Workspace/Atelier2/Atelier2.xpr
+open_project C:/GitHub/TheLegendOfSherby/jeu/Atelier2.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Workspace/Atelier2' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Workspace/ip_repo/myColorRegister_1.0'.
-WARNING: [IP_Flow 19-2207] Repository 'c:/Workspace/ip_repo/myColorRegister_1.0' already exists; ignoring attempt to add it again.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Workspace/ip_repo/myColorRegister_1.0'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/s4InfoAtelier4/s4InfoAtelier4.ipdefs/rgb2dvi'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/s4InfoAtelier4/s4InfoAtelier4.ipdefs/tmds_v1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/GitHub/TheLegendOfSherby/jeu/Atelier2.ip_defs/rgb2dvi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/GitHub/TheLegendOfSherby/jeu/Atelier2.ip_defs/myColorRegister_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/GitHub/TheLegendOfSherby/jeu/Atelier2.ip_defs/tmds_v1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/GitHub/TheLegendOfSherby/jeu/lib/graphics'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/GitHub/TheLegendOfSherby/jeu/lib/vivado'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/GitHub/TheLegendOfSherby/jeu/lib/vivado-boards-master'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/GitHub/TheLegendOfSherby/jeu/lib/vivado-library'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
-open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:14 . Memory (MB): peak = 1113.148 ; gain = 0.000
-open_bd_design {C:/Workspace/Atelier2/Atelier2.srcs/sources_1/bd/Exercice2_bd/Exercice2_bd.bd}
-Reading block design file <C:/Workspace/Atelier2/Atelier2.srcs/sources_1/bd/Exercice2_bd/Exercice2_bd.bd>...
-Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
-Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
-Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
-Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
-Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
-Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.4 - rgb2dvi_0
-Adding component instance block -- xilinx.com:ip:v_proc_ss:2.3 - v_proc_ss_0
-Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
-Adding component instance block -- xilinx.com:module_ref:testPatternGen2:1.0 - testPatternGen2_0
-Successfully read diagram <Exercice2_bd> from block design file <C:/Workspace/Atelier2/Atelier2.srcs/sources_1/bd/Exercice2_bd/Exercice2_bd.bd>
-open_bd_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1113.551 ; gain = 0.402
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.4'. The one found in IP location 'c:/GitHub/TheLegendOfSherby/jeu/Atelier2.ip_defs/rgb2dvi' will take precedence over the same IP in locations: 
+   c:/GitHub/TheLegendOfSherby/jeu/lib/graphics/rgb2dvi
+   c:/GitHub/TheLegendOfSherby/jeu/lib/vivado-library/ip/rgb2dvi
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:AXI_DPTI:1.1'. The one found in IP location 'c:/GitHub/TheLegendOfSherby/jeu/lib/vivado/ip/AXI_DPTI_1.0' will take precedence over the same IP in location c:/GitHub/TheLegendOfSherby/jeu/lib/vivado-library/ip/AXI_DPTI_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:axi_dynclk:1.2'. The one found in IP location 'c:/GitHub/TheLegendOfSherby/jeu/lib/vivado/ip/axi_dynclk' will take precedence over the same IP in location c:/GitHub/TheLegendOfSherby/jeu/lib/vivado-library/ip/axi_dynclk
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:user:axi_i2s_adi:1.2'. The one found in IP location 'c:/GitHub/TheLegendOfSherby/jeu/lib/vivado/ip/axi_i2s_adi_1.2' will take precedence over the same IP in location c:/GitHub/TheLegendOfSherby/jeu/lib/vivado-library/ip/axi_i2s_adi_1.2
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:axi_ps2:1.0'. The one found in IP location 'c:/GitHub/TheLegendOfSherby/jeu/lib/vivado/ip/axi_ps2_1.0' will take precedence over the same IP in location c:/GitHub/TheLegendOfSherby/jeu/lib/vivado-library/ip/axi_ps2_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:clock_forwarder:1.1'. The one found in IP location 'c:/GitHub/TheLegendOfSherby/jeu/lib/vivado/ip/clock_forwarder' will take precedence over the same IP in location c:/GitHub/TheLegendOfSherby/jeu/lib/vivado-library/ip/clock_forwarder
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:dvi2rgb:2.0'. The one found in IP location 'c:/GitHub/TheLegendOfSherby/jeu/lib/vivado/ip/dvi2rgb' will take precedence over the same IP in location c:/GitHub/TheLegendOfSherby/jeu/lib/vivado-library/ip/dvi2rgb
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_contrast_stretch:1.0'. The one found in IP location 'c:/GitHub/TheLegendOfSherby/jeu/lib/vivado/ip/hls_contrast_stretch_1_0' will take precedence over the same IP in location c:/GitHub/TheLegendOfSherby/jeu/lib/vivado-library/ip/hls_contrast_stretch_1_0
+WARNING: [IP_Flow 19-4831] Duplicate Interface found for 'digilentinc.com:interface:tmds:1.0'. The one found in location 'c:/GitHub/TheLegendOfSherby/jeu/Atelier2.ip_defs/tmds_v1_0/tmds.xml' will take precedence over the same Interface in locations:
+   c:/GitHub/TheLegendOfSherby/jeu/lib/graphics/tmds_v1_0/tmds.xml
+   c:/GitHub/TheLegendOfSherby/jeu/lib/vivado/if/tmds_v1_0/tmds.xml
+   c:/GitHub/TheLegendOfSherby/jeu/lib/vivado-library/if/tmds_v1_0/tmds.xml
+
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilentinc.com:interface:pmod:1.0'. The one found in location 'c:/GitHub/TheLegendOfSherby/jeu/lib/vivado/if/pmod_v1_0/pmod.xml' will take precedence over the same Interface in location 'c:/GitHub/TheLegendOfSherby/jeu/lib/vivado-library/if/pmod_v1_0/pmod.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'natinst.com:user:ZmodScope_Calibration:1.0'. The one found in location 'c:/GitHub/TheLegendOfSherby/jeu/lib/vivado/if/ZmodScope_Calibration_v1_0/ZmodScope_Calibration.xml' will take precedence over the same Interface in location 'c:/GitHub/TheLegendOfSherby/jeu/lib/vivado-library/if/ZmodScope_Calibration_v1_0/ZmodScope_Calibration.xml'
+open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:31 . Memory (MB): peak = 1088.453 ; gain = 0.000
 update_compile_order -fileset sources_1
-regenerate_bd_layout -routing
-undo
-INFO: [Common 17-17] undo 'regenerate_bd_layout -routing'
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
-Starting synth_design
-Using part: xc7z010clg400-1
-Top: testPatternGen2
-INFO: [Device 21-403] Loading part xc7z010clg400-1
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1797.902 ; gain = 240.855
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'testPatternGen2' [C:/Workspace/Atelier2/Atelier2.srcs/sources_1/imports/new/testPatternGen2.vhd:47]
-WARNING: [Synth 8-614] signal 'i_colorDataA' is read in the process but is not in the sensitivity list [C:/Workspace/Atelier2/Atelier2.srcs/sources_1/imports/new/testPatternGen2.vhd:52]
-WARNING: [Synth 8-614] signal 'i_colorDataB' is read in the process but is not in the sensitivity list [C:/Workspace/Atelier2/Atelier2.srcs/sources_1/imports/new/testPatternGen2.vhd:52]
-INFO: [Synth 8-256] done synthesizing module 'testPatternGen2' (1#1) [C:/Workspace/Atelier2/Atelier2.srcs/sources_1/imports/new/testPatternGen2.vhd:47]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1875.133 ; gain = 318.086
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1880.574 ; gain = 323.527
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1880.574 ; gain = 323.527
----------------------------------------------------------------------------------

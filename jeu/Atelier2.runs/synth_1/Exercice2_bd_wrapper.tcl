@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -84,17 +85,13 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo-z7-10:part0:1.0 [current_project]
 set_property ip_repo_paths {
-  c:/Workspace/ip_repo/myColorRegister_1.0
-  c:/Workspace/ip_repo/myip_1.0
-  c:/Workspace/ip_repo/myColorRegister_1.0
-  c:/Workspace/ip_repo/myColorRegister_1.0
-  c:/Workspace/ip_repo/myColorRegister_1.0
-  c:/Workspace/ip_repo/myColorRegister_1.0
-  c:/Workspace/ip_repo/myColorRegister_1.0
-  c:/Workspace/ip_repo/myColorRegister_1.0
-  c:/Workspace/ip_repo/myColorRegister_1.0
-  c:/s4InfoAtelier4/s4InfoAtelier4.ipdefs/rgb2dvi
-  c:/s4InfoAtelier4/s4InfoAtelier4.ipdefs/tmds_v1_0
+  c:/Workspace/Atelier2/Atelier2.ip_defs/rgb2dvi
+  c:/Workspace/Atelier2/Atelier2.ip_defs/myColorRegister_1.0
+  c:/Workspace/Atelier2/Atelier2.ip_defs/tmds_v1_0
+  c:/Workspace/Atelier2/lib/graphics
+  c:/Workspace/Atelier2/lib/vivado
+  c:/Workspace/Atelier2/lib/vivado-boards-master
+  c:/Workspace/Atelier2/lib/vivado-library
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Workspace/Atelier2/Atelier2.cache/ip [current_project]
@@ -206,7 +203,39 @@ set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/
 set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_38/bd_8e83_m01awn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_39/bd_8e83_m01wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_40/bd_8e83_m01bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_42/bd_8e83_m02s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_43/bd_8e83_m02arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_44/bd_8e83_m02rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_45/bd_8e83_m02awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_46/bd_8e83_m02wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_47/bd_8e83_m02bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_49/bd_8e83_m03s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_50/bd_8e83_m03arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_51/bd_8e83_m03rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_52/bd_8e83_m03awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_53/bd_8e83_m03wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_54/bd_8e83_m03bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_56/bd_8e83_m04s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_57/bd_8e83_m04arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_58/bd_8e83_m04rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_59/bd_8e83_m04awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_60/bd_8e83_m04wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_61/bd_8e83_m04bn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_gpio_0_0/PmodJSTK2_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_gpio_0_0/PmodJSTK2_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_gpio_0_0/PmodJSTK2_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/Exercice2_bd_PmodJSTK2_0_2_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_pmod_bridge_0_0/PmodJSTK2_pmod_bridge_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_pmod_bridge_0_0/src/pmod_concat_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_quad_spi_0_0/PmodJSTK2_axi_quad_spi_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_quad_spi_0_0/PmodJSTK2_axi_quad_spi_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_quad_spi_0_0/PmodJSTK2_axi_quad_spi_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_quad_spi_0_0/PmodJSTK2_axi_quad_spi_0_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/Exercice2_bd_ooc.xdc]
 
 OPTRACE "Adding files" END { }
@@ -220,6 +249,9 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 }
 read_xdc C:/Workspace/Atelier2/Atelier2.srcs/constrs_1/imports/new/atelier4Constraints.xdc
 set_property used_in_implementation false [get_files C:/Workspace/Atelier2/Atelier2.srcs/constrs_1/imports/new/atelier4Constraints.xdc]
+
+read_xdc C:/Workspace/Atelier2/Atelier2.srcs/constrs_1/new/Zybo-Z7-master.xdc
+set_property used_in_implementation false [get_files C:/Workspace/Atelier2/Atelier2.srcs/constrs_1/new/Zybo-Z7-master.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

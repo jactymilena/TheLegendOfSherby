@@ -3,6 +3,8 @@
 
 # XDC: imports/new/atelier4Constraints.xdc
 
+# XDC: new/Zybo-Z7-master.xdc
+
 # Block Designs: bd/Exercice2_bd/Exercice2_bd.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Exercice2_bd || ORIG_REF_NAME==Exercice2_bd} -quiet] -quiet
 
@@ -336,11 +338,89 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Exercice2_b
 # IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_41/bd_8e83_m01e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_42/bd_8e83_m02s2a_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_43/bd_8e83_m02arn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_44/bd_8e83_m02rn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_45/bd_8e83_m02awn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_46/bd_8e83_m02wn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_47/bd_8e83_m02bn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_48/bd_8e83_m02e_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_49/bd_8e83_m03s2a_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_50/bd_8e83_m03arn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_51/bd_8e83_m03rn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_52/bd_8e83_m03awn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_53/bd_8e83_m03wn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_54/bd_8e83_m03bn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_55/bd_8e83_m03e_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_56/bd_8e83_m04s2a_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_57/bd_8e83_m04arn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_58/bd_8e83_m04rn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_59/bd_8e83_m04awn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_60/bd_8e83_m04wn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_61/bd_8e83_m04bn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_62/bd_8e83_m04e_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
 # IP: bd/Exercice2_bd/ip/Exercice2_bd_testPatternGenerator_0_0/Exercice2_bd_testPatternGenerator_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Exercice2_bd_testPatternGenerator_0_0 || ORIG_REF_NAME==Exercice2_bd_testPatternGenerator_0_0} -quiet] -quiet
 
 # IP: bd/Exercice2_bd/ip/Exercice2_bd_myColorRegister_1_1/Exercice2_bd_myColorRegister_1_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Exercice2_bd_myColorRegister_1_1 || ORIG_REF_NAME==Exercice2_bd_myColorRegister_1_1} -quiet] -quiet
+
+# IP: bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Exercice2_bd_axi_gpio_0_0 || ORIG_REF_NAME==Exercice2_bd_axi_gpio_0_0} -quiet] -quiet
+
+# IP: bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/Exercice2_bd_PmodJSTK2_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Exercice2_bd_PmodJSTK2_0_2 || ORIG_REF_NAME==Exercice2_bd_PmodJSTK2_0_2} -quiet] -quiet
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_gpio_0_0/PmodJSTK2_axi_gpio_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PmodJSTK2_axi_gpio_0_0 || ORIG_REF_NAME==PmodJSTK2_axi_gpio_0_0} -quiet] -quiet
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_pmod_bridge_0_0/PmodJSTK2_pmod_bridge_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PmodJSTK2_pmod_bridge_0_0 || ORIG_REF_NAME==PmodJSTK2_pmod_bridge_0_0} -quiet] -quiet
+
+# IP: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_quad_spi_0_0/PmodJSTK2_axi_quad_spi_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PmodJSTK2_axi_quad_spi_0_0 || ORIG_REF_NAME==PmodJSTK2_axi_quad_spi_0_0} -quiet] -quiet
 
 # XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_processing_system7_0_0/Exercice2_bd_processing_system7_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==Exercice2_bd_processing_system7_0_0 || ORIG_REF_NAME==Exercice2_bd_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
@@ -570,6 +650,79 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_40/bd_8e83_m01bn_0_ooc.xdc
 
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_42/bd_8e83_m02s2a_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_43/bd_8e83_m02arn_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_44/bd_8e83_m02rn_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_45/bd_8e83_m02awn_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_46/bd_8e83_m02wn_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_47/bd_8e83_m02bn_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_49/bd_8e83_m03s2a_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_50/bd_8e83_m03arn_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_51/bd_8e83_m03rn_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_52/bd_8e83_m03awn_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_53/bd_8e83_m03wn_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_54/bd_8e83_m03bn_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_56/bd_8e83_m04s2a_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_57/bd_8e83_m04arn_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_58/bd_8e83_m04rn_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_59/bd_8e83_m04awn_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_60/bd_8e83_m04wn_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_61/bd_8e83_m04bn_0_ooc.xdc
+
 # XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==Exercice2_bd_axi_gpio_0_0 || ORIG_REF_NAME==Exercice2_bd_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==Exercice2_bd_axi_gpio_0_0 || ORIG_REF_NAME==Exercice2_bd_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_gpio_0_0/PmodJSTK2_axi_gpio_0_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PmodJSTK2_axi_gpio_0_0 || ORIG_REF_NAME==PmodJSTK2_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_gpio_0_0/PmodJSTK2_axi_gpio_0_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_gpio_0_0/PmodJSTK2_axi_gpio_0_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PmodJSTK2_axi_gpio_0_0 || ORIG_REF_NAME==PmodJSTK2_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/Exercice2_bd_PmodJSTK2_0_2_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==Exercice2_bd_PmodJSTK2_0_2 || ORIG_REF_NAME==Exercice2_bd_PmodJSTK2_0_2} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_pmod_bridge_0_0/PmodJSTK2_pmod_bridge_0_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PmodJSTK2_pmod_bridge_0_0 || ORIG_REF_NAME==PmodJSTK2_pmod_bridge_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_pmod_bridge_0_0/src/pmod_concat_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_quad_spi_0_0/PmodJSTK2_axi_quad_spi_0_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PmodJSTK2_axi_quad_spi_0_0 || ORIG_REF_NAME==PmodJSTK2_axi_quad_spi_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_quad_spi_0_0/PmodJSTK2_axi_quad_spi_0_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PmodJSTK2_axi_quad_spi_0_0 || ORIG_REF_NAME==PmodJSTK2_axi_quad_spi_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_quad_spi_0_0/PmodJSTK2_axi_quad_spi_0_0_ooc.xdc
+
+# XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_quad_spi_0_0/PmodJSTK2_axi_quad_spi_0_0_clocks.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PmodJSTK2_axi_quad_spi_0_0 || ORIG_REF_NAME==PmodJSTK2_axi_quad_spi_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/Exercice2_bd_ooc.xdc

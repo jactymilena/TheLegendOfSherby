@@ -19,4 +19,5 @@ platform active {Exercice2_bd_wrapper}
 domain active {zynq_fsbl}
 domain active {standalone_ps7_cortexa9_0}
 platform generate -quick
+catch {platform remove Exercice2_bd_wrapper_1}
 platform generate

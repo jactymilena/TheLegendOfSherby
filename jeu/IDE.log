@@ -99,14 +99,626 @@ con
 
 15:30:01 INFO  : Launch script is exported to file 'C:\Workspace\Atelier2\pain_system\_ide\scripts\debugger_pain-default.tcl'
 15:31:20 INFO  : Disconnected from the channel tcfchan#3.
-15:35:39 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\GitHub\TheLegendOfSherby\jeu\temp_xsdb_launch_script.tcl
-15:35:43 INFO  : XSCT server has started successfully.
-15:35:43 INFO  : plnx-install-location is set to ''
-15:35:43 INFO  : Successfully done setting XSCT server connection channel  
-15:35:43 INFO  : Successfully done setting workspace for the tool. 
-15:35:47 INFO  : Platform repository initialization has completed.
-15:35:48 INFO  : Successfully done query RDI_DATADIR 
-15:35:48 INFO  : Registering command handlers for Vitis TCF services
-15:36:07 INFO  : Checking for BSP changes to sync application flags for project 'pain'...
-15:36:30 INFO  : Projects exported to 'C:\GitHub\TheLegendOfSherby\vitis_export_archive.ide.zip'
-15:56:18 INFO  : Projects exported to 'C:\GitHub\TheLegendOfSherby\vitis_export_archive2.ide.zip'
+23:55:09 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Workspace\Atelier2\temp_xsdb_launch_script.tcl
+23:55:13 INFO  : XSCT server has started successfully.
+23:55:13 INFO  : plnx-install-location is set to ''
+23:55:13 INFO  : Successfully done setting XSCT server connection channel  
+23:55:13 INFO  : Successfully done setting workspace for the tool. 
+23:55:18 INFO  : Platform repository initialization has completed.
+23:55:19 INFO  : Registering command handlers for Vitis TCF services
+23:55:25 INFO  : Successfully done query RDI_DATADIR 
+23:56:43 INFO  : Checking for BSP changes to sync application flags for project 'pain'...
+23:59:32 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Workspace\Atelier2\temp_xsdb_launch_script.tcl
+23:59:35 INFO  : XSCT server has started successfully.
+23:59:35 INFO  : plnx-install-location is set to ''
+23:59:35 INFO  : Successfully done setting XSCT server connection channel  
+23:59:35 INFO  : Successfully done setting workspace for the tool. 
+23:59:40 INFO  : Platform repository initialization has completed.
+23:59:41 INFO  : Successfully done query RDI_DATADIR 
+23:59:42 INFO  : Registering command handlers for Vitis TCF services
+00:03:34 INFO  : Result from executing command 'getProjects': Exercice2_bd_wrapper;Exercice2_bd_wrapper_1
+00:03:34 INFO  : Result from executing command 'getPlatforms': Exercice2_bd_wrapper|C:/Workspace/Atelier2/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/Exercice2_bd_wrapper.xpfm
+00:03:34 INFO  : Platform 'Exercice2_bd_wrapper_1' is added to custom repositories.
+00:03:49 INFO  : Platform 'Exercice2_bd_wrapper_1' is added to custom repositories.
+00:07:44 INFO  : Result from executing command 'getProjects': Exercice2_bd_wrapper;Exercice2_bd_wrapper_1
+00:07:44 INFO  : Result from executing command 'getPlatforms': Exercice2_bd_wrapper_1|C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/Exercice2_bd_wrapper_1.xpfm;Exercice2_bd_wrapper|C:/Workspace/Atelier2/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/Exercice2_bd_wrapper.xpfm
+00:08:53 WARN  : Failed to update project references for project pain
+00:11:13 INFO  : Result from executing command 'getProjects': Exercice2_bd_wrapper_1
+00:11:13 INFO  : Result from executing command 'getPlatforms': 
+00:11:20 INFO  : Checking for BSP changes to sync application flags for project 'pain1'...
+00:12:02 INFO  : Checking for BSP changes to sync application flags for project 'pain1'...
+00:13:38 INFO  : Checking for BSP changes to sync application flags for project 'pain1'...
+00:17:12 INFO  : Checking for BSP changes to sync application flags for project 'pain1'...
+00:17:22 INFO  : Checking for BSP changes to sync application flags for project 'pain1'...
+00:21:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:21:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:21:27 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:21:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:21:44 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+00:21:44 INFO  : 'jtag frequency' command is executed.
+00:21:44 INFO  : Context for 'APU' is selected.
+00:21:44 INFO  : System reset is completed.
+00:21:47 INFO  : 'after 3000' command is executed.
+00:21:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:21:48 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:21:48 INFO  : Context for 'APU' is selected.
+00:21:48 INFO  : Hardware design and registers information is loaded from 'C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa'.
+00:21:48 INFO  : 'configparams force-mem-access 1' command is executed.
+00:21:48 INFO  : Context for 'APU' is selected.
+00:21:48 INFO  : Sourcing of 'C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl' is done.
+00:21:50 INFO  : 'ps7_init' command is executed.
+00:21:50 INFO  : 'ps7_post_config' command is executed.
+00:21:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:21:51 INFO  : The application 'C:/Workspace/Atelier2/pain1/Debug/pain1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:21:51 INFO  : 'configparams force-mem-access 0' command is executed.
+00:21:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Workspace/Atelier2/pain1/Debug/pain1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:21:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:21:51 INFO  : 'con' command is executed.
+00:21:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:21:51 INFO  : Launch script is exported to file 'C:\Workspace\Atelier2\pain1_system\_ide\scripts\debugger_pain1-default.tcl'
+00:22:07 INFO  : Disconnected from the channel tcfchan#6.
+00:22:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:22:08 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+00:22:08 INFO  : 'jtag frequency' command is executed.
+00:22:08 INFO  : Context for 'APU' is selected.
+00:22:08 INFO  : System reset is completed.
+00:22:11 INFO  : 'after 3000' command is executed.
+00:22:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:22:13 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:22:13 INFO  : Context for 'APU' is selected.
+00:22:13 INFO  : Hardware design and registers information is loaded from 'C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa'.
+00:22:13 INFO  : 'configparams force-mem-access 1' command is executed.
+00:22:13 INFO  : Context for 'APU' is selected.
+00:22:13 INFO  : Sourcing of 'C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl' is done.
+00:22:14 INFO  : 'ps7_init' command is executed.
+00:22:14 INFO  : 'ps7_post_config' command is executed.
+00:22:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:22:15 INFO  : The application 'C:/Workspace/Atelier2/pain1/Debug/pain1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:22:15 INFO  : 'configparams force-mem-access 0' command is executed.
+00:22:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Workspace/Atelier2/pain1/Debug/pain1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:22:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:22:15 INFO  : 'con' command is executed.
+00:22:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:22:15 INFO  : Launch script is exported to file 'C:\Workspace\Atelier2\pain1_system\_ide\scripts\debugger_pain1-default.tcl'
+00:24:12 INFO  : Result from executing command 'getProjects': Exercice2_bd_wrapper_1
+00:24:12 INFO  : Result from executing command 'getPlatforms': Exercice2_bd_wrapper_1|C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/Exercice2_bd_wrapper_1.xpfm
+00:24:19 INFO  : Checking for BSP changes to sync application flags for project 'pain1'...
+00:24:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:24:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:24:33 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:24:58 INFO  : Disconnected from the channel tcfchan#7.
+00:24:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:24:59 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+00:24:59 INFO  : 'jtag frequency' command is executed.
+00:24:59 INFO  : Context for 'APU' is selected.
+00:24:59 INFO  : System reset is completed.
+00:25:02 INFO  : 'after 3000' command is executed.
+00:25:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:25:04 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:25:04 INFO  : Context for 'APU' is selected.
+00:25:04 INFO  : Hardware design and registers information is loaded from 'C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa'.
+00:25:04 INFO  : 'configparams force-mem-access 1' command is executed.
+00:25:04 INFO  : Context for 'APU' is selected.
+00:25:04 INFO  : Sourcing of 'C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl' is done.
+00:25:05 INFO  : 'ps7_init' command is executed.
+00:25:05 INFO  : 'ps7_post_config' command is executed.
+00:25:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:25:06 INFO  : The application 'C:/Workspace/Atelier2/pain1/Debug/pain1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:25:06 INFO  : 'configparams force-mem-access 0' command is executed.
+00:25:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Workspace/Atelier2/pain1/Debug/pain1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:25:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:25:06 INFO  : 'con' command is executed.
+00:25:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:25:06 INFO  : Launch script is exported to file 'C:\Workspace\Atelier2\pain1_system\_ide\scripts\debugger_pain1-default.tcl'
+00:26:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:26:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:26:54 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:27:14 INFO  : Disconnected from the channel tcfchan#11.
+00:27:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:27:16 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+00:27:16 INFO  : 'jtag frequency' command is executed.
+00:27:16 INFO  : Context for 'APU' is selected.
+00:27:16 INFO  : System reset is completed.
+00:27:19 INFO  : 'after 3000' command is executed.
+00:27:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:27:20 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:27:20 INFO  : Context for 'APU' is selected.
+00:27:20 INFO  : Hardware design and registers information is loaded from 'C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa'.
+00:27:20 INFO  : 'configparams force-mem-access 1' command is executed.
+00:27:20 INFO  : Context for 'APU' is selected.
+00:27:20 INFO  : Sourcing of 'C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl' is done.
+00:27:21 INFO  : 'ps7_init' command is executed.
+00:27:21 INFO  : 'ps7_post_config' command is executed.
+00:27:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:27:22 INFO  : The application 'C:/Workspace/Atelier2/pain1/Debug/pain1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:27:22 INFO  : 'configparams force-mem-access 0' command is executed.
+00:27:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Workspace/Atelier2/pain1/Debug/pain1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:27:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:27:22 INFO  : 'con' command is executed.
+00:27:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:27:22 INFO  : Launch script is exported to file 'C:\Workspace\Atelier2\pain1_system\_ide\scripts\debugger_pain1-default.tcl'
+00:28:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:28:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:28:02 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:28:11 INFO  : Disconnected from the channel tcfchan#12.
+00:28:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:28:13 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+00:28:13 INFO  : 'jtag frequency' command is executed.
+00:28:13 INFO  : Context for 'APU' is selected.
+00:28:13 INFO  : System reset is completed.
+00:28:16 INFO  : 'after 3000' command is executed.
+00:28:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:28:17 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:28:17 INFO  : Context for 'APU' is selected.
+00:28:17 INFO  : Hardware design and registers information is loaded from 'C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa'.
+00:28:17 INFO  : 'configparams force-mem-access 1' command is executed.
+00:28:17 INFO  : Context for 'APU' is selected.
+00:28:17 INFO  : Sourcing of 'C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl' is done.
+00:28:19 INFO  : 'ps7_init' command is executed.
+00:28:19 INFO  : 'ps7_post_config' command is executed.
+00:28:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:28:20 INFO  : The application 'C:/Workspace/Atelier2/pain1/Debug/pain1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:28:20 INFO  : 'configparams force-mem-access 0' command is executed.
+00:28:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Workspace/Atelier2/pain1/Debug/pain1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:28:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:28:20 INFO  : 'con' command is executed.
+00:28:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:28:20 INFO  : Launch script is exported to file 'C:\Workspace\Atelier2\pain1_system\_ide\scripts\debugger_pain1-default.tcl'
+00:30:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:30:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:30:04 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:30:10 INFO  : Checking for BSP changes to sync application flags for project 'pain1'...
+00:30:19 INFO  : Disconnected from the channel tcfchan#13.
+00:30:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:30:20 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+00:30:20 INFO  : 'jtag frequency' command is executed.
+00:30:20 INFO  : Context for 'APU' is selected.
+00:30:20 INFO  : System reset is completed.
+00:30:23 INFO  : 'after 3000' command is executed.
+00:30:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:30:24 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:30:24 INFO  : Context for 'APU' is selected.
+00:30:24 INFO  : Hardware design and registers information is loaded from 'C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa'.
+00:30:24 INFO  : 'configparams force-mem-access 1' command is executed.
+00:30:24 INFO  : Context for 'APU' is selected.
+00:30:24 INFO  : Sourcing of 'C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl' is done.
+00:30:26 INFO  : 'ps7_init' command is executed.
+00:30:26 INFO  : 'ps7_post_config' command is executed.
+00:30:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:30:27 INFO  : The application 'C:/Workspace/Atelier2/pain1/Debug/pain1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:30:27 INFO  : 'configparams force-mem-access 0' command is executed.
+00:30:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Workspace/Atelier2/pain1/Debug/pain1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:30:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:30:27 INFO  : 'con' command is executed.
+00:30:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:30:27 INFO  : Launch script is exported to file 'C:\Workspace\Atelier2\pain1_system\_ide\scripts\debugger_pain1-default.tcl'
+00:33:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:33:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:33:58 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:34:05 INFO  : Disconnected from the channel tcfchan#14.
+00:34:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:34:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+00:34:06 INFO  : 'jtag frequency' command is executed.
+00:34:06 INFO  : Context for 'APU' is selected.
+00:34:06 INFO  : System reset is completed.
+00:34:09 INFO  : 'after 3000' command is executed.
+00:34:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:34:10 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:34:10 INFO  : Context for 'APU' is selected.
+00:34:10 INFO  : Hardware design and registers information is loaded from 'C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa'.
+00:34:11 INFO  : 'configparams force-mem-access 1' command is executed.
+00:34:11 INFO  : Context for 'APU' is selected.
+00:34:11 INFO  : Sourcing of 'C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl' is done.
+00:34:12 INFO  : 'ps7_init' command is executed.
+00:34:12 INFO  : 'ps7_post_config' command is executed.
+00:34:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:34:13 INFO  : The application 'C:/Workspace/Atelier2/pain1/Debug/pain1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:34:13 INFO  : 'configparams force-mem-access 0' command is executed.
+00:34:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Workspace/Atelier2/pain1/Debug/pain1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:34:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:34:13 INFO  : 'con' command is executed.
+00:34:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:34:13 INFO  : Launch script is exported to file 'C:\Workspace\Atelier2\pain1_system\_ide\scripts\debugger_pain1-default.tcl'
+00:35:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:35:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:35:18 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:35:26 INFO  : Disconnected from the channel tcfchan#15.
+00:35:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:35:27 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+00:35:27 INFO  : 'jtag frequency' command is executed.
+00:35:27 INFO  : Context for 'APU' is selected.
+00:35:27 INFO  : System reset is completed.
+00:35:30 INFO  : 'after 3000' command is executed.
+00:35:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:35:32 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:35:32 INFO  : Context for 'APU' is selected.
+00:35:32 INFO  : Hardware design and registers information is loaded from 'C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa'.
+00:35:32 INFO  : 'configparams force-mem-access 1' command is executed.
+00:35:32 INFO  : Context for 'APU' is selected.
+00:35:32 INFO  : Sourcing of 'C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl' is done.
+00:35:33 INFO  : 'ps7_init' command is executed.
+00:35:33 INFO  : 'ps7_post_config' command is executed.
+00:35:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:35:34 INFO  : The application 'C:/Workspace/Atelier2/pain1/Debug/pain1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:35:34 INFO  : 'configparams force-mem-access 0' command is executed.
+00:35:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Workspace/Atelier2/pain1/Debug/pain1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:35:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:35:34 INFO  : 'con' command is executed.
+00:35:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:35:34 INFO  : Launch script is exported to file 'C:\Workspace\Atelier2\pain1_system\_ide\scripts\debugger_pain1-default.tcl'
+00:35:51 INFO  : Disconnected from the channel tcfchan#16.
+00:35:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:35:52 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+00:35:52 INFO  : 'jtag frequency' command is executed.
+00:35:52 INFO  : Context for 'APU' is selected.
+00:35:52 INFO  : System reset is completed.
+00:35:55 INFO  : 'after 3000' command is executed.
+00:35:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:35:57 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:35:57 INFO  : Context for 'APU' is selected.
+00:35:57 INFO  : Hardware design and registers information is loaded from 'C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa'.
+00:35:57 INFO  : 'configparams force-mem-access 1' command is executed.
+00:35:57 INFO  : Context for 'APU' is selected.
+00:35:57 INFO  : Sourcing of 'C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl' is done.
+00:35:58 INFO  : 'ps7_init' command is executed.
+00:35:58 INFO  : 'ps7_post_config' command is executed.
+00:35:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:35:59 INFO  : The application 'C:/Workspace/Atelier2/pain1/Debug/pain1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:35:59 INFO  : 'configparams force-mem-access 0' command is executed.
+00:35:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Workspace/Atelier2/pain1/Debug/pain1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:35:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:35:59 INFO  : 'con' command is executed.
+00:35:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:35:59 INFO  : Launch script is exported to file 'C:\Workspace\Atelier2\pain1_system\_ide\scripts\debugger_pain1-default.tcl'
+00:37:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:37:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:37:29 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:38:06 INFO  : Checking for BSP changes to sync application flags for project 'pain1'...
+00:38:42 INFO  : Disconnected from the channel tcfchan#17.
+00:38:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:38:44 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+00:38:44 INFO  : 'jtag frequency' command is executed.
+00:38:44 INFO  : Context for 'APU' is selected.
+00:38:44 INFO  : System reset is completed.
+00:38:47 INFO  : 'after 3000' command is executed.
+00:38:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:38:48 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:38:48 INFO  : Context for 'APU' is selected.
+00:38:48 INFO  : Hardware design and registers information is loaded from 'C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa'.
+00:38:48 INFO  : 'configparams force-mem-access 1' command is executed.
+00:38:48 INFO  : Context for 'APU' is selected.
+00:38:48 INFO  : Sourcing of 'C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl' is done.
+00:38:50 INFO  : 'ps7_init' command is executed.
+00:38:50 INFO  : 'ps7_post_config' command is executed.
+00:38:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:38:50 INFO  : The application 'C:/Workspace/Atelier2/pain1/Debug/pain1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:38:50 INFO  : 'configparams force-mem-access 0' command is executed.
+00:38:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Workspace/Atelier2/pain1/Debug/pain1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:38:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:38:51 INFO  : 'con' command is executed.
+00:38:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:38:51 INFO  : Launch script is exported to file 'C:\Workspace\Atelier2\pain1_system\_ide\scripts\debugger_pain1-default.tcl'
+00:39:16 INFO  : Disconnected from the channel tcfchan#18.
+00:39:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:39:17 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+00:39:17 INFO  : 'jtag frequency' command is executed.
+00:39:17 INFO  : Context for 'APU' is selected.
+00:39:17 INFO  : System reset is completed.
+00:39:20 INFO  : 'after 3000' command is executed.
+00:39:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:39:21 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+00:39:21 INFO  : Context for 'APU' is selected.
+00:39:22 INFO  : Hardware design and registers information is loaded from 'C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa'.
+00:39:22 INFO  : 'configparams force-mem-access 1' command is executed.
+00:39:22 INFO  : Context for 'APU' is selected.
+00:39:22 INFO  : Sourcing of 'C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl' is done.
+00:39:23 INFO  : 'ps7_init' command is executed.
+00:39:23 INFO  : 'ps7_post_config' command is executed.
+00:39:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:39:24 INFO  : The application 'C:/Workspace/Atelier2/pain1/Debug/pain1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:39:24 INFO  : 'configparams force-mem-access 0' command is executed.
+00:39:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Workspace/Atelier2/pain1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Workspace/Atelier2/pain1/Debug/pain1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:39:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:39:24 INFO  : 'con' command is executed.
+00:39:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:39:24 INFO  : Launch script is exported to file 'C:\Workspace\Atelier2\pain1_system\_ide\scripts\debugger_pain1-default.tcl'
+00:40:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:40:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+00:40:51 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain1/_ide/bitstream/Exercice2_bd_wrapper.bit"
+01:12:07 INFO  : Result from executing command 'getProjects': Exercice2_bd_wrapper;Exercice2_bd_wrapper_1
+01:12:07 INFO  : Result from executing command 'getPlatforms': Exercice2_bd_wrapper_1|C:/Workspace/Atelier2/Exercice2_bd_wrapper_1/export/Exercice2_bd_wrapper_1/Exercice2_bd_wrapper_1.xpfm
+01:12:08 INFO  : Platform 'Exercice2_bd_wrapper' is added to custom repositories.
+01:12:19 INFO  : Platform 'Exercice2_bd_wrapper' is added to custom repositories.
+01:16:39 INFO  : Result from executing command 'getProjects': Exercice2_bd_wrapper
+01:16:39 INFO  : Result from executing command 'getPlatforms': Exercice2_bd_wrapper|C:/Workspace/Atelier2/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/Exercice2_bd_wrapper.xpfm
+01:16:50 INFO  : Checking for BSP changes to sync application flags for project 'pain'...
+01:17:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:17:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+01:17:04 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain/_ide/bitstream/Exercice2_bd_wrapper.bit"
+01:17:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:17:19 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+01:17:19 INFO  : 'jtag frequency' command is executed.
+01:17:19 INFO  : Context for 'APU' is selected.
+01:17:19 INFO  : System reset is completed.
+01:17:22 INFO  : 'after 3000' command is executed.
+01:17:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+01:17:23 INFO  : Device configured successfully with "C:/Workspace/Atelier2/pain/_ide/bitstream/Exercice2_bd_wrapper.bit"
+01:17:23 INFO  : Context for 'APU' is selected.
+01:17:24 INFO  : Hardware design and registers information is loaded from 'C:/Workspace/Atelier2/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+01:17:24 INFO  : 'configparams force-mem-access 1' command is executed.
+01:17:24 INFO  : Context for 'APU' is selected.
+01:17:24 INFO  : Sourcing of 'C:/Workspace/Atelier2/pain/_ide/psinit/ps7_init.tcl' is done.
+01:17:24 INFO  : 'ps7_init' command is executed.
+01:17:24 INFO  : 'ps7_post_config' command is executed.
+01:17:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:17:25 INFO  : The application 'C:/Workspace/Atelier2/pain/Debug/pain.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:17:25 INFO  : 'configparams force-mem-access 0' command is executed.
+01:17:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/Workspace/Atelier2/pain/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Workspace/Atelier2/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Workspace/Atelier2/pain/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Workspace/Atelier2/pain/Debug/pain.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:17:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:17:25 INFO  : 'con' command is executed.
+01:17:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:17:25 INFO  : Launch script is exported to file 'C:\Workspace\Atelier2\pain_system\_ide\scripts\debugger_pain-default.tcl'

@@ -31,6 +31,19 @@
  
  
 /******************************************************************/
+/* Definitions for driver PMODJSTK2 */
+#define XPAR_PMODJSTK2_NUM_INSTANCES 1
+
+/* Definitions for peripheral PMODJSTK2_0 */
+#define XPAR_PMODJSTK2_0_DEVICE_ID 0
+#define XPAR_PMODJSTK2_0_AXI_LITE_SPI_BASEADDR 0x40010000
+#define XPAR_PMODJSTK2_0_AXI_LITE_SPI_HIGHADDR 0x4001FFFF
+#define XPAR_PMODJSTK2_0_AXI_LITE_GPIO_BASEADDR 0x40000000
+#define XPAR_PMODJSTK2_0_AXI_LITE_GPIO_HIGHADDR 0x40000FFF
+
+
+/******************************************************************/
+
 
 /* Definitions for peripheral PS7_DDR_0 */
 #define XPAR_PS7_DDR_0_S_AXI_BASEADDR 0x00100000
@@ -221,24 +234,39 @@
 /******************************************************************/
 
 /* Definitions for driver GPIO */
-#define XPAR_XGPIO_NUM_INSTANCES 1
+#define XPAR_XGPIO_NUM_INSTANCES 2
+
+/* Definitions for peripheral AXI_GPIO_0 */
+#define XPAR_AXI_GPIO_0_BASEADDR 0x41200000
+#define XPAR_AXI_GPIO_0_HIGHADDR 0x4120FFFF
+#define XPAR_AXI_GPIO_0_DEVICE_ID 0
+#define XPAR_AXI_GPIO_0_INTERRUPT_PRESENT 0
+#define XPAR_AXI_GPIO_0_IS_DUAL 0
+
 
 /* Definitions for peripheral V_PROC_SS_0_RESET_SEL_AXIS */
 #define XPAR_V_PROC_SS_0_RESET_SEL_AXIS_BASEADDR 0x00010000
 #define XPAR_V_PROC_SS_0_RESET_SEL_AXIS_HIGHADDR 0x0001FFFF
-#define XPAR_V_PROC_SS_0_RESET_SEL_AXIS_DEVICE_ID 0
+#define XPAR_V_PROC_SS_0_RESET_SEL_AXIS_DEVICE_ID 1
 #define XPAR_V_PROC_SS_0_RESET_SEL_AXIS_INTERRUPT_PRESENT 0
 #define XPAR_V_PROC_SS_0_RESET_SEL_AXIS_IS_DUAL 0
 
 
 /******************************************************************/
 
-/* Canonical definitions for peripheral V_PROC_SS_0_RESET_SEL_AXIS */
-#define XPAR_GPIO_0_BASEADDR 0x00010000
-#define XPAR_GPIO_0_HIGHADDR 0x0001FFFF
-#define XPAR_GPIO_0_DEVICE_ID XPAR_V_PROC_SS_0_RESET_SEL_AXIS_DEVICE_ID
+/* Canonical definitions for peripheral AXI_GPIO_0 */
+#define XPAR_GPIO_0_BASEADDR 0x41200000
+#define XPAR_GPIO_0_HIGHADDR 0x4120FFFF
+#define XPAR_GPIO_0_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
 #define XPAR_GPIO_0_INTERRUPT_PRESENT 0
 #define XPAR_GPIO_0_IS_DUAL 0
+
+/* Canonical definitions for peripheral V_PROC_SS_0_RESET_SEL_AXIS */
+#define XPAR_GPIO_1_BASEADDR 0x00010000
+#define XPAR_GPIO_1_HIGHADDR 0x0001FFFF
+#define XPAR_GPIO_1_DEVICE_ID XPAR_V_PROC_SS_0_RESET_SEL_AXIS_DEVICE_ID
+#define XPAR_GPIO_1_INTERRUPT_PRESENT 0
+#define XPAR_GPIO_1_IS_DUAL 0
 
 
 /******************************************************************/

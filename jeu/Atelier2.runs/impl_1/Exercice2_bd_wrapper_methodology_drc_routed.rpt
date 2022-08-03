@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon Aug  1 15:01:53 2022
+| Date         : Tue Aug  2 01:03:01 2022
 | Host         : DESKTOP-NHSH7S2 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Exercice2_bd_wrapper_methodology_drc_routed.rpt -pb Exercice2_bd_wrapper_methodology_drc_routed.pb -rpx Exercice2_bd_wrapper_methodology_drc_routed.rpx
 | Design       : Exercice2_bd_wrapper
@@ -23,24 +23,30 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 2
-+----------+----------+---------------------------------------------+------------+
-| Rule     | Severity | Description                                 | Violations |
-+----------+----------+---------------------------------------------+------------+
-| ULMTCS-1 | Warning  | Control Sets use limits recommend reduction | 1          |
-| XDCB-5   | Warning  | Runtime inefficient way to find pin objects | 1          |
-+----------+----------+---------------------------------------------+------------+
+             Violations found: 3
++----------+----------+-------------------------------------------------+------------+
+| Rule     | Severity | Description                                     | Violations |
++----------+----------+-------------------------------------------------+------------+
+| PDRC-190 | Warning  | Suboptimally placed synchronized register chain | 1          |
+| ULMTCS-1 | Warning  | Control Sets use limits recommend reduction     | 1          |
+| XDCB-5   | Warning  | Runtime inefficient way to find pin objects     | 1          |
++----------+----------+-------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Exercice2_bd_i/PmodJSTK2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_RST_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to in site SLICE_X29Y52 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Exercice2_bd_i/PmodJSTK2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_RST_AX2S_1_CDC_1 is not placed in the same (SLICE) site.
+Related violations: <none>
+
 ULMTCS-1#1 Warning
 Control Sets use limits recommend reduction  
-This design uses 415 control sets (vs. available limit of 4400, determined by 1 control set per CLB). This exceeds the control set use guideline of 7.5 percent. This is at a level where reduction is RECOMMENDED (see UG949). Use report_control_sets to get more details.
+This design uses 498 control sets (vs. available limit of 4400, determined by 1 control set per CLB). This exceeds the control set use guideline of 7.5 percent. This is at a level where reduction is RECOMMENDED (see UG949). Use report_control_sets to get more details.
 Related violations: <none>
 
 XDCB-5#1 Warning
 Runtime inefficient way to find pin objects  
-The option '-through : [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '7' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+The option '-through : [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '9' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
 Current XDC: c:/Workspace/Atelier2/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_rgb2dvi_0_0/src/rgb2dvi.xdc (Line: 5)
 Related violations: <none>
 
