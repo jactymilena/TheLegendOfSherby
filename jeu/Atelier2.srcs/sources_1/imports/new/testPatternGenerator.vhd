@@ -117,11 +117,18 @@ begin
         m_axis_tuser <= '0';
     end case;
     
-     if(lineCpt(0) = '1') then
-        m_axis_tdata <= i_colorDataA(23 downto 0);
-     else 
-        m_axis_tdata <= i_colorDataB(23 downto 0);
-     end if;         
+    -- if(lineCpt(0) = '1') then
+     --   m_axis_tdata <= i_colorDataA(23 downto 0);
+     --else 
+     --   m_axis_tdata <= i_colorDataB(23 downto 0);
+     --end if;         
 end process;     
+
+process(clk, i_colorDataA)
+begin
+    if(rising_edge(clk)) then
+    m_axis_tdata <= i_colorDataB(23 downto 0);
+    end if;
+end process;
 
 end Behavioral;

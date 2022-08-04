@@ -2609,3 +2609,1222 @@ con
 ----------------End of Script----------------
 
 15:42:45 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain2_system\_ide\scripts\debugger_pain2-default.tcl'
+16:13:40 ERROR : An unexpected exception occurred in the module 'reading platform'
+16:13:40 ERROR : Unexpected exception occurred while writing platform project 'Exercice2_bd_wrapper' log.
+16:13:40 WARN  : Failed to update project references for project pain
+16:13:40 WARN  : Failed to update project references for project pain_system
+16:14:02 ERROR : XSCT server calls should not be made from TCF thread.
+java.lang.RuntimeException: XSCT server calls should not be made from TCF thread.
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueAndWait(XSDBCommandManager.java:391)
+	at com.xilinx.sdk.xsdb.XsdbCommandUtils.executeAndRespond(XsdbCommandUtils.java:325)
+	at com.xilinx.sdk.hw.internal.HwPlatform.openHw(HwPlatform.java:372)
+	at com.xilinx.sdk.hw.internal.HwPlatform.<init>(HwPlatform.java:359)
+	at com.xilinx.sdk.hw.internal.HwSpecFactory.createHwSpec(HwSpecFactory.java:56)
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigUtil.createHwPlatform(SdsLaunchConfigUtil.java:57)
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigModel.iniHwPlatform(SdsLaunchConfigModel.java:179)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.getHwPlatform(BaseLaunchConfigModel.java:577)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readCrossTriggerModel(BaseLaunchConfigModel.java:173)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readAndSetAttributes(BaseLaunchConfigModel.java:156)
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigModel.newInstance(SdsLaunchConfigModel.java:104)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.createConfigModel(SdsTcfLaunchDelegate.java:85)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.generateReports(SdsTcfLaunchDelegate.java:634)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.onDisconnected(SdsTcfLaunchDelegate.java:608)
+	at org.eclipse.tcf.internal.debug.ui.model.TCFModelManager$1.onDisconnected(TCFModelManager.java:79)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch.onDisconnected(TCFLaunch.java:532)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch$43.onChannelClosed(TCFLaunch.java:1643)
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:858)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+16:14:02 INFO  : Disconnected from the channel tcfchan#44.
+16:15:22 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\GitHub\TheLegendOfSherby\jeu\temp_xsdb_launch_script.tcl
+16:15:22 INFO  : Registering command handlers for Vitis TCF services
+16:15:26 INFO  : XSCT server has started successfully.
+16:15:28 INFO  : Platform repository initialization has completed.
+16:15:31 INFO  : Successfully done setting XSCT server connection channel  
+16:15:31 INFO  : plnx-install-location is set to ''
+16:15:31 INFO  : Successfully done query RDI_DATADIR 
+16:15:31 INFO  : Successfully done setting workspace for the tool. 
+16:16:47 INFO  : Result from executing command 'getProjects': Exercice2_bd_wrapper
+16:16:47 INFO  : Result from executing command 'getPlatforms': Exercice2_bd_wrapper|C:/Workspace/Atelier2/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/Exercice2_bd_wrapper.xpfm
+16:16:47 WARN  : An unexpected exception occurred in the module 'platform project logging'
+16:16:47 INFO  : Platform 'Exercice2_bd_wrapper' is added to custom repositories.
+16:16:58 INFO  : Platform 'Exercice2_bd_wrapper' is added to custom repositories.
+16:20:50 INFO  : Result from executing command 'getProjects': Exercice2_bd_wrapper
+16:20:50 INFO  : Result from executing command 'getPlatforms': Exercice2_bd_wrapper|C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/Exercice2_bd_wrapper.xpfm;Exercice2_bd_wrapper|C:/Workspace/Atelier2/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/Exercice2_bd_wrapper.xpfm
+16:21:05 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:21:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:21:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:21:26 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:21:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:21:34 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:21:34 INFO  : 'jtag frequency' command is executed.
+16:21:34 INFO  : Context for 'APU' is selected.
+16:21:34 INFO  : System reset is completed.
+16:21:37 INFO  : 'after 3000' command is executed.
+16:21:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:21:38 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:21:38 INFO  : Context for 'APU' is selected.
+16:21:39 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:21:39 INFO  : 'configparams force-mem-access 1' command is executed.
+16:21:39 INFO  : Context for 'APU' is selected.
+16:21:39 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:21:39 INFO  : 'ps7_init' command is executed.
+16:21:39 INFO  : 'ps7_post_config' command is executed.
+16:21:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:21:40 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:21:40 INFO  : 'configparams force-mem-access 0' command is executed.
+16:21:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:21:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:21:41 INFO  : 'con' command is executed.
+16:21:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:21:41 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:22:21 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:22:26 INFO  : Disconnected from the channel tcfchan#2.
+16:22:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:22:27 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:22:27 INFO  : 'jtag frequency' command is executed.
+16:22:27 INFO  : Context for 'APU' is selected.
+16:22:28 INFO  : System reset is completed.
+16:22:31 INFO  : 'after 3000' command is executed.
+16:22:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:22:32 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:22:32 INFO  : Context for 'APU' is selected.
+16:22:32 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:22:32 INFO  : 'configparams force-mem-access 1' command is executed.
+16:22:32 INFO  : Context for 'APU' is selected.
+16:22:32 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:22:32 INFO  : 'ps7_init' command is executed.
+16:22:32 INFO  : 'ps7_post_config' command is executed.
+16:22:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:22:34 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:22:34 INFO  : 'configparams force-mem-access 0' command is executed.
+16:22:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:22:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:22:34 INFO  : 'con' command is executed.
+16:22:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:22:34 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:23:07 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:23:12 INFO  : Disconnected from the channel tcfchan#3.
+16:23:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:23:13 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:23:13 INFO  : 'jtag frequency' command is executed.
+16:23:13 INFO  : Context for 'APU' is selected.
+16:23:13 INFO  : System reset is completed.
+16:23:16 INFO  : 'after 3000' command is executed.
+16:23:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:23:18 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:23:18 INFO  : Context for 'APU' is selected.
+16:23:18 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:23:18 INFO  : 'configparams force-mem-access 1' command is executed.
+16:23:18 INFO  : Context for 'APU' is selected.
+16:23:18 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:23:18 INFO  : 'ps7_init' command is executed.
+16:23:18 INFO  : 'ps7_post_config' command is executed.
+16:23:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:23:19 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:23:19 INFO  : 'configparams force-mem-access 0' command is executed.
+16:23:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:23:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:23:19 INFO  : 'con' command is executed.
+16:23:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:23:19 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:23:34 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:23:46 INFO  : Disconnected from the channel tcfchan#4.
+16:23:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:23:48 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:23:48 INFO  : 'jtag frequency' command is executed.
+16:23:48 INFO  : Context for 'APU' is selected.
+16:23:48 INFO  : System reset is completed.
+16:23:51 INFO  : 'after 3000' command is executed.
+16:23:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:23:52 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:23:52 INFO  : Context for 'APU' is selected.
+16:23:52 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:23:52 INFO  : 'configparams force-mem-access 1' command is executed.
+16:23:52 INFO  : Context for 'APU' is selected.
+16:23:52 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:23:53 INFO  : 'ps7_init' command is executed.
+16:23:53 INFO  : 'ps7_post_config' command is executed.
+16:23:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:23:54 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:23:54 INFO  : 'configparams force-mem-access 0' command is executed.
+16:23:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:23:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:23:54 INFO  : 'con' command is executed.
+16:23:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:23:54 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:24:12 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:24:19 INFO  : Disconnected from the channel tcfchan#5.
+16:24:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:24:20 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:24:20 INFO  : 'jtag frequency' command is executed.
+16:24:20 INFO  : Context for 'APU' is selected.
+16:24:20 INFO  : System reset is completed.
+16:24:23 INFO  : 'after 3000' command is executed.
+16:24:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:24:24 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:24:24 INFO  : Context for 'APU' is selected.
+16:24:24 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:24:24 INFO  : 'configparams force-mem-access 1' command is executed.
+16:24:25 INFO  : Context for 'APU' is selected.
+16:24:25 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:24:25 INFO  : 'ps7_init' command is executed.
+16:24:25 INFO  : 'ps7_post_config' command is executed.
+16:24:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:24:26 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:24:26 INFO  : 'configparams force-mem-access 0' command is executed.
+16:24:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:24:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:24:26 INFO  : 'con' command is executed.
+16:24:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:24:26 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:24:47 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:24:51 INFO  : Disconnected from the channel tcfchan#6.
+16:24:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:24:53 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:24:53 INFO  : 'jtag frequency' command is executed.
+16:24:53 INFO  : Context for 'APU' is selected.
+16:24:53 INFO  : System reset is completed.
+16:24:56 INFO  : 'after 3000' command is executed.
+16:24:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:24:57 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:24:57 INFO  : Context for 'APU' is selected.
+16:24:57 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:24:57 INFO  : 'configparams force-mem-access 1' command is executed.
+16:24:57 INFO  : Context for 'APU' is selected.
+16:24:57 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:24:58 INFO  : 'ps7_init' command is executed.
+16:24:58 INFO  : 'ps7_post_config' command is executed.
+16:24:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:24:59 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:24:59 INFO  : 'configparams force-mem-access 0' command is executed.
+16:24:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:24:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:24:59 INFO  : 'con' command is executed.
+16:24:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:24:59 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:27:24 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:27:33 INFO  : Disconnected from the channel tcfchan#7.
+16:27:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:27:35 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:27:35 INFO  : 'jtag frequency' command is executed.
+16:27:35 INFO  : Context for 'APU' is selected.
+16:27:35 INFO  : System reset is completed.
+16:27:38 INFO  : 'after 3000' command is executed.
+16:27:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:27:39 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:27:39 INFO  : Context for 'APU' is selected.
+16:27:39 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:27:39 INFO  : 'configparams force-mem-access 1' command is executed.
+16:27:39 INFO  : Context for 'APU' is selected.
+16:27:39 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:27:40 INFO  : 'ps7_init' command is executed.
+16:27:40 INFO  : 'ps7_post_config' command is executed.
+16:27:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:27:41 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:27:41 INFO  : 'configparams force-mem-access 0' command is executed.
+16:27:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:27:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:27:41 INFO  : 'con' command is executed.
+16:27:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:27:41 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:29:19 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:29:24 INFO  : Disconnected from the channel tcfchan#8.
+16:29:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:29:26 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:29:26 INFO  : 'jtag frequency' command is executed.
+16:29:26 INFO  : Context for 'APU' is selected.
+16:29:26 INFO  : System reset is completed.
+16:29:29 INFO  : 'after 3000' command is executed.
+16:29:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:29:30 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:29:30 INFO  : Context for 'APU' is selected.
+16:29:30 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:29:30 INFO  : 'configparams force-mem-access 1' command is executed.
+16:29:30 INFO  : Context for 'APU' is selected.
+16:29:30 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:29:30 INFO  : 'ps7_init' command is executed.
+16:29:30 INFO  : 'ps7_post_config' command is executed.
+16:29:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:29:32 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:29:32 INFO  : 'configparams force-mem-access 0' command is executed.
+16:29:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:29:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:29:32 INFO  : 'con' command is executed.
+16:29:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:29:32 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:30:40 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:30:45 INFO  : Disconnected from the channel tcfchan#9.
+16:30:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:30:46 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:30:46 INFO  : 'jtag frequency' command is executed.
+16:30:46 INFO  : Context for 'APU' is selected.
+16:30:46 INFO  : System reset is completed.
+16:30:49 INFO  : 'after 3000' command is executed.
+16:30:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:30:50 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:30:50 INFO  : Context for 'APU' is selected.
+16:30:50 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:30:50 INFO  : 'configparams force-mem-access 1' command is executed.
+16:30:50 INFO  : Context for 'APU' is selected.
+16:30:50 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:30:51 INFO  : 'ps7_init' command is executed.
+16:30:51 INFO  : 'ps7_post_config' command is executed.
+16:30:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:30:52 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:30:52 INFO  : 'configparams force-mem-access 0' command is executed.
+16:30:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:30:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:30:52 INFO  : 'con' command is executed.
+16:30:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:30:52 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:31:08 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:31:24 INFO  : Disconnected from the channel tcfchan#10.
+16:31:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:31:26 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:31:26 INFO  : 'jtag frequency' command is executed.
+16:31:26 INFO  : Context for 'APU' is selected.
+16:31:26 INFO  : System reset is completed.
+16:31:29 INFO  : 'after 3000' command is executed.
+16:31:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:31:30 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:31:30 INFO  : Context for 'APU' is selected.
+16:31:30 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:31:30 INFO  : 'configparams force-mem-access 1' command is executed.
+16:31:30 INFO  : Context for 'APU' is selected.
+16:31:30 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:31:31 INFO  : 'ps7_init' command is executed.
+16:31:31 INFO  : 'ps7_post_config' command is executed.
+16:31:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:31:32 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:31:32 INFO  : 'configparams force-mem-access 0' command is executed.
+16:31:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:31:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:31:32 INFO  : 'con' command is executed.
+16:31:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:31:32 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:32:01 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:32:06 INFO  : Disconnected from the channel tcfchan#11.
+16:32:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:32:08 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:32:08 INFO  : 'jtag frequency' command is executed.
+16:32:08 INFO  : Context for 'APU' is selected.
+16:32:08 INFO  : System reset is completed.
+16:32:11 INFO  : 'after 3000' command is executed.
+16:32:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:32:12 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:32:12 INFO  : Context for 'APU' is selected.
+16:32:12 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:32:12 INFO  : 'configparams force-mem-access 1' command is executed.
+16:32:12 INFO  : Context for 'APU' is selected.
+16:32:12 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:32:12 INFO  : 'ps7_init' command is executed.
+16:32:12 INFO  : 'ps7_post_config' command is executed.
+16:32:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:32:14 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:32:14 INFO  : 'configparams force-mem-access 0' command is executed.
+16:32:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:32:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:32:14 INFO  : 'con' command is executed.
+16:32:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:32:14 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:32:36 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:32:43 INFO  : Disconnected from the channel tcfchan#12.
+16:32:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:32:44 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:32:44 INFO  : 'jtag frequency' command is executed.
+16:32:44 INFO  : Context for 'APU' is selected.
+16:32:44 INFO  : System reset is completed.
+16:32:47 INFO  : 'after 3000' command is executed.
+16:32:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:32:49 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:32:49 INFO  : Context for 'APU' is selected.
+16:32:49 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:32:49 INFO  : 'configparams force-mem-access 1' command is executed.
+16:32:49 INFO  : Context for 'APU' is selected.
+16:32:49 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:32:49 INFO  : 'ps7_init' command is executed.
+16:32:49 INFO  : 'ps7_post_config' command is executed.
+16:32:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:32:50 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:32:50 INFO  : 'configparams force-mem-access 0' command is executed.
+16:32:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:32:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:32:51 INFO  : 'con' command is executed.
+16:32:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:32:51 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:33:07 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:33:13 INFO  : Disconnected from the channel tcfchan#13.
+16:33:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:33:15 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:33:15 INFO  : 'jtag frequency' command is executed.
+16:33:15 INFO  : Context for 'APU' is selected.
+16:33:15 INFO  : System reset is completed.
+16:33:18 INFO  : 'after 3000' command is executed.
+16:33:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:33:19 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:33:19 INFO  : Context for 'APU' is selected.
+16:33:19 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:33:19 INFO  : 'configparams force-mem-access 1' command is executed.
+16:33:19 INFO  : Context for 'APU' is selected.
+16:33:19 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:33:20 INFO  : 'ps7_init' command is executed.
+16:33:20 INFO  : 'ps7_post_config' command is executed.
+16:33:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:33:21 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:33:21 INFO  : 'configparams force-mem-access 0' command is executed.
+16:33:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:33:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:33:21 INFO  : 'con' command is executed.
+16:33:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:33:21 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:33:33 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:33:42 INFO  : Disconnected from the channel tcfchan#14.
+16:33:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:33:43 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:33:43 INFO  : 'jtag frequency' command is executed.
+16:33:43 INFO  : Context for 'APU' is selected.
+16:33:43 INFO  : System reset is completed.
+16:33:46 INFO  : 'after 3000' command is executed.
+16:33:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:33:47 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:33:47 INFO  : Context for 'APU' is selected.
+16:33:47 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:33:47 INFO  : 'configparams force-mem-access 1' command is executed.
+16:33:47 INFO  : Context for 'APU' is selected.
+16:33:47 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:33:48 INFO  : 'ps7_init' command is executed.
+16:33:48 INFO  : 'ps7_post_config' command is executed.
+16:33:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:33:49 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:33:49 INFO  : 'configparams force-mem-access 0' command is executed.
+16:33:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:33:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:33:49 INFO  : 'con' command is executed.
+16:33:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:33:49 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:34:12 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:34:17 INFO  : Disconnected from the channel tcfchan#15.
+16:34:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:34:18 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:34:18 INFO  : 'jtag frequency' command is executed.
+16:34:18 INFO  : Context for 'APU' is selected.
+16:34:18 INFO  : System reset is completed.
+16:34:21 INFO  : 'after 3000' command is executed.
+16:34:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:34:22 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:34:22 INFO  : Context for 'APU' is selected.
+16:34:22 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:34:22 INFO  : 'configparams force-mem-access 1' command is executed.
+16:34:22 INFO  : Context for 'APU' is selected.
+16:34:22 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:34:23 INFO  : 'ps7_init' command is executed.
+16:34:23 INFO  : 'ps7_post_config' command is executed.
+16:34:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:34:24 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:34:24 INFO  : 'configparams force-mem-access 0' command is executed.
+16:34:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:34:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:34:24 INFO  : 'con' command is executed.
+16:34:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:34:24 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:34:40 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:34:50 INFO  : Disconnected from the channel tcfchan#16.
+16:34:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:34:51 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:34:51 INFO  : 'jtag frequency' command is executed.
+16:34:51 INFO  : Context for 'APU' is selected.
+16:34:51 INFO  : System reset is completed.
+16:34:54 INFO  : 'after 3000' command is executed.
+16:34:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:34:55 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:34:55 INFO  : Context for 'APU' is selected.
+16:34:55 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:34:55 INFO  : 'configparams force-mem-access 1' command is executed.
+16:34:55 INFO  : Context for 'APU' is selected.
+16:34:55 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:34:56 INFO  : 'ps7_init' command is executed.
+16:34:56 INFO  : 'ps7_post_config' command is executed.
+16:34:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:34:57 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:34:57 INFO  : 'configparams force-mem-access 0' command is executed.
+16:34:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:34:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:34:57 INFO  : 'con' command is executed.
+16:34:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:34:57 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:35:14 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:35:19 INFO  : Disconnected from the channel tcfchan#17.
+16:35:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:35:20 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:35:20 INFO  : 'jtag frequency' command is executed.
+16:35:20 INFO  : Context for 'APU' is selected.
+16:35:20 INFO  : System reset is completed.
+16:35:23 INFO  : 'after 3000' command is executed.
+16:35:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:35:24 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:35:24 INFO  : Context for 'APU' is selected.
+16:35:24 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:35:24 INFO  : 'configparams force-mem-access 1' command is executed.
+16:35:24 INFO  : Context for 'APU' is selected.
+16:35:24 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:35:25 INFO  : 'ps7_init' command is executed.
+16:35:25 INFO  : 'ps7_post_config' command is executed.
+16:35:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:35:26 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:35:26 INFO  : 'configparams force-mem-access 0' command is executed.
+16:35:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:35:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:35:26 INFO  : 'con' command is executed.
+16:35:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:35:26 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:35:53 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:35:57 INFO  : Disconnected from the channel tcfchan#18.
+16:35:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:35:58 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:35:58 INFO  : 'jtag frequency' command is executed.
+16:35:58 INFO  : Context for 'APU' is selected.
+16:35:58 INFO  : System reset is completed.
+16:36:01 INFO  : 'after 3000' command is executed.
+16:36:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:36:02 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:36:02 INFO  : Context for 'APU' is selected.
+16:36:02 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:36:02 INFO  : 'configparams force-mem-access 1' command is executed.
+16:36:02 INFO  : Context for 'APU' is selected.
+16:36:02 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:36:03 INFO  : 'ps7_init' command is executed.
+16:36:03 INFO  : 'ps7_post_config' command is executed.
+16:36:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:36:04 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:36:04 INFO  : 'configparams force-mem-access 0' command is executed.
+16:36:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:36:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:36:04 INFO  : 'con' command is executed.
+16:36:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:36:04 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:36:31 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:36:36 INFO  : Disconnected from the channel tcfchan#19.
+16:36:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:36:37 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:36:37 INFO  : 'jtag frequency' command is executed.
+16:36:37 INFO  : Context for 'APU' is selected.
+16:36:37 INFO  : System reset is completed.
+16:36:40 INFO  : 'after 3000' command is executed.
+16:36:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:36:41 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:36:41 INFO  : Context for 'APU' is selected.
+16:36:41 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:36:41 INFO  : 'configparams force-mem-access 1' command is executed.
+16:36:41 INFO  : Context for 'APU' is selected.
+16:36:41 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:36:42 INFO  : 'ps7_init' command is executed.
+16:36:42 INFO  : 'ps7_post_config' command is executed.
+16:36:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:36:43 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:36:43 INFO  : 'configparams force-mem-access 0' command is executed.
+16:36:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:36:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:36:43 INFO  : 'con' command is executed.
+16:36:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:36:43 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:37:03 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:37:15 INFO  : Disconnected from the channel tcfchan#20.
+16:37:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:37:16 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:37:16 INFO  : 'jtag frequency' command is executed.
+16:37:16 INFO  : Context for 'APU' is selected.
+16:37:16 INFO  : System reset is completed.
+16:37:19 INFO  : 'after 3000' command is executed.
+16:37:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:37:20 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:37:20 INFO  : Context for 'APU' is selected.
+16:37:20 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:37:20 INFO  : 'configparams force-mem-access 1' command is executed.
+16:37:21 INFO  : Context for 'APU' is selected.
+16:37:21 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:37:21 INFO  : 'ps7_init' command is executed.
+16:37:21 INFO  : 'ps7_post_config' command is executed.
+16:37:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:37:22 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:37:22 INFO  : 'configparams force-mem-access 0' command is executed.
+16:37:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:37:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:37:22 INFO  : 'con' command is executed.
+16:37:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:37:22 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:37:41 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:37:55 INFO  : Disconnected from the channel tcfchan#21.
+16:37:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:37:56 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:37:56 INFO  : 'jtag frequency' command is executed.
+16:37:56 INFO  : Context for 'APU' is selected.
+16:37:56 INFO  : System reset is completed.
+16:37:59 INFO  : 'after 3000' command is executed.
+16:37:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:38:00 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:38:00 INFO  : Context for 'APU' is selected.
+16:38:00 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:38:00 INFO  : 'configparams force-mem-access 1' command is executed.
+16:38:01 INFO  : Context for 'APU' is selected.
+16:38:01 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:38:01 INFO  : 'ps7_init' command is executed.
+16:38:01 INFO  : 'ps7_post_config' command is executed.
+16:38:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:38:02 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:38:02 INFO  : 'configparams force-mem-access 0' command is executed.
+16:38:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:38:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:38:02 INFO  : 'con' command is executed.
+16:38:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:38:02 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:38:23 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:38:27 INFO  : Disconnected from the channel tcfchan#22.
+16:38:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:38:29 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:38:29 INFO  : 'jtag frequency' command is executed.
+16:38:29 INFO  : Context for 'APU' is selected.
+16:38:29 INFO  : System reset is completed.
+16:38:32 INFO  : 'after 3000' command is executed.
+16:38:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:38:33 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:38:33 INFO  : Context for 'APU' is selected.
+16:38:33 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:38:33 INFO  : 'configparams force-mem-access 1' command is executed.
+16:38:33 INFO  : Context for 'APU' is selected.
+16:38:33 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:38:33 INFO  : 'ps7_init' command is executed.
+16:38:33 INFO  : 'ps7_post_config' command is executed.
+16:38:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:38:35 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:38:35 INFO  : 'configparams force-mem-access 0' command is executed.
+16:38:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:38:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:38:35 INFO  : 'con' command is executed.
+16:38:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:38:35 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:38:53 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:39:01 INFO  : Disconnected from the channel tcfchan#23.
+16:39:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:39:03 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:39:03 INFO  : 'jtag frequency' command is executed.
+16:39:03 INFO  : Context for 'APU' is selected.
+16:39:03 INFO  : System reset is completed.
+16:39:06 INFO  : 'after 3000' command is executed.
+16:39:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:39:07 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:39:07 INFO  : Context for 'APU' is selected.
+16:39:07 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:39:07 INFO  : 'configparams force-mem-access 1' command is executed.
+16:39:07 INFO  : Context for 'APU' is selected.
+16:39:07 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:39:07 INFO  : 'ps7_init' command is executed.
+16:39:07 INFO  : 'ps7_post_config' command is executed.
+16:39:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:39:09 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:39:09 INFO  : 'configparams force-mem-access 0' command is executed.
+16:39:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:39:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:39:09 INFO  : 'con' command is executed.
+16:39:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:39:09 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:39:50 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:39:55 INFO  : Disconnected from the channel tcfchan#24.
+16:39:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:39:57 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:39:57 INFO  : 'jtag frequency' command is executed.
+16:39:57 INFO  : Context for 'APU' is selected.
+16:39:57 INFO  : System reset is completed.
+16:40:00 INFO  : 'after 3000' command is executed.
+16:40:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:40:01 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:40:01 INFO  : Context for 'APU' is selected.
+16:40:01 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:40:01 INFO  : 'configparams force-mem-access 1' command is executed.
+16:40:01 INFO  : Context for 'APU' is selected.
+16:40:01 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:40:02 INFO  : 'ps7_init' command is executed.
+16:40:02 INFO  : 'ps7_post_config' command is executed.
+16:40:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:40:03 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:40:03 INFO  : 'configparams force-mem-access 0' command is executed.
+16:40:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:40:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:40:03 INFO  : 'con' command is executed.
+16:40:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:40:03 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'
+16:40:45 INFO  : Checking for BSP changes to sync application flags for project 'pain3'...
+16:40:51 INFO  : Disconnected from the channel tcfchan#25.
+16:40:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:40:52 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E63A' is selected.
+16:40:52 INFO  : 'jtag frequency' command is executed.
+16:40:52 INFO  : Context for 'APU' is selected.
+16:40:52 INFO  : System reset is completed.
+16:40:55 INFO  : 'after 3000' command is executed.
+16:40:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}' command is executed.
+16:40:56 INFO  : Device configured successfully with "C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit"
+16:40:56 INFO  : Context for 'APU' is selected.
+16:40:56 INFO  : Hardware design and registers information is loaded from 'C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa'.
+16:40:56 INFO  : 'configparams force-mem-access 1' command is executed.
+16:40:56 INFO  : Context for 'APU' is selected.
+16:40:57 INFO  : Sourcing of 'C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl' is done.
+16:40:57 INFO  : 'ps7_init' command is executed.
+16:40:57 INFO  : 'ps7_post_config' command is executed.
+16:40:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:40:58 INFO  : The application 'C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:40:58 INFO  : 'configparams force-mem-access 0' command is executed.
+16:40:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E63A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E63A-13722093-0"}
+fpga -file C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/bitstream/Exercice2_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper/export/Exercice2_bd_wrapper/hw/Exercice2_bd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/GitHub/TheLegendOfSherby/jeu/pain3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/GitHub/TheLegendOfSherby/jeu/pain3/Debug/pain3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:40:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:40:58 INFO  : 'con' command is executed.
+16:40:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:40:58 INFO  : Launch script is exported to file 'C:\GitHub\TheLegendOfSherby\jeu\pain3_system\_ide\scripts\debugger_pain3-default.tcl'

@@ -37,7 +37,7 @@ int main() {
 	 //displayMap(backgroundManager, 0);
     while (1) {
 
-    	 if (counter == 11116666) {
+    	 if (counter == 10) {
     		 //displayMap(backgroundManager, 0);
 			//MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_1_S00_AXI_BASEADDR, 4, colorA);
 			//colorA = colorA + 0x200;

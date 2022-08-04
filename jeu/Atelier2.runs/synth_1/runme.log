@@ -10,7 +10,6 @@
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source Exercice2_bd_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1087.871 ; gain = 0.000
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/GitHub/TheLegendOfSherby/jeu/Atelier2.ip_defs/rgb2dvi'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/GitHub/TheLegendOfSherby/jeu/Atelier2.ip_defs/myColorRegister_1.0'.
@@ -37,7 +36,6 @@ WARNING: [IP_Flow 19-4831] Duplicate Interface found for 'digilentinc.com:interf
 
 WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilentinc.com:interface:pmod:1.0'. The one found in location 'c:/GitHub/TheLegendOfSherby/jeu/lib/vivado/if/pmod_v1_0/pmod.xml' will take precedence over the same Interface in location 'c:/Workspace/Atelier2/lib/vivado-library/if/pmod_v1_0/pmod.xml'
 WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'natinst.com:user:ZmodScope_Calibration:1.0'. The one found in location 'c:/GitHub/TheLegendOfSherby/jeu/lib/vivado/if/ZmodScope_Calibration_v1_0/ZmodScope_Calibration.xml' will take precedence over the same Interface in location 'c:/Workspace/Atelier2/lib/vivado-library/if/ZmodScope_Calibration_v1_0/ZmodScope_Calibration.xml'
-update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1087.871 ; gain = 0.000
 INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
 INFO: [IP_Flow 19-5107] Inferred bus interface 'rstn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
 INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
@@ -70,7 +68,7 @@ WARNING: [IP_Flow 19-4831] Duplicate Interface found for 'digilentinc.com:interf
 
 WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilentinc.com:interface:pmod:1.0'. The one found in location 'c:/GitHub/TheLegendOfSherby/jeu/lib/vivado/if/pmod_v1_0/pmod.xml' will take precedence over the same Interface in location 'c:/Workspace/Atelier2/lib/vivado-library/if/pmod_v1_0/pmod.xml'
 WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'natinst.com:user:ZmodScope_Calibration:1.0'. The one found in location 'c:/GitHub/TheLegendOfSherby/jeu/lib/vivado/if/ZmodScope_Calibration_v1_0/ZmodScope_Calibration.xml' will take precedence over the same Interface in location 'c:/Workspace/Atelier2/lib/vivado-library/if/ZmodScope_Calibration_v1_0/ZmodScope_Calibration.xml'
-add_files: Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 1087.871 ; gain = 0.000
+add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1082.262 ; gain = 0.000
 
 ****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
   **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
@@ -80,7 +78,7 @@ add_files: Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 1
 source C:/Xilinx/Vitis_HLS/2020.2/scripts/vitis_hls/hls.tcl -notrace
 INFO: Applying HLS Y2K22 patch v1.2 for IP revision
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'nao15' on host 'desktop-nhsh7s2' (Windows NT_amd64 version 6.2) on Thu Aug 04 15:03:00 -0400 2022
+INFO: [HLS 200-10] For user 'nao15' on host 'desktop-nhsh7s2' (Windows NT_amd64 version 6.2) on Thu Aug 04 15:56:33 -0400 2022
 INFO: [HLS 200-10] In directory 'C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1'
 Sourcing Tcl script 'C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/runhls.tcl'
 INFO: [HLS 200-1510] Running: open_project bd_f134_vsc_0 
@@ -141,7 +139,7 @@ INFO: [XFORM 203-701] Set the default channel type in dataflow to FIFO.
 INFO: [HLS 200-1510] Running: config_rtl -prefix bd_f134_vsc_0_ 
 WARNING: [HLS 200-483] The 'config_rtl -prefix' command is deprecated and will be removed in a future release. Use 'config_rtl -module_prefix' as its replacement.
 INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.216 seconds; current allocated memory: 165.942 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.103 seconds; current allocated memory: 165.942 MB.
 INFO: [HLS 200-10] Analyzing design file 'c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_1/src/v_vscaler.cpp' ... 
 WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:128:1
 Resolution: For help on HLS 214-114 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=214-114.html
@@ -255,7 +253,7 @@ WARNING: [HLS 207-5301] unused parameter 'ColorMode': C:/GitHub/TheLegendOfSherb
 WARNING: [HLS 207-5514] extra token before variable expression is ignored: C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:843:38
 WARNING: [HLS 207-5514] extra token before variable expression is ignored: C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1085:38
 WARNING: [HLS 207-5514] extra token before variable expression is ignored: C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1120:38
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 70.794 seconds; current allocated memory: 172.405 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 44.271 seconds; current allocated memory: 172.408 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:283:50)
 INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:286:25)
@@ -445,14 +443,14 @@ INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_class.hls::Sca
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_class.hls::Scalars' into 'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&) (.1)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_class.hls::Scalars' into 'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&) (.1)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_class.hls::Scalars' into 'vscale_core_polyphase(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned short&, unsigned int&, unsigned char&, short (*) [6], hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&) (.1)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 6 seconds. CPU system time: 1 seconds. Elapsed time: 30.64 seconds; current allocated memory: 175.298 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.118 seconds; current allocated memory: 175.299 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 26.319 seconds; current allocated memory: 175.298 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 175.299 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.878 seconds; current allocated memory: 187.293 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.515 seconds; current allocated memory: 187.293 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 WARNING: [SYNCHK 200-23] C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_ref.h:674: variable-indexed range selection may cause suboptimal QoR.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.13 seconds; current allocated memory: 202.806 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.644 seconds; current allocated memory: 202.807 MB.
 INFO: [XFORM 203-510] Pipelining loop 'loop_init_coeff_tap' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:253) in function 'vscale_core_polyphase' automatically.
 INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width_for_procpix' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:213) in function 'vscale_core_polyphase' for pipelining.
 INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_1063_2' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1034) in function 'v_vcresampler_core' for pipelining.
@@ -508,30 +506,30 @@ INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/GitHub/The
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1189:25) to (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1230:27) in function 'v_vcresampler_core'... converting 6 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:844:2) in function 'AXIvideo2MultiPixStream'... converting 13 basic blocks.
 INFO: [XFORM 203-11] Balancing expressions in function 'v_vcresampler_core' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1011)...3 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 5.491 seconds; current allocated memory: 239.086 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.891 seconds; current allocated memory: 239.086 MB.
 INFO: [XFORM 203-541] Flattening a loop nest 'loop_init_coeff_phase' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:250:14) in function 'vscale_core_polyphase'.
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.V[1]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.V[4]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.V[0]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.V[3]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.V[2]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.V[4]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.V[5]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.V[3]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.V[0]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.V[1]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.V[4]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.V[0]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.V[3]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.V[2]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.V[4]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.V[5]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.V[3]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.V[0]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_y.val.V[0]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1036).
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_y.val.V[1]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1036).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_y.val.V[0]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1036).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_y.val.V[1]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1036).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_c.val.V[1]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1037).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_c.val.V[2]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1037).
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_c.val.V[0]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1037).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_c.val.V[1]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1037).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_c.val.V[2]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1037).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_c.val.V[2]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1037).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_c.val.V[1]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1037).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_c.val.V[0]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1037).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_c.val.V[2]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1037).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_c.val.V[1]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1037).
 INFO: [HLS 200-472] Inferring partial write operation for 'LineBuf.val.V[0]' (c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h:798:17)
 INFO: [HLS 200-472] Inferring partial write operation for 'LineBuf.val.V[5]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:360:39)
 INFO: [HLS 200-472] Inferring partial write operation for 'FiltCoeff[0]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:255:29)
@@ -541,7 +539,7 @@ INFO: [HLS 200-472] Inferring partial write operation for 'linebuf_c.val.V[0]' (
 INFO: [HLS 200-472] Inferring partial write operation for 'linebuf_c.val.V[1]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1173:37)
 WARNING: [HLS 200-1614] Cosimulation may deadlock if process AXIvideo2MultiPixStream has a streamed top-level array input and has predecessor processes. If a deadlock occurs, please consider converting the streamed array into an hls::stream or using '::common::get_param hls.config_cosim.top_streamed_array true' in the TCL script.
 WARNING: [HLS 200-1449] Process vscale_core_polyphase has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 6 seconds. CPU system time: 0 seconds. Elapsed time: 6.02 seconds; current allocated memory: 329.382 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 4.686 seconds; current allocated memory: 329.383 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'v_vscaler' ...
 WARNING: [SYN 201-103] Legalizing function name 'Block_.split4_proc' to 'Block_split4_proc'.
@@ -580,13 +578,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.974 seconds; current allocated memory: 329.674 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.019 seconds; current allocated memory: 329.674 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.357 seconds; current allocated memory: 329.801 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.227 seconds; current allocated memory: 329.801 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'reg_unsigned_short_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -623,13 +621,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.015 seconds; current allocated memory: 329.849 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.767 seconds; current allocated memory: 329.849 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.332 seconds; current allocated memory: 329.918 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.217 seconds; current allocated memory: 329.918 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'AXIvideo2MultiPixStream' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -670,13 +668,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.947 seconds; current allocated memory: 330.194 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.877 seconds; current allocated memory: 330.194 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.487 seconds; current allocated memory: 330.631 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.292 seconds; current allocated memory: 330.632 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_vcresampler_core' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -726,13 +724,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.23 seconds; current allocated memory: 331.080 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.078 seconds; current allocated memory: 331.080 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.51 seconds; current allocated memory: 331.619 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.355 seconds; current allocated memory: 331.619 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'vscale_core_polyphase' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -889,7 +887,7 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 5.25 seconds; current allocated memory: 332.728 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 3.78 seconds; current allocated memory: 332.729 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
@@ -901,7 +899,7 @@ WARNING: [BIND 205-102] The specified resource core for memory 'FiltCoeff_4' wil
 WARNING: [BIND 205-102] The specified resource core for memory 'FiltCoeff_5' will be ignored if a simpler one can be used.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.163 seconds; current allocated memory: 334.070 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.664 seconds; current allocated memory: 334.070 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvideo' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -938,13 +936,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.669 seconds; current allocated memory: 334.314 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.336 seconds; current allocated memory: 334.315 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.582 seconds; current allocated memory: 343.714 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.308 seconds; current allocated memory: 343.714 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_vscaler' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -979,33 +977,33 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.817 seconds; current allocated memory: 343.894 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.952 seconds; current allocated memory: 343.895 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.049 seconds; current allocated memory: 344.373 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.765 seconds; current allocated memory: 344.373 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'Block_split4_proc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_split4_proc'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.952 seconds; current allocated memory: 344.549 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.737 seconds; current allocated memory: 344.549 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reg_unsigned_short_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_unsigned_short_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.544 seconds; current allocated memory: 344.926 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.347 seconds; current allocated memory: 344.926 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2MultiPixStream' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2MultiPixStream'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.414 seconds; current allocated memory: 345.657 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.287 seconds; current allocated memory: 345.657 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_vcresampler_core' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_vcresampler_core'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.904 seconds; current allocated memory: 347.866 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.612 seconds; current allocated memory: 347.868 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'vscale_core_polyphase' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1016,12 +1014,12 @@ INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_16s_26s_26_4_1': 3 
 INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_16s_26s_27_4_1': 3 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_16s_27s_27_4_1': 3 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'vscale_core_polyphase'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.051 seconds; current allocated memory: 352.294 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.304 seconds; current allocated memory: 352.295 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvideo' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvideo'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.906 seconds; current allocated memory: 357.192 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.883 seconds; current allocated memory: 357.193 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_vscaler' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1049,7 +1047,7 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/m_axis_video_V_d
 INFO: [RTGEN 206-500] Setting interface mode on function 'v_vscaler' to 's_axilite & ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Bundling port 'HeightIn', 'Width', 'HeightOut', 'LineRate', 'ColorMode', 'vfltCoeff' to AXI-Lite port CTRL.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_vscaler'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.35 seconds; current allocated memory: 359.275 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.104 seconds; current allocated memory: 359.276 MB.
 INFO: [RTMG 210-278] Implementing memory 'bd_f134_vsc_0_v_vcresampler_core_linebuf_y_val_V_0_ram (RAM)' using auto RAMs.
 INFO: [RTMG 210-278] Implementing memory 'bd_f134_vsc_0_v_vcresampler_core_linebuf_y_val_V_1_ram (RAM)' using auto RAMs.
 WARNING: [RTMG 210-274] Memory 'bd_f134_vsc_0_v_vcresampler_core_linebuf_c_val_V_2' is read-only, switch it to a ROM.
@@ -1076,12 +1074,12 @@ INFO: [RTMG 210-285] Implementing FIFO 'HwReg_HeightOut_c21_U(bd_f134_vsc_0_fifo
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_AXIvideo2MultiPixStream_U0_U(bd_f134_vsc_0_start_for_AXIvideo2MultiPixStream_U0)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_vcresampler_core_U0_U(bd_f134_vsc_0_start_for_v_vcresampler_core_U0)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_MultiPixStream2AXIvideo_U0_U(bd_f134_vsc_0_start_for_MultiPixStream2AXIvideo_U0)' using Shift Registers.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 7 seconds. CPU system time: 3 seconds. Elapsed time: 12.33 seconds; current allocated memory: 365.296 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 6 seconds. CPU system time: 1 seconds. Elapsed time: 8.492 seconds; current allocated memory: 365.280 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for v_vscaler with prefix bd_f134_vsc_0_.
 INFO: [VLOG 209-307] Generating Verilog RTL for v_vscaler with prefix bd_f134_vsc_0_.
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 101.88 MHz
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 51 seconds. CPU system time: 7 seconds. Elapsed time: 161.303 seconds; current allocated memory: 366.137 MB.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 34 seconds. CPU system time: 4 seconds. Elapsed time: 108.736 seconds; current allocated memory: 366.121 MB.
 INFO: [HLS 200-1510] Running: export_design -format ip_catalog -vendor xilinx.com -library ip -version 1.1 
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 
@@ -1094,11 +1092,11 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Thu Aug  4 15:06:15 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  4 15:58:43 2022...
 INFO: [HLS 200-802] Generated output file bd_f134_vsc_0/prj/impl/export.zip
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 5 seconds. CPU system time: 2 seconds. Elapsed time: 29.307 seconds; current allocated memory: 371.115 MB.
-INFO: [HLS 200-112] Total CPU user time: 61 seconds. Total CPU system time: 12 seconds. Total elapsed time: 199.509 seconds; peak allocated memory: 365.296 MB.
-INFO: [Common 17-206] Exiting vitis_hls at Thu Aug  4 15:06:17 2022...
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 19.263 seconds; current allocated memory: 371.135 MB.
+INFO: [HLS 200-112] Total CPU user time: 40 seconds. Total CPU system time: 6 seconds. Total elapsed time: 131.74 seconds; peak allocated memory: 365.280 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Thu Aug  4 15:58:44 2022...
 WARNING: [IP_Flow 19-1971] File named "hdl/verilog/bd_f134_vsc_0_AXIvideo2MultiPixStream.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
 WARNING: [IP_Flow 19-1971] File named "hdl/verilog/bd_f134_vsc_0_Block_split4_proc.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
 WARNING: [IP_Flow 19-1971] File named "hdl/verilog/bd_f134_vsc_0_CTRL_s_axi.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
@@ -1176,7 +1174,7 @@ WARNING: [IP_Flow 19-1971] File named "hdl/verilog/bd_f134_vsc_0_v_vscaler.v" al
 source C:/Xilinx/Vitis_HLS/2020.2/scripts/vitis_hls/hls.tcl -notrace
 INFO: Applying HLS Y2K22 patch v1.2 for IP revision
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'nao15' on host 'desktop-nhsh7s2' (Windows NT_amd64 version 6.2) on Thu Aug 04 15:06:22 -0400 2022
+INFO: [HLS 200-10] For user 'nao15' on host 'desktop-nhsh7s2' (Windows NT_amd64 version 6.2) on Thu Aug 04 15:58:47 -0400 2022
 INFO: [HLS 200-10] In directory 'C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1'
 Sourcing Tcl script 'C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/runhls.tcl'
 INFO: [HLS 200-1510] Running: open_project bd_f134_hsc_0 
@@ -1235,7 +1233,7 @@ WARNING: [HLS 200-484] The 'config_schedule -verbose' command is deprecated and 
 INFO: [HLS 200-1510] Running: config_rtl -prefix bd_f134_hsc_0_ 
 WARNING: [HLS 200-483] The 'config_rtl -prefix' command is deprecated and will be removed in a future release. Use 'config_rtl -module_prefix' as its replacement.
 INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.206 seconds; current allocated memory: 165.880 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.101 seconds; current allocated memory: 165.880 MB.
 INFO: [HLS 200-10] Analyzing design file 'c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_2/src/v_hscaler.cpp' ... 
 WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_hsc_0/prj/.autopilot/db/v_hscaler.cpp:156:3
 Resolution: For help on HLS 214-114 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=214-114.html
@@ -1359,7 +1357,7 @@ WARNING: [HLS 207-5514] extra token before variable expression is ignored: C:/Gi
 WARNING: [HLS 207-5514] extra token before variable expression is ignored: C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1499:38
 WARNING: [HLS 207-5514] extra token before variable expression is ignored: C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1696:38
 WARNING: [HLS 207-5514] extra token before variable expression is ignored: C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1739:38
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 58.148 seconds; current allocated memory: 172.608 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 54.532 seconds; current allocated memory: 172.608 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:283:50)
 INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:286:25)
@@ -1590,14 +1588,14 @@ INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_class.hls::Sca
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_class.hls::Scalars' into 'hscale_core_polyphase(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned short&, unsigned int&, unsigned char&, short (*) [6], ap_uint<9>*, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&) (.1)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_class.hls::Scalars' into 'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char const&, bool&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&) (.1)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_class.hls::Scalars' into 'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char const&, bool&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&) (.1)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4 seconds. CPU system time: 1 seconds. Elapsed time: 27.88 seconds; current allocated memory: 175.932 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.093 seconds; current allocated memory: 175.933 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 29.893 seconds; current allocated memory: 175.932 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.082 seconds; current allocated memory: 175.933 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.56 seconds; current allocated memory: 188.677 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.42 seconds; current allocated memory: 188.677 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 WARNING: [SYNCHK 200-23] C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_ref.h:414: variable-indexed range selection may cause suboptimal QoR.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.003 seconds; current allocated memory: 206.313 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.049 seconds; current allocated memory: 206.313 MB.
 WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'ColorMode' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_hsc_0/prj/.autopilot/db/v_hscaler.cpp:120) as it is incompatible with its interface mode 's_axilite'.
 INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_1342_1' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1342) in function 'MultiPixStream2AXIvideo' automatically.
 INFO: [XFORM 203-510] Pipelining loop 'loop_init_coeff_tap' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_hsc_0/prj/.autopilot/db/v_hscaler.cpp:611) in function 'hscale_core_polyphase' automatically.
@@ -1685,7 +1683,7 @@ INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (C:/GitHub/TheLe
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1244:2) in function 'AXIvideo2MultiPixStream'... converting 13 basic blocks.
 INFO: [XFORM 203-11] Balancing expressions in function 'v_vcresampler_core' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:145:9)...3 expression(s) balanced.
 INFO: [XFORM 203-11] Balancing expressions in function 'v_hcresampler_core' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1399)...6 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 4.145 seconds; current allocated memory: 247.606 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 4.292 seconds; current allocated memory: 247.606 MB.
 INFO: [XFORM 203-541] Flattening a loop nest 'loop_init_coeff_phase' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_hsc_0/prj/.autopilot/db/v_hscaler.cpp:608:11) in function 'hscale_core_polyphase'.
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_y.val.V[0]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1639).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_y.val.V[0]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1639).
@@ -1699,7 +1697,7 @@ INFO: [HLS 200-472] Inferring partial write operation for 'linebuf_c.val.V[1]' (
 INFO: [HLS 200-472] Inferring partial write operation for 'FiltCoeff[0][0]' (C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/bd_f134_hsc_0/prj/.autopilot/db/v_hscaler.cpp:614:36)
 WARNING: [HLS 200-1614] Cosimulation may deadlock if process AXIvideo2MultiPixStream has a streamed top-level array input and has predecessor processes. If a deadlock occurs, please consider converting the streamed array into an hls::stream or using '::common::get_param hls.config_cosim.top_streamed_array true' in the TCL script.
 WARNING: [HLS 200-1449] Process hscale_core_polyphase has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.687 seconds; current allocated memory: 367.937 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.826 seconds; current allocated memory: 367.937 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'v_hscaler' ...
 WARNING: [SYN 201-103] Legalizing function name 'v_hscaler.entry4' to 'v_hscaler_entry4'.
@@ -1741,13 +1739,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.761 seconds; current allocated memory: 368.229 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.815 seconds; current allocated memory: 368.229 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.184 seconds; current allocated memory: 368.282 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 368.282 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_hscaler_entry32' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1782,13 +1780,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.612 seconds; current allocated memory: 368.331 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.787 seconds; current allocated memory: 368.331 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.185 seconds; current allocated memory: 368.403 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.223 seconds; current allocated memory: 368.403 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'Block_split1_proc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1823,13 +1821,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.635 seconds; current allocated memory: 368.447 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.76 seconds; current allocated memory: 368.447 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.184 seconds; current allocated memory: 368.493 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 368.493 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'Block_split12_proc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1864,13 +1862,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.654 seconds; current allocated memory: 368.557 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.766 seconds; current allocated memory: 368.557 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.189 seconds; current allocated memory: 368.626 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.212 seconds; current allocated memory: 368.626 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'AXIvideo2MultiPixStream' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1911,13 +1909,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.805 seconds; current allocated memory: 368.863 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.881 seconds; current allocated memory: 368.862 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.239 seconds; current allocated memory: 369.209 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.275 seconds; current allocated memory: 369.209 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_hcresampler_core26' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1964,13 +1962,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.849 seconds; current allocated memory: 369.564 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.911 seconds; current allocated memory: 369.564 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.265 seconds; current allocated memory: 369.974 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.291 seconds; current allocated memory: 369.973 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'reg_ap_uint_9_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -2007,13 +2005,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.84 seconds; current allocated memory: 370.021 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.919 seconds; current allocated memory: 370.021 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 370.062 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.216 seconds; current allocated memory: 370.062 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'hscale_polyphase' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -2163,13 +2161,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.75 seconds; current allocated memory: 370.776 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.744 seconds; current allocated memory: 370.776 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.419 seconds; current allocated memory: 371.559 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.404 seconds; current allocated memory: 371.559 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'hscale_core_polyphase' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -2213,7 +2211,7 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.279 seconds; current allocated memory: 372.252 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.25 seconds; current allocated memory: 372.252 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
@@ -2225,7 +2223,7 @@ WARNING: [BIND 205-102] The specified resource core for memory 'FiltCoeff_4_0' w
 WARNING: [BIND 205-102] The specified resource core for memory 'FiltCoeff_5_0' will be ignored if a simpler one can be used.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.565 seconds; current allocated memory: 373.162 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.666 seconds; current allocated memory: 373.162 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_hcresampler_core' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -2272,13 +2270,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.312 seconds; current allocated memory: 373.520 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.384 seconds; current allocated memory: 373.520 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.294 seconds; current allocated memory: 373.943 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.317 seconds; current allocated memory: 373.943 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_vcresampler_core' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -2323,13 +2321,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.075 seconds; current allocated memory: 374.229 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.182 seconds; current allocated memory: 374.229 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.274 seconds; current allocated memory: 374.552 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.304 seconds; current allocated memory: 374.552 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvideo' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -2368,13 +2366,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.027 seconds; current allocated memory: 374.792 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.131 seconds; current allocated memory: 374.792 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.278 seconds; current allocated memory: 375.087 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.303 seconds; current allocated memory: 375.087 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_hscaler' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -2411,48 +2409,48 @@ INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
 WARNING: [HLS 200-1020] Increasing the depth of FIFO bPassThruHcr2_c (from Block_split12_proc_U0 to v_hcresampler_core_U0) to 6 to improve performance and/or avoid deadlocks.
 WARNING: [HLS 200-1020] Increasing the depth of FIFO bPassThruVcr_c (from Block_split12_proc_U0 to v_vcresampler_core_U0) to 7 to improve performance and/or avoid deadlocks.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.971 seconds; current allocated memory: 375.308 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.049 seconds; current allocated memory: 375.308 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.724 seconds; current allocated memory: 375.724 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.605 seconds; current allocated memory: 375.724 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_hscaler_entry4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_hscaler_entry4'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.76 seconds; current allocated memory: 375.816 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.793 seconds; current allocated memory: 375.816 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_hscaler_entry32' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_hscaler_entry32'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.255 seconds; current allocated memory: 376.013 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.267 seconds; current allocated memory: 376.013 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'Block_split1_proc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_split1_proc'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.251 seconds; current allocated memory: 376.235 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.265 seconds; current allocated memory: 376.235 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'Block_split12_proc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_split12_proc'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.254 seconds; current allocated memory: 376.467 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.276 seconds; current allocated memory: 376.467 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2MultiPixStream' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2MultiPixStream'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.32 seconds; current allocated memory: 377.212 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.336 seconds; current allocated memory: 377.212 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_hcresampler_core26' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_hcresampler_core26'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.495 seconds; current allocated memory: 378.899 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.506 seconds; current allocated memory: 378.899 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reg_ap_uint_9_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_ap_uint_9_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.677 seconds; current allocated memory: 380.418 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.73 seconds; current allocated memory: 380.417 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'hscale_polyphase' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -2464,28 +2462,28 @@ INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_16s_26s_27_4_1': 3 
 INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_16s_27s_27_4_1': 3 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mux_83_8_1_1': 3 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'hscale_polyphase'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.461 seconds; current allocated memory: 382.225 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.488 seconds; current allocated memory: 382.225 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'hscale_core_polyphase' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'hscale_core_polyphase'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.272 seconds; current allocated memory: 386.516 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.359 seconds; current allocated memory: 386.516 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_hcresampler_core' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_hcresampler_core'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.288 seconds; current allocated memory: 390.101 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.357 seconds; current allocated memory: 390.101 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_vcresampler_core' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_vcresampler_core'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.683 seconds; current allocated memory: 392.199 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.71 seconds; current allocated memory: 392.198 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvideo' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Generating core module 'mux_32_8_1_1': 3 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvideo'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.633 seconds; current allocated memory: 393.971 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.675 seconds; current allocated memory: 393.971 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_hscaler' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -2515,7 +2513,7 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'v_hscaler/m_axis_video_V_d
 INFO: [RTGEN 206-500] Setting interface mode on function 'v_hscaler' to 's_axilite & ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Bundling port 'Height', 'WidthIn', 'WidthOut', 'ColorMode', 'PixelRate', 'ColorModeOut', 'hfltCoeff', 'phasesH' to AXI-Lite port CTRL.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_hscaler'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.157 seconds; current allocated memory: 396.061 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.242 seconds; current allocated memory: 396.061 MB.
 INFO: [RTMG 210-278] Implementing memory 'bd_f134_hsc_0_hscale_core_polyphase_FiltCoeff_0_0_ram (RAM_1P_LUTRAM)' using distributed RAMs.
 INFO: [RTMG 210-278] Implementing memory 'bd_f134_hsc_0_v_vcresampler_core_linebuf_y_val_V_0_ram (RAM)' using auto RAMs.
 INFO: [RTMG 210-278] Implementing memory 'bd_f134_hsc_0_v_vcresampler_core_linebuf_c_val_V_0_ram (RAM)' using auto RAMs.
@@ -2537,12 +2535,12 @@ INFO: [RTMG 210-285] Implementing FIFO 'start_for_AXIvideo2MultiPixStream_U0_U(b
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_hcresampler_core_U0_U(bd_f134_hsc_0_start_for_v_hcresampler_core_U0)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_vcresampler_core_U0_U(bd_f134_hsc_0_start_for_v_vcresampler_core_U0)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_MultiPixStream2AXIvideo_U0_U(bd_f134_hsc_0_start_for_MultiPixStream2AXIvideo_U0)' using Shift Registers.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 7 seconds. CPU system time: 2 seconds. Elapsed time: 7.677 seconds; current allocated memory: 402.470 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 11 seconds. CPU system time: 2 seconds. Elapsed time: 11.007 seconds; current allocated memory: 402.446 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for v_hscaler with prefix bd_f134_hsc_0_.
 INFO: [VLOG 209-307] Generating Verilog RTL for v_hscaler with prefix bd_f134_hsc_0_.
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 101.88 MHz
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 41 seconds. CPU system time: 5 seconds. Elapsed time: 129.541 seconds; current allocated memory: 403.624 MB.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 47 seconds. CPU system time: 5 seconds. Elapsed time: 133.222 seconds; current allocated memory: 403.616 MB.
 INFO: [HLS 200-1510] Running: export_design -format ip_catalog -vendor xilinx.com -library ip -version 1.1 
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 
@@ -2555,11 +2553,11 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Thu Aug  4 15:08:53 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  4 16:01:24 2022...
 INFO: [HLS 200-802] Generated output file bd_f134_hsc_0/prj/impl/export.zip
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 16.815 seconds; current allocated memory: 408.611 MB.
-INFO: [HLS 200-112] Total CPU user time: 49 seconds. Total CPU system time: 8 seconds. Total elapsed time: 152.379 seconds; peak allocated memory: 402.470 MB.
-INFO: [Common 17-206] Exiting vitis_hls at Thu Aug  4 15:08:54 2022...
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 4 seconds. CPU system time: 1 seconds. Elapsed time: 20.051 seconds; current allocated memory: 408.582 MB.
+INFO: [HLS 200-112] Total CPU user time: 55 seconds. Total CPU system time: 8 seconds. Total elapsed time: 158.653 seconds; peak allocated memory: 402.446 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Thu Aug  4 16:01:25 2022...
 WARNING: [IP_Flow 19-1971] File named "hdl/verilog/bd_f134_hsc_0_AXIvideo2MultiPixStream.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
 WARNING: [IP_Flow 19-1971] File named "hdl/verilog/bd_f134_hsc_0_Block_split1_proc.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
 WARNING: [IP_Flow 19-1971] File named "hdl/verilog/bd_f134_hsc_0_Block_split12_proc.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
@@ -2593,7 +2591,7 @@ WARNING: [IP_Flow 19-1971] File named "hdl/verilog/bd_f134_hsc_0_start_for_Block
 WARNING: [IP_Flow 19-1971] File named "hdl/verilog/bd_f134_hsc_0_start_for_MultiPixStream2AXIvideo_U0.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
 WARNING: [IP_Flow 19-1971] File named "hdl/verilog/bd_f134_hsc_0_start_for_v_hcresampler_core_U0.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
 INFO: [Common 17-14] Message 'IP_Flow 19-1971' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-compile_c: Time (s): cpu = 00:00:01 ; elapsed = 00:06:02 . Memory (MB): peak = 1087.871 ; gain = 0.000
+compile_c: Time (s): cpu = 00:00:00 ; elapsed = 00:04:56 . Memory (MB): peak = 1082.262 ; gain = 0.000
 Command: synth_design -top Exercice2_bd_wrapper -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
@@ -2601,9 +2599,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 46744
+INFO: [Synth 8-7075] Helper process launched with PID 34320
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1164.520 ; gain = 76.648
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1162.797 ; gain = 80.535
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Exercice2_bd_wrapper' [C:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/hdl/Exercice2_bd_wrapper.v:12]
 INFO: [Synth 8-638] synthesizing module 'Exercice2_bd' [c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/synth/Exercice2_bd.vhd:75]
@@ -4481,8 +4479,7 @@ INFO: [Synth 8-638] synthesizing module 'Exercice2_bd_testPatternGenerator_0_0' 
 INFO: [Synth 8-3491] module 'testPatternGenerator' declared at 'C:/GitHub/TheLegendOfSherby/jeu/Atelier2.srcs/sources_1/imports/new/testPatternGenerator.vhd:34' bound to instance 'U0' of component 'testPatternGenerator' [c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_testPatternGenerator_0_0/synth/Exercice2_bd_testPatternGenerator_0_0.vhd:107]
 INFO: [Synth 8-638] synthesizing module 'testPatternGenerator' [C:/GitHub/TheLegendOfSherby/jeu/Atelier2.srcs/sources_1/imports/new/testPatternGenerator.vhd:48]
 WARNING: [Synth 8-614] signal 'rstn' is read in the process but is not in the sensitivity list [C:/GitHub/TheLegendOfSherby/jeu/Atelier2.srcs/sources_1/imports/new/testPatternGenerator.vhd:58]
-WARNING: [Synth 8-614] signal 'i_colorDataA' is read in the process but is not in the sensitivity list [C:/GitHub/TheLegendOfSherby/jeu/Atelier2.srcs/sources_1/imports/new/testPatternGenerator.vhd:103]
-WARNING: [Synth 8-614] signal 'i_colorDataB' is read in the process but is not in the sensitivity list [C:/GitHub/TheLegendOfSherby/jeu/Atelier2.srcs/sources_1/imports/new/testPatternGenerator.vhd:103]
+WARNING: [Synth 8-614] signal 'i_colorDataB' is read in the process but is not in the sensitivity list [C:/GitHub/TheLegendOfSherby/jeu/Atelier2.srcs/sources_1/imports/new/testPatternGenerator.vhd:127]
 INFO: [Synth 8-256] done synthesizing module 'testPatternGenerator' (179#1) [C:/GitHub/TheLegendOfSherby/jeu/Atelier2.srcs/sources_1/imports/new/testPatternGenerator.vhd:48]
 INFO: [Synth 8-256] done synthesizing module 'Exercice2_bd_testPatternGenerator_0_0' (180#1) [c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_testPatternGenerator_0_0/synth/Exercice2_bd_testPatternGenerator_0_0.vhd:70]
 INFO: [Synth 8-3491] module 'Exercice2_bd_v_axi4s_vid_out_0_0' declared at 'c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_axi4s_vid_out_0_0/synth/Exercice2_bd_v_axi4s_vid_out_0_0.v:58' bound to instance 'v_axi4s_vid_out_0' of component 'Exercice2_bd_v_axi4s_vid_out_0_0' [c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/synth/Exercice2_bd.vhd:1235]
@@ -5857,20 +5854,20 @@ WARNING: [Synth 8-7071] port 'jc_pin9_o' of module 'Exercice2_bd' is unconnected
 WARNING: [Synth 8-7071] port 'jc_pin9_t' of module 'Exercice2_bd' is unconnected for instance 'Exercice2_bd_i' [C:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/hdl/Exercice2_bd_wrapper.v:96]
 WARNING: [Synth 8-7023] instance 'Exercice2_bd_i' of module 'Exercice2_bd' has 52 connections declared, but only 27 given [C:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/hdl/Exercice2_bd_wrapper.v:96]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 1791.094 ; gain = 703.223
+Finished RTL Elaboration : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 1788.176 ; gain = 705.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 1793.840 ; gain = 705.969
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 1788.176 ; gain = 705.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 1793.840 ; gain = 705.969
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 1788.176 ; gain = 705.914
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2077.336 ; gain = 17.445
+Netlist sorting complete. Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2070.410 ; gain = 18.168
 INFO: [Netlist 29-17] Analyzing 348 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -6022,7 +6019,7 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/Exercice2_bd
 INFO: [Project 1-1715] 8 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2552.664 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2545.551 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 342 instances were transformed.
   FD => FDRE: 11 instances
@@ -6030,16 +6027,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDRSE => FDRSE (FDRE, LUT4, VCC): 17 instances
   SRL16 => SRL16E: 6 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.679 . Memory (MB): peak = 2552.664 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.647 . Memory (MB): peak = 2545.551 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:50 ; elapsed = 00:01:58 . Memory (MB): peak = 2552.664 ; gain = 1464.793
+Finished Constraint Validation : Time (s): cpu = 00:01:49 ; elapsed = 00:01:54 . Memory (MB): peak = 2545.551 ; gain = 1463.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:50 ; elapsed = 00:01:58 . Memory (MB): peak = 2552.664 ; gain = 1464.793
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:49 ; elapsed = 00:01:54 . Memory (MB): peak = 2545.551 ; gain = 1463.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -6258,7 +6255,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for Exercice2_bd_i/v_proc_ss_0/U0/axi
 Applied set_property KEEP_HIERARCHY = SOFT for Exercice2_bd_i/v_axi4s_vid_out_0/inst/COUPLER_INST/\generate_sync_fifo.FIFO_INST /XPM_FIFO_SYNC_INST. (constraint file  auto generated constraint).
 Applied set_property KEEP = true for sys_clock. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:52 ; elapsed = 00:01:59 . Memory (MB): peak = 2552.664 ; gain = 1464.793
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:50 ; elapsed = 00:01:56 . Memory (MB): peak = 2545.551 ; gain = 1463.289
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment__parameterized0'
@@ -6559,7 +6556,7 @@ INFO: [Synth 8-3971] The signal "bd_f134_hsc_0_CTRL_s_axi_ram:/gen_write[1].mem_
 INFO: [Synth 8-3971] The signal "bd_f134_hsc_0_CTRL_s_axi_ram__parameterized0:/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
 INFO: [Synth 8-3971] The signal "bd_f134_vsc_0_CTRL_s_axi_ram:/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:14 ; elapsed = 00:02:23 . Memory (MB): peak = 2552.664 ; gain = 1464.793
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:10 ; elapsed = 00:02:17 . Memory (MB): peak = 2545.551 ; gain = 1463.289
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'Exercice2_bd_i/v_proc_ss_0/U0/hsc/inst/MultiPixStream2AXIvideo_U0/regslice_both_AXI_video_strm_V_id_V_U' (bd_f134_hsc_0_regslice_both__parameterized1) to 'Exercice2_bd_i/v_proc_ss_0/U0/hsc/inst/MultiPixStream2AXIvideo_U0/regslice_both_AXI_video_strm_V_dest_V_U'
 INFO: [Synth 8-223] decloning instance 'Exercice2_bd_i/v_proc_ss_0/U0/vsc/inst/MultiPixStream2AXIvideo_U0/regslice_both_AXI_video_strm_V_id_V_U' (bd_f134_vsc_0_regslice_both__parameterized1) to 'Exercice2_bd_i/v_proc_ss_0/U0/vsc/inst/MultiPixStream2AXIvideo_U0/regslice_both_AXI_video_strm_V_dest_V_U'
@@ -6666,7 +6663,7 @@ Detailed RTL Component Info :
 	  10 Input   32 Bit        Muxes := 1     
 	   4 Input   32 Bit        Muxes := 5     
 	  13 Input   32 Bit        Muxes := 1     
-	   2 Input   24 Bit        Muxes := 27    
+	   2 Input   24 Bit        Muxes := 26    
 	   2 Input   17 Bit        Muxes := 1     
 	   2 Input   16 Bit        Muxes := 4     
 	   2 Input   15 Bit        Muxes := 1     
@@ -7056,7 +7053,7 @@ INFO: [Synth 8-3971] The signal "Exercice2_bd_i/v_proc_ss_0/U0/hsc/inst/CTRL_s_a
 INFO: [Synth 8-3971] The signal "Exercice2_bd_i/v_proc_ss_0/U0/vsc/inst/CTRL_s_axi_U/int_vfltCoeff/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
 INFO: [Synth 8-5784] Optimized 1 bits of RAM "gen_wr_a.gen_word_narrow.mem_reg" due to constant propagation. Old ram width 27 bits, new ram width 26 bits.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:28 ; elapsed = 00:03:40 . Memory (MB): peak = 2552.664 ; gain = 1464.793
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:19 ; elapsed = 00:03:29 . Memory (MB): peak = 2545.551 ; gain = 1463.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -7170,13 +7167,13 @@ Start Applying XDC Timing Constraints
 WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 47 of c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0.xdc. [c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0.xdc:47]
 WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 47 of c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_gpio_0_0/PmodJSTK2_axi_gpio_0_0.xdc. [c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_gpio_0_0/PmodJSTK2_axi_gpio_0_0.xdc:47]
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:41 ; elapsed = 00:03:54 . Memory (MB): peak = 2552.664 ; gain = 1464.793
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:33 ; elapsed = 00:03:42 . Memory (MB): peak = 2545.551 ; gain = 1463.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:03:46 ; elapsed = 00:03:59 . Memory (MB): peak = 2552.664 ; gain = 1464.793
+Finished Timing Optimization : Time (s): cpu = 00:03:37 ; elapsed = 00:03:46 . Memory (MB): peak = 2545.551 ; gain = 1463.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -7258,7 +7255,7 @@ INFO: [Synth 8-7052] The timing for the instance Exercice2_bd_i/v_proc_ss_0/U0/v
 INFO: [Synth 8-7052] The timing for the instance Exercice2_bd_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/LineBuf_val_V_5_U/bd_f134_vsc_0_vscale_core_polyphase_LineBuf_val_V_0_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance Exercice2_bd_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/LineBuf_val_V_5_U/bd_f134_vsc_0_vscale_core_polyphase_LineBuf_val_V_0_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:58 ; elapsed = 00:04:14 . Memory (MB): peak = 2552.664 ; gain = 1464.793
+Finished Technology Mapping : Time (s): cpu = 00:03:49 ; elapsed = 00:04:01 . Memory (MB): peak = 2545.551 ; gain = 1463.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -7277,37 +7274,37 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3295] tying undriven pin CDC_SINGLE_REMAP_UNDERFLOW_INST/xpm_cdc_single_inst:src_in to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:04:03 ; elapsed = 00:04:19 . Memory (MB): peak = 2552.664 ; gain = 1464.793
+Finished IO Insertion : Time (s): cpu = 00:03:53 ; elapsed = 00:04:06 . Memory (MB): peak = 2545.551 ; gain = 1463.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:04:03 ; elapsed = 00:04:19 . Memory (MB): peak = 2552.664 ; gain = 1464.793
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:53 ; elapsed = 00:04:06 . Memory (MB): peak = 2545.551 ; gain = 1463.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:05 ; elapsed = 00:04:21 . Memory (MB): peak = 2552.664 ; gain = 1464.793
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:56 ; elapsed = 00:04:09 . Memory (MB): peak = 2545.551 ; gain = 1463.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:04:05 ; elapsed = 00:04:21 . Memory (MB): peak = 2552.664 ; gain = 1464.793
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:56 ; elapsed = 00:04:09 . Memory (MB): peak = 2545.551 ; gain = 1463.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:04:06 ; elapsed = 00:04:22 . Memory (MB): peak = 2552.664 ; gain = 1464.793
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:57 ; elapsed = 00:04:09 . Memory (MB): peak = 2545.551 ; gain = 1463.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:04:06 ; elapsed = 00:04:22 . Memory (MB): peak = 2552.664 ; gain = 1464.793
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:57 ; elapsed = 00:04:09 . Memory (MB): peak = 2545.551 ; gain = 1463.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -7375,7 +7372,7 @@ Report Cell Usage:
 |4     |DSP48E1    |    36|
 |7     |LUT1       |   577|
 |8     |LUT2       |   763|
-|9     |LUT3       |  1624|
+|9     |LUT3       |  1600|
 |10    |LUT4       |  1407|
 |11    |LUT5       |  1257|
 |12    |LUT6       |  1686|
@@ -7400,18 +7397,18 @@ Report Cell Usage:
 |37    |OBUFDS     |     4|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:04:06 ; elapsed = 00:04:22 . Memory (MB): peak = 2552.664 ; gain = 1464.793
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:57 ; elapsed = 00:04:09 . Memory (MB): peak = 2545.551 ; gain = 1463.289
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:24 ; elapsed = 00:03:22 . Memory (MB): peak = 2552.664 ; gain = 705.969
-Synthesis Optimization Complete : Time (s): cpu = 00:04:06 ; elapsed = 00:04:22 . Memory (MB): peak = 2552.664 ; gain = 1464.793
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:15 ; elapsed = 00:03:11 . Memory (MB): peak = 2545.551 ; gain = 705.914
+Synthesis Optimization Complete : Time (s): cpu = 00:03:57 ; elapsed = 00:04:10 . Memory (MB): peak = 2545.551 ; gain = 1463.289
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2552.664 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2545.551 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 648 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2552.664 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2545.551 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 296 instances were transformed.
   FD => FDRE: 1 instance 
@@ -7421,11 +7418,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRL16 => SRL16E: 6 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-728 Infos, 211 Warnings, 21 Critical Warnings and 0 Errors encountered.
+728 Infos, 210 Warnings, 21 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:04:26 ; elapsed = 00:04:49 . Memory (MB): peak = 2552.664 ; gain = 1464.793
+synth_design: Time (s): cpu = 00:04:15 ; elapsed = 00:04:32 . Memory (MB): peak = 2545.551 ; gain = 1463.289
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/Exercice2_bd_wrapper.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2552.664 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2545.551 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file Exercice2_bd_wrapper_utilization_synth.rpt -pb Exercice2_bd_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Aug  4 15:13:50 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  4 16:06:04 2022...
