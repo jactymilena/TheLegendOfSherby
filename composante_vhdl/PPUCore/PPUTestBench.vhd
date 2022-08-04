@@ -78,7 +78,7 @@ tb : PROCESS
    BEGIN
    d_reset <= '1';
    s_enable <= '1';
-   
+   wait;
    end process;
    
    process
