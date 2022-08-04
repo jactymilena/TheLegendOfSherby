@@ -82,16 +82,16 @@ component actor_manager is
            i_set_actor_y        : in STD_LOGIC_VECTOR (8 downto 0);
            i_actor_id           : in STD_LOGIC_VECTOR (3 downto 0);
            i_tile_id            : in STD_LOGIC_VECTOR  (7 downto 0);
-           o_actor_actif        : in STD_LOGIC;
            i_actorSetPos_we     : in STD_LOGIC;
            i_actorSetActive_we  : in STD_LOGIC;
            i_actorSetTile_we    : in STD_LOGIC;
            i_actorBuffer_we     : in STD_LOGIC;
-           o_color_code         : out STD_ULOGIC_VECTOR (7 downto 0));
+           o_actor_actif        : out STD_LOGIC;
+           o_color_code         : out STD_ULOGIC_VECTOR (3 downto 0));
 end component;
 
 component color_converter is
-    Port ( code : in STD_LOGIC_VECTOR (3 downto 0);
+    Port ( code : in STD_ULOGIC_VECTOR (3 downto 0);
            color : out STD_LOGIC_VECTOR (23 downto 0));
 end component;
 
@@ -103,7 +103,7 @@ component testPatternGenerator is
            m_axis_tvalid : out std_logic;
            m_axis_tdata  : out std_logic_vector(23 downto 0);
            m_axis_tready : in std_logic;
-           i_colorDataA  : in std_logic_vector(31 downto 0);
+           i_colorDataA  : in std_logic_vector(23 downto 0);
            i_scrollX     : in std_logic_vector (8 downto 0);
            i_scrollY     : in std_logic_vector (8 downto 0);
            o_globalX     : out std_logic_vector (8 downto 0);
@@ -194,7 +194,7 @@ begin
                         s_mux_In1_bg_colorCode;
     inst_color_converter : color_converter
     port map (
-    code => to_stdlogicvector(s_codeColor_FINAL),
+    code => s_codeColor_FINAL,
     color => s_couleur
     );
     
