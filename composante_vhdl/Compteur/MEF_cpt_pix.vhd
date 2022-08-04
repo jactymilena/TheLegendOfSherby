@@ -37,8 +37,8 @@ entity MEF_cpt_pix is
            i_clk : in STD_LOGIC;
            i_OffsetX : in STD_LOGIC_VECTOR (8 downto 0);
            i_OffsetY : in STD_LOGIC_VECTOR (8 downto 0);
-           i_cpt256 : in STD_LOGIC_VECTOR (8 downto 0);
-           i_cpt224 : in STD_LOGIC_VECTOR (8 downto 0);
+           i_cpt256 : in STD_LOGIC_VECTOR (7 downto 0);
+           i_cpt224 : in STD_LOGIC_VECTOR (7 downto 0);
            o_en256 : out STD_LOGIC;
            o_en224 : out STD_LOGIC;
            o_rst256 : out STD_LOGIC;
@@ -74,7 +74,7 @@ begin
     end process;
 
 -- conditions de transitions
-transitions: process(i_en, i_OffsetX , i_OffsetY, current_state, i_cpt224, i_cpt256 )
+transitions: process(i_en,current_state, i_cpt224, i_cpt256 )
 begin
    case current_state is
         when init => 
@@ -108,9 +108,9 @@ begin
             if i_en = '0' then
                 next_state <= init;
             elsif i_en = '1' then
-                if i_cpt256 < "011111111" then
+                if (i_cpt256 < "11111111") then
                     next_state <= idle;
-                elsif i_cpt256 = "011111111" then
+                elsif (i_cpt256 = "11111111") then
                     next_state <= end_line;
                 else
                     next_state <= init;
@@ -123,9 +123,9 @@ begin
             if i_en = '0' then
                 next_state <= init;
             elsif i_en = '1' then
-                if i_cpt224 < "011011111" then
+                if i_cpt224 < "11011111" then
                     next_state <= start_line;
-                elsif i_cpt224 = "011011111" then
+                elsif i_cpt224 = "11011111" then
                     next_state <= end_frame;
                 else
                     next_state <= init;
@@ -150,9 +150,9 @@ end process;
   case current_state is
         when init =>
            o_en224 <= '0';
-           o_rst224 <= '0';
+           o_rst224 <= '1';
            o_en256 <= '0';
-           o_rst256 <= '0';
+           o_rst256 <= '1';
            o_PositionX <= "000000000";
            o_PositionY <= "000000000";
         when start_frame =>

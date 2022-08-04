@@ -38,6 +38,7 @@ end Background_Manager_TB;
 architecture Behavioral of Background_Manager_TB is
 signal   d_clk_p, d_reset       :  std_logic := '0';
  constant c_clk_p_Period      : time :=  20 ns;  -- 50 MHz 
+ constant c_clk_16pixel      : time :=  480 ns;  -- 50 MHz 
 signal s_PositionX, s_PositionY :  STD_LOGIC_VECTOR (8 downto 0);
 signal s_setTileId: STD_LOGIC_VECTOR (7 downto 0);
 signal s_setTileX, s_setTileY : STD_LOGIC_VECTOR (8 downto 0);
