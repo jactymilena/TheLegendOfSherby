@@ -294,6 +294,8 @@ void Background::setMapIndex(int index)
 
 int Background::getNextTile() {
 	tileIndex++;
+	if(tileIndex == 57344)
+		tileIndex = 0;
 	return this->backgrounds[mapIndex][tileIndex];
 }
 

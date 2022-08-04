@@ -10,9 +10,9 @@
 
 void displayMap(Background* backgroundManager, int mapIndex) {
     backgroundManager->setMapIndex(mapIndex);
-    for(int y = 0; y < 32; y++) {
-    	for(int x = 0; x < 32; x++) {
-        	API::sendBackgroundGlobalOpcode(API::SET_POST_BACKGROUND, backgroundManager->getNextTile(), x * 16, y * 16);
+    for(int y = 0; y < 256; y++) {
+    	for(int x = 0; x < 224; x++) {
+        	API::sendBackgroundGlobalOpcode(API::SET_POST_BACKGROUND, backgroundManager->getNextTile(), x, y);
     	}
     }
 }
@@ -24,7 +24,7 @@ int main() {
     int counter = 0;
     double time = 1.0/60.0;
 
-    long tick = time * 667000000;
+    long tick = time ;//* 667000000;
 
     int colorA = 0x00000000;
     int colorB = 0x0000FF00;
@@ -32,19 +32,21 @@ int main() {
 
     // ajout du background
     Background* backgroundManager = Background::getBackgroundManager();
+    backgroundManager->setMapIndex(0);
 
-	 displayMap(backgroundManager, 0);/*
+	 //displayMap(backgroundManager, 0);
     while (1) {
 
-	 	 //displayMap(backgroundManager, 0);
-    	 if (counter == tick) {
-    		 displayMap(backgroundManager, 0);
+    	 if (counter == 11116666) {
+    		 //displayMap(backgroundManager, 0);
 			//MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_1_S00_AXI_BASEADDR, 4, colorA);
 			//colorA = colorA + 0x200;
+
+    		Xil_Out32((INSTRUCTION_BASEADDR) + (4), (u32)(backgroundManager->getNextTile()));
 			counter = 0;
     	}
     	counter++;
-    }*/
+    }
 
     return 0;
 }
