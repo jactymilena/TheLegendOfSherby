@@ -34,13 +34,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity PPU is
     Port ( i_instruction : in STD_LOGIC_VECTOR (31 downto 0) ;
            clk          : in std_logic;
-           o_couleur : out STD_LOGIC_VECTOR (23 downto 0);
-           o_control : out STD_LOGIC_VECTOR (3 downto 0));
+           m_axis_tuser  : out std_logic;
+            m_axis_tlast  : out std_logic;
+            m_axis_tvalid : out std_logic;
+           o_couleur : out STD_LOGIC_VECTOR (23 downto 0)
+           );
+         --  o_control : out STD_LOGIC_VECTOR (3 downto 0));
 end PPU;
 
 architecture Behavioral of PPU is
 component PPUCore
-port ( i_instruction : in STD_LOGIC_VECTOR (31 downto 0);
+port (     i_instruction : in STD_LOGIC_VECTOR (31 downto 0);
            o_control : out STD_LOGIC_VECTOR (31 downto 27);
            o_actor_x : out STD_LOGIC_VECTOR (17 downto 9);
            o_actor_y : out STD_LOGIC_VECTOR (8 downto 0);
@@ -59,15 +63,6 @@ port ( i_opcode : in STD_LOGIC_VECTOR (31 downto 27);
            o_actorSetTile_we      : out STD_LOGIC;
            o_backgroundTile_XY_we : out STD_LOGIC;
            o_actorBuffer_we       : out STD_LOGIC);
-end component;
-component compteur_pixel is
-   Port ( i_reset : in STD_LOGIC;
-      --     i_enable : in STD_LOGIC;
-           i_clk : in STD_LOGIC;
-   --        i_scrollX  :in std_logic_vector(8 downto 0);
-   --        i_scrollY  :in std_logic_vector(8 downto 0);
-           o_PositionX : out STD_LOGIC_VECTOR (8 downto 0);
-           o_PositionY : out STD_LOGIC_VECTOR (8 downto 0));
 end component;
 component BackgroundManager is
     Port ( clk      : in std_ulogic;
@@ -100,13 +95,21 @@ component color_converter is
            color : out STD_LOGIC_VECTOR (23 downto 0));
 end component;
 
-component frame_printer is
-    Port ( PositionX : in STD_LOGIC_VECTOR (8 downto 0);
-           PositionY : in STD_LOGIC_VECTOR (8 downto 0);
-           i_clk: in STD_LOGIC;
-           i_rst: in STD_LOGIC;
-           i_en: in STD_LOGIC;
-           control : out STD_LOGIC_VECTOR (3 downto 0));
+component testPatternGenerator is
+    Port ( clk           : in STD_LOGIC ;
+           rstn          : in std_logic;
+           m_axis_tuser  : out std_logic;
+           m_axis_tlast  : out std_logic;
+           m_axis_tvalid : out std_logic;
+           m_axis_tdata  : out std_logic_vector(23 downto 0);
+           m_axis_tready : in std_logic;
+           i_colorDataA  : in std_logic_vector(31 downto 0);
+           i_scrollX     : in std_logic_vector (8 downto 0);
+           i_scrollY     : in std_logic_vector (8 downto 0);
+           o_globalX     : out std_logic_vector (8 downto 0);
+           o_globalY     : out std_logic_vector (8 downto 0)
+        --   i_colorDataB : in std_logic_vector(31 downto 0)
+);
 end component;
 
 signal s_control: std_logic_vector (4 downto 0);
@@ -117,6 +120,7 @@ signal s_bgTile_WE : std_logic;
 
 -- compteur Pixel
 signal s_global_cmp_x, s_global_cmp_y :STD_LOGIC_VECTOR (8 downto 0);
+signal s_couleur : std_logic_vector(23 downto 0);
 
 -- code Couleur
 signal s_codeColor_FINAL : std_ulogic_vector(3 downto 0);
@@ -156,16 +160,7 @@ begin
         o_backgroundTile_XY_we => s_bgTile_WE,
         o_actorBuffer_we      => s_actor_Buffer_WE
     );
-    inst_compteur_pixel: compteur_pixel
-    port map(
-    i_reset     => '1',
---    i_enable    =>
-    i_clk       => clk,
-  --  i_scrollX   =>
- --   i_scrollY   => 
-    o_PositionX => s_global_cmp_x,
-    o_PositionY => s_global_cmp_y
-    );
+    
     inst_background: BackgroundManager
     port map(
         clk        => clk,
@@ -200,7 +195,23 @@ begin
     inst_color_converter : color_converter
     port map (
     code => to_stdlogicvector(s_codeColor_FINAL),
-    color => o_couleur
+    color => s_couleur
+    );
+    
+    inst_patternGenerator : testPatternGenerator
+    port map(
+    clk            => clk,
+    rstn           => '1',
+    m_axis_tuser   => m_axis_tuser,
+    m_axis_tlast   => m_axis_tlast,
+    m_axis_tvalid  => m_axis_tvalid,
+    m_axis_tdata   => o_couleur,
+    m_axis_tready  => '1',
+    i_colorDataA   => s_couleur,
+    i_scrollX      =>  "000000000",
+    i_scrollY      =>  "000000000",
+    o_globalX      => s_global_cmp_x,
+    o_globalY      => s_global_cmp_y
     );
     
 end Behavioral;
