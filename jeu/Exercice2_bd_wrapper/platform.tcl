@@ -21,3 +21,18 @@ domain active {standalone_ps7_cortexa9_0}
 platform generate -quick
 catch {platform remove Exercice2_bd_wrapper_1}
 platform generate
+platform clean
+platform generate
+platform clean
+platform create -name {Exercice2_bd_wrapper}\
+-hw {C:\GitHub\TheLegendOfSherby\jeu\Exercice2_bd_wrapper.xsa}\
+-fsbl-target {psu_cortexa53_0} -out {C:/GitHub/TheLegendOfSherby/jeu}
+
+platform write
+domain create -name {standalone_ps7_cortexa9_0} -display-name {standalone_ps7_cortexa9_0} -os {standalone} -proc {ps7_cortexa9_0} -runtime {cpp} -arch {32-bit} -support-app {empty_application}
+platform generate -domains 
+platform active {Exercice2_bd_wrapper}
+domain active {zynq_fsbl}
+domain active {standalone_ps7_cortexa9_0}
+platform generate -quick
+platform generate

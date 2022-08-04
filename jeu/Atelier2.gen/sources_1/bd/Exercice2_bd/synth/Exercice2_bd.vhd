@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Mon Aug  1 23:28:31 2022
+--Date        : Thu Aug  4 12:11:21 2022
 --Host        : DESKTOP-NHSH7S2 running 64-bit major release  (build 9200)
 --Command     : generate_target Exercice2_bd.bd
 --Design      : Exercice2_bd
@@ -413,19 +413,6 @@ architecture STRUCTURE of Exercice2_bd is
     M04_AXI_rready : out STD_LOGIC
   );
   end component Exercice2_bd_smartconnect_0_0;
-  component Exercice2_bd_testPatternGenerator_0_0 is
-  port (
-    clk : in STD_LOGIC;
-    rstn : in STD_LOGIC;
-    m_axis_tuser : out STD_LOGIC;
-    m_axis_tlast : out STD_LOGIC;
-    m_axis_tvalid : out STD_LOGIC;
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
-    m_axis_tready : in STD_LOGIC;
-    i_colorDataA : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    i_colorDataB : in STD_LOGIC_VECTOR ( 31 downto 0 )
-  );
-  end component Exercice2_bd_testPatternGenerator_0_0;
   component Exercice2_bd_myColorRegister_1_1 is
   port (
     o_imageDataA : out STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -542,6 +529,19 @@ architecture STRUCTURE of Exercice2_bd is
     s_axi_aresetn : in STD_LOGIC
   );
   end component Exercice2_bd_PmodJSTK2_0_2;
+  component Exercice2_bd_testPatternGenerator_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    rstn : in STD_LOGIC;
+    m_axis_tuser : out STD_LOGIC;
+    m_axis_tlast : out STD_LOGIC;
+    m_axis_tvalid : out STD_LOGIC;
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    m_axis_tready : in STD_LOGIC;
+    i_colorDataA : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    i_colorDataB : in STD_LOGIC_VECTOR ( 31 downto 0 )
+  );
+  end component Exercice2_bd_testPatternGenerator_0_0;
   signal PmodJSTK2_0_Pmod_out_PIN10_I : STD_LOGIC;
   signal PmodJSTK2_0_Pmod_out_PIN10_O : STD_LOGIC;
   signal PmodJSTK2_0_Pmod_out_PIN10_T : STD_LOGIC;
@@ -795,30 +795,30 @@ architecture STRUCTURE of Exercice2_bd is
   attribute X_INTERFACE_INFO of FIXED_IO_ps_srstb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
   attribute X_INTERFACE_INFO of hdmi_out_clk_n : signal is "digilentinc.com:interface:tmds:1.0 hdmi_out CLK_N";
   attribute X_INTERFACE_INFO of hdmi_out_clk_p : signal is "digilentinc.com:interface:tmds:1.0 hdmi_out CLK_P";
-  attribute X_INTERFACE_INFO of jc_pin10_i : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin10_o : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin10_t : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin1_i : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin1_o : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin1_t : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin2_i : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin2_o : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin2_t : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin3_i : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin3_o : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin3_t : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin4_i : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin4_o : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin4_t : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin7_i : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin7_o : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin7_t : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin8_i : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin8_o : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin8_t : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin9_i : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin9_o : signal is "digilentinc.com:interface:pmod:1.0 jc ";
-  attribute X_INTERFACE_INFO of jc_pin9_t : signal is "digilentinc.com:interface:pmod:1.0 jc ";
+  attribute X_INTERFACE_INFO of jc_pin10_i : signal is "digilentinc.com:interface:pmod:1.0 jc PIN10_I";
+  attribute X_INTERFACE_INFO of jc_pin10_o : signal is "digilentinc.com:interface:pmod:1.0 jc PIN10_O";
+  attribute X_INTERFACE_INFO of jc_pin10_t : signal is "digilentinc.com:interface:pmod:1.0 jc PIN10_T";
+  attribute X_INTERFACE_INFO of jc_pin1_i : signal is "digilentinc.com:interface:pmod:1.0 jc PIN1_I";
+  attribute X_INTERFACE_INFO of jc_pin1_o : signal is "digilentinc.com:interface:pmod:1.0 jc PIN1_O";
+  attribute X_INTERFACE_INFO of jc_pin1_t : signal is "digilentinc.com:interface:pmod:1.0 jc PIN1_T";
+  attribute X_INTERFACE_INFO of jc_pin2_i : signal is "digilentinc.com:interface:pmod:1.0 jc PIN2_I";
+  attribute X_INTERFACE_INFO of jc_pin2_o : signal is "digilentinc.com:interface:pmod:1.0 jc PIN2_O";
+  attribute X_INTERFACE_INFO of jc_pin2_t : signal is "digilentinc.com:interface:pmod:1.0 jc PIN2_T";
+  attribute X_INTERFACE_INFO of jc_pin3_i : signal is "digilentinc.com:interface:pmod:1.0 jc PIN3_I";
+  attribute X_INTERFACE_INFO of jc_pin3_o : signal is "digilentinc.com:interface:pmod:1.0 jc PIN3_O";
+  attribute X_INTERFACE_INFO of jc_pin3_t : signal is "digilentinc.com:interface:pmod:1.0 jc PIN3_T";
+  attribute X_INTERFACE_INFO of jc_pin4_i : signal is "digilentinc.com:interface:pmod:1.0 jc PIN4_I";
+  attribute X_INTERFACE_INFO of jc_pin4_o : signal is "digilentinc.com:interface:pmod:1.0 jc PIN4_O";
+  attribute X_INTERFACE_INFO of jc_pin4_t : signal is "digilentinc.com:interface:pmod:1.0 jc PIN4_T";
+  attribute X_INTERFACE_INFO of jc_pin7_i : signal is "digilentinc.com:interface:pmod:1.0 jc PIN7_I";
+  attribute X_INTERFACE_INFO of jc_pin7_o : signal is "digilentinc.com:interface:pmod:1.0 jc PIN7_O";
+  attribute X_INTERFACE_INFO of jc_pin7_t : signal is "digilentinc.com:interface:pmod:1.0 jc PIN7_T";
+  attribute X_INTERFACE_INFO of jc_pin8_i : signal is "digilentinc.com:interface:pmod:1.0 jc PIN8_I";
+  attribute X_INTERFACE_INFO of jc_pin8_o : signal is "digilentinc.com:interface:pmod:1.0 jc PIN8_O";
+  attribute X_INTERFACE_INFO of jc_pin8_t : signal is "digilentinc.com:interface:pmod:1.0 jc PIN8_T";
+  attribute X_INTERFACE_INFO of jc_pin9_i : signal is "digilentinc.com:interface:pmod:1.0 jc PIN9_I";
+  attribute X_INTERFACE_INFO of jc_pin9_o : signal is "digilentinc.com:interface:pmod:1.0 jc PIN9_O";
+  attribute X_INTERFACE_INFO of jc_pin9_t : signal is "digilentinc.com:interface:pmod:1.0 jc PIN9_T";
   attribute X_INTERFACE_INFO of reset_rtl : signal is "xilinx.com:signal:reset:1.0 RST.RESET_RTL RST";
   attribute X_INTERFACE_PARAMETER of reset_rtl : signal is "XIL_INTERFACENAME RST.RESET_RTL, INSERT_VIP 0, POLARITY ACTIVE_HIGH";
   attribute X_INTERFACE_INFO of sys_clock : signal is "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK";

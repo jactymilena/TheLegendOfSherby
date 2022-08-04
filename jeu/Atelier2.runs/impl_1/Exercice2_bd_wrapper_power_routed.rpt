@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Tue Aug  2 01:03:08 2022
+| Date             : Thu Aug  4 12:28:47 2022
 | Host             : DESKTOP-NHSH7S2 running 64-bit major release  (build 9200)
 | Command          : report_power -file Exercice2_bd_wrapper_power_routed.rpt -pb Exercice2_bd_wrapper_power_summary_routed.pb -rpx Exercice2_bd_wrapper_power_routed.rpx
 | Design           : Exercice2_bd_wrapper
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.952        |
+| Total On-Chip Power (W)  | 1.951        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 1.821        |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.020 |       10 |       --- |             --- |
-| Slice Logic              |     0.006 |    15881 |       --- |             --- |
-|   LUT as Logic           |     0.005 |     5284 |     17600 |           30.02 |
+| Slice Logic              |     0.005 |    15854 |       --- |             --- |
+|   LUT as Logic           |     0.005 |     5270 |     17600 |           29.94 |
 |   Register               |    <0.001 |     6902 |     35200 |           19.61 |
 |   CARRY4                 |    <0.001 |      234 |      4400 |            5.32 |
 |   LUT as Shift Register  |    <0.001 |      181 |      6000 |            3.02 |
 |   F7/F8 Muxes            |    <0.001 |       32 |     17600 |            0.18 |
 |   LUT as Distributed RAM |    <0.001 |      208 |      6000 |            3.47 |
 |   Others                 |     0.000 |     1210 |       --- |             --- |
-| Signals                  |     0.006 |    12509 |       --- |             --- |
+| Signals                  |     0.006 |    12501 |       --- |             --- |
 | Block RAM                |     0.007 |       18 |        60 |           30.00 |
 | MMCM                     |     0.116 |        1 |         2 |           50.00 |
 | PLL                      |     0.135 |        1 |         2 |           50.00 |

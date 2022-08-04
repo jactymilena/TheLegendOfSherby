@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="54" Path="C:/Workspace/Atelier2/Atelier2.xpr">
+<Project Version="7" Minor="54" Path="C:/GitHub/TheLegendOfSherby/jeu/Atelier2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="95c6bd892c5c41c8bf797498e623df48"/>
@@ -42,7 +42,7 @@
     <Option Name="IPRepoPath" Val="$PPRDIR/lib/graphics"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/lib/vivado"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/lib/vivado-boards-master"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/lib/vivado-library"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../Workspace/Atelier2/lib/vivado-library"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>
@@ -105,7 +105,7 @@
       <File Path="$PSRCDIR/sources_1/imports/new/testPatternGen2.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd"/>
           <Attr Name="ImportTime" Val="1657666123"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -120,7 +120,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/new/atelier4Constraints.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../s4InfoAtelier4/s4InfoAtelier4.srcs/constrs_1/imports/new/atelier4Constraints.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../s4InfoAtelier4/s4InfoAtelier4.srcs/constrs_1/imports/new/atelier4Constraints.xdc"/>
           <Attr Name="ImportTime" Val="1657666123"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -179,7 +179,7 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="15">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../../Workspace/Atelier2/Atelier2.srcs/utils_1/imports/synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
@@ -189,7 +189,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../Workspace/Atelier2/Atelier2.srcs/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>

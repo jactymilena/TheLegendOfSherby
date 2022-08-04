@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Workspace/Atelier2/Atelier2.runs/synth_1'
+HD_PWD='C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
