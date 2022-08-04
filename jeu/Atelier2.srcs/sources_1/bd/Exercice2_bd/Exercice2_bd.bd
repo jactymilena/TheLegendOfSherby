@@ -19,10 +19,10 @@
       "rgb2dvi_0": "",
       "v_proc_ss_0": "",
       "smartconnect_0": "",
-      "testPatternGenerator_0": "",
       "myColorRegister_1": "",
       "axi_gpio_0": "",
-      "PmodJSTK2_0": ""
+      "PmodJSTK2_0": "",
+      "testPatternGenerator_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1635,6 +1635,47 @@
           }
         }
       },
+      "myColorRegister_1": {
+        "vlnv": "xilinx.com:user:myColorRegister:1.0",
+        "xci_name": "Exercice2_bd_myColorRegister_1_1",
+        "xci_path": "ip\\Exercice2_bd_myColorRegister_1_1\\Exercice2_bd_myColorRegister_1_1.xci",
+        "inst_hier_path": "myColorRegister_1"
+      },
+      "axi_gpio_0": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "xci_name": "Exercice2_bd_axi_gpio_0_0",
+        "xci_path": "ip\\Exercice2_bd_axi_gpio_0_0\\Exercice2_bd_axi_gpio_0_0.xci",
+        "inst_hier_path": "axi_gpio_0",
+        "parameters": {
+          "GPIO_BOARD_INTERFACE": {
+            "value": "sws_4bits"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "PmodJSTK2_0": {
+        "vlnv": "digilentinc.com:IP:PmodJSTK2:1.0",
+        "xci_name": "Exercice2_bd_PmodJSTK2_0_2",
+        "xci_path": "ip\\Exercice2_bd_PmodJSTK2_0_2\\Exercice2_bd_PmodJSTK2_0_2.xci",
+        "inst_hier_path": "PmodJSTK2_0",
+        "parameters": {
+          "PMOD": {
+            "value": "jc"
+          }
+        },
+        "interface_ports": {
+          "AXI_LITE_SPI": {
+            "mode": "Slave",
+            "memory_map_ref": "AXI_LITE_SPI"
+          },
+          "AXI_LITE_GPIO": {
+            "mode": "Slave",
+            "memory_map_ref": "AXI_LITE_GPIO"
+          }
+        }
+      },
       "testPatternGenerator_0": {
         "vlnv": "xilinx.com:module_ref:testPatternGenerator:1.0",
         "xci_name": "Exercice2_bd_testPatternGenerator_0_0",
@@ -1769,50 +1810,69 @@
             "right": "0"
           }
         }
-      },
-      "myColorRegister_1": {
-        "vlnv": "xilinx.com:user:myColorRegister:1.0",
-        "xci_name": "Exercice2_bd_myColorRegister_1_1",
-        "xci_path": "ip\\Exercice2_bd_myColorRegister_1_1\\Exercice2_bd_myColorRegister_1_1.xci",
-        "inst_hier_path": "myColorRegister_1"
-      },
-      "axi_gpio_0": {
-        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
-        "xci_name": "Exercice2_bd_axi_gpio_0_0",
-        "xci_path": "ip\\Exercice2_bd_axi_gpio_0_0\\Exercice2_bd_axi_gpio_0_0.xci",
-        "inst_hier_path": "axi_gpio_0",
-        "parameters": {
-          "GPIO_BOARD_INTERFACE": {
-            "value": "sws_4bits"
-          },
-          "USE_BOARD_FLOW": {
-            "value": "true"
-          }
-        }
-      },
-      "PmodJSTK2_0": {
-        "vlnv": "digilentinc.com:IP:PmodJSTK2:1.0",
-        "xci_name": "Exercice2_bd_PmodJSTK2_0_2",
-        "xci_path": "ip\\Exercice2_bd_PmodJSTK2_0_2\\Exercice2_bd_PmodJSTK2_0_2.xci",
-        "inst_hier_path": "PmodJSTK2_0",
-        "parameters": {
-          "PMOD": {
-            "value": "jc"
-          }
-        },
-        "interface_ports": {
-          "AXI_LITE_SPI": {
-            "mode": "Slave",
-            "memory_map_ref": "AXI_LITE_SPI"
-          },
-          "AXI_LITE_GPIO": {
-            "mode": "Slave",
-            "memory_map_ref": "AXI_LITE_GPIO"
-          }
-        }
       }
     },
     "interface_nets": {
+      "smartconnect_0_M03_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M03_AXI",
+          "PmodJSTK2_0/AXI_LITE_GPIO"
+        ]
+      },
+      "testPatternGenerator_0_m_axis": {
+        "interface_ports": [
+          "testPatternGenerator_0/m_axis",
+          "v_proc_ss_0/s_axis"
+        ]
+      },
+      "processing_system7_0_DDR": {
+        "interface_ports": [
+          "DDR",
+          "processing_system7_0/DDR"
+        ]
+      },
+      "v_axi4s_vid_out_0_vid_io_out": {
+        "interface_ports": [
+          "v_axi4s_vid_out_0/vid_io_out",
+          "rgb2dvi_0/RGB"
+        ]
+      },
+      "processing_system7_0_M_AXI_GP0": {
+        "interface_ports": [
+          "processing_system7_0/M_AXI_GP0",
+          "smartconnect_0/S00_AXI"
+        ]
+      },
+      "smartconnect_0_M00_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M00_AXI",
+          "v_proc_ss_0/s_axi_ctrl"
+        ]
+      },
+      "axi_gpio_0_GPIO": {
+        "interface_ports": [
+          "btns_4bits",
+          "axi_gpio_0/GPIO"
+        ]
+      },
+      "smartconnect_0_M01_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M01_AXI",
+          "myColorRegister_1/S00_AXI"
+        ]
+      },
+      "smartconnect_0_M04_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M04_AXI",
+          "PmodJSTK2_0/AXI_LITE_SPI"
+        ]
+      },
+      "processing_system7_0_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
+        ]
+      },
       "PmodJSTK2_0_Pmod_out": {
         "interface_ports": [
           "jc",
@@ -1825,82 +1885,22 @@
           "v_axi4s_vid_out_0/vtiming_in"
         ]
       },
-      "v_proc_ss_0_m_axis": {
-        "interface_ports": [
-          "v_proc_ss_0/m_axis",
-          "v_axi4s_vid_out_0/video_in"
-        ]
-      },
       "smartconnect_0_M02_AXI": {
         "interface_ports": [
           "smartconnect_0/M02_AXI",
           "axi_gpio_0/S_AXI"
         ]
       },
+      "v_proc_ss_0_m_axis": {
+        "interface_ports": [
+          "v_proc_ss_0/m_axis",
+          "v_axi4s_vid_out_0/video_in"
+        ]
+      },
       "rgb2dvi_0_TMDS": {
         "interface_ports": [
           "hdmi_out",
           "rgb2dvi_0/TMDS"
-        ]
-      },
-      "axi_gpio_0_GPIO": {
-        "interface_ports": [
-          "btns_4bits",
-          "axi_gpio_0/GPIO"
-        ]
-      },
-      "processing_system7_0_M_AXI_GP0": {
-        "interface_ports": [
-          "processing_system7_0/M_AXI_GP0",
-          "smartconnect_0/S00_AXI"
-        ]
-      },
-      "smartconnect_0_M01_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M01_AXI",
-          "myColorRegister_1/S00_AXI"
-        ]
-      },
-      "processing_system7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
-        ]
-      },
-      "v_axi4s_vid_out_0_vid_io_out": {
-        "interface_ports": [
-          "v_axi4s_vid_out_0/vid_io_out",
-          "rgb2dvi_0/RGB"
-        ]
-      },
-      "smartconnect_0_M00_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M00_AXI",
-          "v_proc_ss_0/s_axi_ctrl"
-        ]
-      },
-      "processing_system7_0_DDR": {
-        "interface_ports": [
-          "DDR",
-          "processing_system7_0/DDR"
-        ]
-      },
-      "testPatternGenerator_0_m_axis": {
-        "interface_ports": [
-          "testPatternGenerator_0/m_axis",
-          "v_proc_ss_0/s_axis"
-        ]
-      },
-      "smartconnect_0_M04_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M04_AXI",
-          "PmodJSTK2_0/AXI_LITE_SPI"
-        ]
-      },
-      "smartconnect_0_M03_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M03_AXI",
-          "PmodJSTK2_0/AXI_LITE_GPIO"
         ]
       }
     },
@@ -1927,10 +1927,10 @@
           "v_axi4s_vid_out_0/aresetn",
           "rgb2dvi_0/aRst_n",
           "v_proc_ss_0/aresetn_ctrl",
-          "testPatternGenerator_0/rstn",
           "myColorRegister_1/s00_axi_aresetn",
           "axi_gpio_0/s_axi_aresetn",
-          "PmodJSTK2_0/s_axi_aresetn"
+          "PmodJSTK2_0/s_axi_aresetn",
+          "testPatternGenerator_0/rstn"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
@@ -1957,10 +1957,10 @@
           "smartconnect_0/aclk1",
           "v_proc_ss_0/aclk_axis",
           "v_proc_ss_0/aclk_ctrl",
-          "testPatternGenerator_0/clk",
           "myColorRegister_1/s00_axi_aclk",
           "axi_gpio_0/s_axi_aclk",
-          "PmodJSTK2_0/s_axi_aclk"
+          "PmodJSTK2_0/s_axi_aclk",
+          "testPatternGenerator_0/clk"
         ]
       },
       "v_axi4s_vid_out_0_vtg_ce": {

@@ -2,7 +2,7 @@
    "ActiveEmotionalView":"Default View",
    "Default View_Layers":"/processing_system7_0_FCLK_CLK0:true|/sys_clock_1:true|/clk_wiz_0_clk_out1:true|",
    "Default View_ScaleFactor":"0.825427",
-   "Default View_TopLeft":"1304,-155",
+   "Default View_TopLeft":"230,-86",
    "Display-PortTypeClock":"true",
    "DisplayPinAutomationMissing":"1",
    "DisplayPinsOfHiddenNets":"1",
@@ -10,54 +10,54 @@
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 8 -x 2320 -y 1260 -defaultsOSRD -bot
-preplace port FIXED_IO -pg 1 -lvl 8 -x 2290 -y 1260 -defaultsOSRD -bot
-preplace port hdmi_out -pg 1 -lvl 7 -x 2130 -y 1260 -defaultsOSRD -bot
-preplace port btns_4bits -pg 1 -lvl 8 -x 2360 -y 0 -defaultsOSRD
-preplace port jc -pg 1 -lvl 8 -x 2360 -y 30 -defaultsOSRD
-preplace port sys_clock -pg 1 -lvl 0 -x -300 -y 300 -defaultsOSRD
-preplace port reset_rtl -pg 1 -lvl 0 -x -300 -y 330 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 2 -x 140 -y 120 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 1 -x -160 -y 340 -defaultsOSRD
-preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 140 -y 320 -defaultsOSRD
-preplace inst v_tc_0 -pg 1 -lvl 4 -x 1200 -y 580 -defaultsOSRD
-preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 5 -x 1580 -y 610 -defaultsOSRD
-preplace inst rgb2dvi_0 -pg 1 -lvl 6 -x 1880 -y 560 -defaultsOSRD
-preplace inst v_proc_ss_0 -pg 1 -lvl 4 -x 1200 -y 380 -defaultsOSRD
-preplace inst smartconnect_0 -pg 1 -lvl 3 -x 540 -y 190 -defaultsOSRD
-preplace inst testPatternGenerator_0 -pg 1 -lvl 3 -x 540 -y 360 -defaultsOSRD
-preplace inst myColorRegister_1 -pg 1 -lvl 4 -x 1200 -y 220 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 5 -x 1580 -y 330 -defaultsOSRD
-preplace inst PmodJSTK2_0 -pg 1 -lvl 4 -x 1200 -y 30 -defaultsOSRD
-preplace netloc sys_clock_1 1 0 1 -280 300n
-preplace netloc clk_wiz_0_locked 1 1 4 -70 470 N 470 680 680 1420
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 4 370 460 740 140 1380 750 1740
-preplace netloc processing_system7_0_FCLK_CLK0 1 1 2 -50 0 370
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 -50 420 340
-preplace netloc clk_wiz_0_clk_out1 1 1 5 -60 430 360 450 730 130 1410 740 1750
-preplace netloc v_axi4s_vid_out_0_vtg_ce 1 3 3 750 770 NJ 770 1730
-preplace netloc v_axi4s_vid_out_0_sof_state_out 1 3 3 760 760 NJ 760 1720
-preplace netloc myColorRegister_1_o_imageDataA 1 2 3 380 -90 N -90 1370
-preplace netloc myColorRegister_1_o_imageDataB 1 2 3 390 -70 N -70 1360
+preplace port DDR -pg 1 -lvl 8 -x 2150 -y 1260 -defaultsOSRD -bot
+preplace port FIXED_IO -pg 1 -lvl 8 -x 2120 -y 1260 -defaultsOSRD -bot
+preplace port hdmi_out -pg 1 -lvl 7 -x 2050 -y 1260 -defaultsOSRD -bot
+preplace port btns_4bits -pg 1 -lvl 8 -x 2190 -y 0 -defaultsOSRD
+preplace port jc -pg 1 -lvl 8 -x 2190 -y 30 -defaultsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x -330 -y 300 -defaultsOSRD
+preplace port reset_rtl -pg 1 -lvl 0 -x -330 -y 330 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 80 -y 120 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x -220 -y 340 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 80 -y 320 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 4 -x 1213 -y 700 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 5 -x 1629 -y 610 -defaultsOSRD
+preplace inst rgb2dvi_0 -pg 1 -lvl 6 -x 1916 -y 560 -defaultsOSRD
+preplace inst v_proc_ss_0 -pg 1 -lvl 4 -x 1213 -y 440 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 3 -x 510 -y 190 -defaultsOSRD
+preplace inst myColorRegister_1 -pg 1 -lvl 4 -x 1213 -y 220 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 5 -x 1629 -y 330 -defaultsOSRD
+preplace inst PmodJSTK2_0 -pg 1 -lvl 4 -x 1213 -y 30 -defaultsOSRD
+preplace inst testPatternGenerator_0 -pg 1 -lvl 3 -x 510 -y 380 -defaultsOSRD
+preplace netloc sys_clock_1 1 0 1 -310 300n
+preplace netloc clk_wiz_0_locked 1 1 4 -130 510 N 510 680 600 1400
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 4 270 500 690 -70 1420 750 1790
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 2 -110 0 310
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 -110 420 290
+preplace netloc clk_wiz_0_clk_out1 1 1 5 -120 430 310 490 750 130 1410 740 1800
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 3 3 720 800 NJ 800 1780
+preplace netloc v_axi4s_vid_out_0_sof_state_out 1 3 3 740 810 NJ 810 1770
+preplace netloc myColorRegister_1_o_imageDataA 1 2 3 320 -110 N -110 1400
+preplace netloc myColorRegister_1_o_imageDataB 1 2 3 330 -100 N -100 1390
 preplace netloc reset_rtl_1 1 0 1 N 330
-preplace netloc processing_system7_0_FCLK_CLK1 1 2 2 350J 30 N
-preplace netloc axi_gpio_0_GPIO 1 5 3 1750J 0 NJ 0 NJ
-preplace netloc smartconnect_0_M00_AXI 1 3 1 720 150n
-preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 360 120n
-preplace netloc v_tc_0_vtiming_out 1 4 1 N 570
-preplace netloc smartconnect_0_M01_AXI 1 3 1 710 170n
-preplace netloc processing_system7_0_FIXED_IO 1 2 6 340 -80 N -80 N -80 N -80 N -80 2160
-preplace netloc v_axi4s_vid_out_0_vid_io_out 1 5 1 N 540
-preplace netloc testPatternGenerator_0_m_axis 1 3 1 N 360
-preplace netloc rgb2dvi_0_TMDS 1 6 1 1980 560n
-preplace netloc processing_system7_0_DDR 1 2 6 330 -100 N -100 N -100 N -100 N -100 2170
-preplace netloc v_proc_ss_0_m_axis 1 4 1 1400 370n
-preplace netloc smartconnect_0_M02_AXI 1 3 2 700 480 1390J
-preplace netloc smartconnect_0_M03_AXI 1 3 1 690 10n
-preplace netloc smartconnect_0_M04_AXI 1 3 1 680 -10n
+preplace netloc processing_system7_0_FCLK_CLK1 1 2 2 290J 30 N
 preplace netloc PmodJSTK2_0_Pmod_out 1 4 4 NJ 30 NJ 30 NJ 30 NJ
-levelinfo -pg 1 -300 -160 140 540 1200 1580 1880 2120 2360
-pagesize -pg 1 -db -bbox -sgen -410 -200 2480 1370
+preplace netloc v_tc_0_vtiming_out 1 4 1 1430 570n
+preplace netloc v_proc_ss_0_m_axis 1 4 1 1390 340n
+preplace netloc smartconnect_0_M02_AXI 1 3 2 720 140 1430J
+preplace netloc rgb2dvi_0_TMDS 1 6 1 2020 560n
+preplace netloc axi_gpio_0_GPIO 1 5 3 1800J 0 NJ 0 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 300 120n
+preplace netloc smartconnect_0_M01_AXI 1 3 1 730 170n
+preplace netloc processing_system7_0_FIXED_IO 1 2 6 280 -80 N -80 N -80 N -80 N -80 2080
+preplace netloc v_axi4s_vid_out_0_vid_io_out 1 5 1 N 540
+preplace netloc smartconnect_0_M00_AXI 1 3 1 740 150n
+preplace netloc processing_system7_0_DDR 1 2 6 270 -90 N -90 N -90 N -90 N -90 2090
+preplace netloc testPatternGenerator_0_m_axis 1 3 1 680 330n
+preplace netloc smartconnect_0_M04_AXI 1 3 1 700 -10n
+preplace netloc smartconnect_0_M03_AXI 1 3 1 710 10n
+levelinfo -pg 1 -330 -220 80 510 1213 1629 1916 2040 2190
+pagesize -pg 1 -db -bbox -sgen -440 -200 2310 1370
 "
 }
 {
