@@ -37,16 +37,49 @@ end PPUTestBench;
 
 architecture Behavioral of PPUTestBench is
     component PPU is
-        Port ( i_instruction : in STD_LOGIC_VECTOR (31 downto 0));
+        Port ( i_instruction : in STD_LOGIC_VECTOR (31 downto 0) ; 
+               clk          : in std_logic;                        
+               m_axis_tuser  : out std_logic;                      
+               m_axis_tlast  : out std_logic;                     
+               m_axis_tvalid : out std_logic;                     
+               o_couleur : out STD_LOGIC_VECTOR (23 downto 0)
+       );
     end component;
-    CONSTANT c_delai : time := 20ns;
+    CONSTANT c_delai : time := 30ns;--20ns
+     constant c_clk_p_Period      : time :=  30 ns;  -- 50 MHz 
     signal instruction : std_logic_vector (31 downto 0);
+    signal   d_clk_p, d_reset       :  std_logic := '0';     
+    signal s_OUTcouleur : std_logic_vector( 23 downto 0);        
+    signal s_enable, s_valid: std_logic; 
+    signal s_lastLine: std_logic ;  
+    signal s_user: std_logic;     
+      
 begin
     
    m_PPU : PPU
    Port map(
-        i_instruction => instruction
+       i_instruction => instruction, 
+       clk           => d_clk_p,
+       m_axis_tuser  => s_user,
+       m_axis_tlast  => s_lastLine,
+       m_axis_tvalid => s_valid,
+       o_couleur     => s_OUTcouleur
    );
+   sim_clk_p:  process
+   begin
+      d_clk_p <= '1';  -- init
+      loop
+         wait for c_clk_p_Period / 2;
+         d_clk_p <= not d_clk_p; -- invert clock value
+      end loop;
+   end process;  
+
+tb : PROCESS
+   BEGIN
+   d_reset <= '1';
+   s_enable <= '1';
+   
+   end process;
    
    process
    begin
