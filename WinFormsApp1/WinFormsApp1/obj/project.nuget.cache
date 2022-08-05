@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "x+YZPQ5IuHVeVIuppLWqegZ3pDEyRwjYpGubaZKcQ+5QIsucUzawI/ATZRhrG4fWusLahnny12QRg3OVJ9PYZA==",
+  "success": true,
+  "projectFilePath": "C:\\github\\TheLegendOfSherby\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\iamya\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+  ],
+  "logs": []
+}

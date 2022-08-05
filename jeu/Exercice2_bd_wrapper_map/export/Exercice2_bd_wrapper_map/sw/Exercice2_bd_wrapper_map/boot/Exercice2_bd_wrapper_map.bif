@@ -1,0 +1,7 @@
+/*Exercice2_bd_wrapper_map*/
+the_ROM_image:
+{
+  [bootloader]<Exercice2_bd_wrapper_map/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}

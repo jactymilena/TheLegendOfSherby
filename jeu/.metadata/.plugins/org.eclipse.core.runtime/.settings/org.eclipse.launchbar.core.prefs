@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_pain11-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_pain12-Default
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_pain14-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_pain16-Default
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_pain-Default/activeLaunchMode=embrun
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_pain-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
@@ -11,6 +11,8 @@ org.eclipse.launchbar.core.descriptorType.default\:Debugger_pain10-Default/activ
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_pain10-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_pain11-Default/activeLaunchMode=embrun
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_pain11-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_pain14-Default/activeLaunchMode=embrun
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_pain14-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_pain2-Default/activeLaunchMode=embrun
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_pain2-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_pain3-Default/activeLaunchMode=embrun

@@ -29,376 +29,334 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Exercice2_b
 # IP: bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/Exercice2_bd_v_proc_ss_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Exercice2_bd_v_proc_ss_0_0 || ORIG_REF_NAME==Exercice2_bd_v_proc_ss_0_0} -quiet] -quiet
 
-# Block Designs: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/bd_f134.bd
+# Block Designs: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/bd_f134.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_f134 || ORIG_REF_NAME==bd_f134} -quiet] -quiet
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_0/bd_f134_smartconnect_0_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_0/bd_f134_smartconnect_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_f134_smartconnect_0_0 || ORIG_REF_NAME==bd_f134_smartconnect_0_0} -quiet] -quiet
 
-# Block Designs: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/bd_c788.bd
+# Block Designs: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/bd_c788.bd
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_0/bd_c788_one_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_0/bd_c788_one_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_1/bd_c788_psr_aclk_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_1/bd_c788_psr_aclk_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_2/bd_c788_arinsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_2/bd_c788_arinsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_3/bd_c788_rinsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_3/bd_c788_rinsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_4/bd_c788_awinsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_4/bd_c788_awinsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_5/bd_c788_winsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_5/bd_c788_winsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_6/bd_c788_binsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_6/bd_c788_binsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_7/bd_c788_aroutsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_7/bd_c788_aroutsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_8/bd_c788_routsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_8/bd_c788_routsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_9/bd_c788_awoutsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_9/bd_c788_awoutsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_10/bd_c788_woutsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_10/bd_c788_woutsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_11/bd_c788_boutsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_11/bd_c788_boutsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_12/bd_c788_arni_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_12/bd_c788_arni_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_13/bd_c788_rni_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_13/bd_c788_rni_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_14/bd_c788_awni_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_14/bd_c788_awni_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_15/bd_c788_wni_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_15/bd_c788_wni_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_16/bd_c788_bni_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_16/bd_c788_bni_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_17/bd_c788_s00mmu_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_17/bd_c788_s00mmu_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_18/bd_c788_s00tr_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_18/bd_c788_s00tr_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_19/bd_c788_s00sic_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_19/bd_c788_s00sic_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_20/bd_c788_s00a2s_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_20/bd_c788_s00a2s_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_21/bd_c788_sarn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_21/bd_c788_sarn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_22/bd_c788_srn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_22/bd_c788_srn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_23/bd_c788_sawn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_23/bd_c788_sawn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_24/bd_c788_swn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_24/bd_c788_swn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_25/bd_c788_sbn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_25/bd_c788_sbn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_26/bd_c788_m00s2a_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_26/bd_c788_m00s2a_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_27/bd_c788_m00arn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_27/bd_c788_m00arn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_28/bd_c788_m00rn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_28/bd_c788_m00rn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_29/bd_c788_m00awn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_29/bd_c788_m00awn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_30/bd_c788_m00wn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_30/bd_c788_m00wn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_31/bd_c788_m00bn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_31/bd_c788_m00bn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_32/bd_c788_m00e_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_32/bd_c788_m00e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_33/bd_c788_m01s2a_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_33/bd_c788_m01s2a_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_34/bd_c788_m01arn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_34/bd_c788_m01arn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_35/bd_c788_m01rn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_35/bd_c788_m01rn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_36/bd_c788_m01awn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_36/bd_c788_m01awn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_37/bd_c788_m01wn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_37/bd_c788_m01wn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_38/bd_c788_m01bn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_38/bd_c788_m01bn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_39/bd_c788_m01e_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_39/bd_c788_m01e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_40/bd_c788_m02s2a_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_40/bd_c788_m02s2a_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_41/bd_c788_m02arn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_41/bd_c788_m02arn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_42/bd_c788_m02rn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_42/bd_c788_m02rn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_43/bd_c788_m02awn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_43/bd_c788_m02awn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_44/bd_c788_m02wn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_44/bd_c788_m02wn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_45/bd_c788_m02bn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_45/bd_c788_m02bn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_46/bd_c788_m02e_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_46/bd_c788_m02e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_1/bd_f134_vsc_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_1/bd_f134_vsc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_f134_vsc_0 || ORIG_REF_NAME==bd_f134_vsc_0} -quiet] -quiet
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_2/bd_f134_hsc_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_2/bd_f134_hsc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_f134_hsc_0 || ORIG_REF_NAME==bd_f134_hsc_0} -quiet] -quiet
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_3/bd_f134_input_size_set_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_3/bd_f134_input_size_set_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_f134_input_size_set_0 || ORIG_REF_NAME==bd_f134_input_size_set_0} -quiet] -quiet
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_4/bd_f134_rst_axis_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_4/bd_f134_rst_axis_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_f134_rst_axis_0 || ORIG_REF_NAME==bd_f134_rst_axis_0} -quiet] -quiet
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_5/bd_f134_reset_sel_axis_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_5/bd_f134_reset_sel_axis_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_f134_reset_sel_axis_0 || ORIG_REF_NAME==bd_f134_reset_sel_axis_0} -quiet] -quiet
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_6/bd_f134_axis_register_slice_0_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_6/bd_f134_axis_register_slice_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_f134_axis_register_slice_0_0 || ORIG_REF_NAME==bd_f134_axis_register_slice_0_0} -quiet] -quiet
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_7/bd_f134_axis_fifo_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_7/bd_f134_axis_fifo_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_f134_axis_fifo_0 || ORIG_REF_NAME==bd_f134_axis_fifo_0} -quiet] -quiet
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_8/bd_f134_xlslice_0_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_8/bd_f134_xlslice_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_f134_xlslice_0_0 || ORIG_REF_NAME==bd_f134_xlslice_0_0} -quiet] -quiet
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_9/bd_f134_xlslice_1_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_9/bd_f134_xlslice_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_f134_xlslice_1_0 || ORIG_REF_NAME==bd_f134_xlslice_1_0} -quiet] -quiet
 
 # IP: bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/Exercice2_bd_smartconnect_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Exercice2_bd_smartconnect_0_0 || ORIG_REF_NAME==Exercice2_bd_smartconnect_0_0} -quiet] -quiet
 
-# Block Designs: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/bd_8e83.bd
+# Block Designs: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/bd_8e83.bd
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_0/bd_8e83_one_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_0/bd_8e83_one_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_1/bd_8e83_psr0_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_1/bd_8e83_psr0_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_2/bd_8e83_psr_aclk_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_2/bd_8e83_psr_aclk_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_3/bd_8e83_psr_aclk1_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_3/bd_8e83_psr_aclk1_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_4/bd_8e83_arinsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_4/bd_8e83_arinsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_5/bd_8e83_rinsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_5/bd_8e83_rinsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_6/bd_8e83_awinsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_6/bd_8e83_awinsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_7/bd_8e83_winsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_7/bd_8e83_winsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_8/bd_8e83_binsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_8/bd_8e83_binsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_9/bd_8e83_aroutsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_9/bd_8e83_aroutsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_10/bd_8e83_routsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_10/bd_8e83_routsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_11/bd_8e83_awoutsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_11/bd_8e83_awoutsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_12/bd_8e83_woutsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_12/bd_8e83_woutsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_13/bd_8e83_boutsw_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_13/bd_8e83_boutsw_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_14/bd_8e83_arni_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_14/bd_8e83_arni_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_15/bd_8e83_rni_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_15/bd_8e83_rni_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_16/bd_8e83_awni_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_16/bd_8e83_awni_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_17/bd_8e83_wni_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_17/bd_8e83_wni_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_18/bd_8e83_bni_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_18/bd_8e83_bni_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_19/bd_8e83_s00mmu_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_19/bd_8e83_s00mmu_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_20/bd_8e83_s00tr_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_20/bd_8e83_s00tr_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_21/bd_8e83_s00sic_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_21/bd_8e83_s00sic_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_22/bd_8e83_s00a2s_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_22/bd_8e83_s00a2s_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_23/bd_8e83_sarn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_23/bd_8e83_sarn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_24/bd_8e83_srn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_24/bd_8e83_srn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_25/bd_8e83_sawn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_25/bd_8e83_sawn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_26/bd_8e83_swn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_26/bd_8e83_swn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_27/bd_8e83_sbn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_27/bd_8e83_sbn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_28/bd_8e83_m00s2a_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_28/bd_8e83_m00s2a_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_29/bd_8e83_m00arn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_29/bd_8e83_m00arn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_30/bd_8e83_m00rn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_30/bd_8e83_m00rn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_31/bd_8e83_m00awn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_31/bd_8e83_m00awn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_32/bd_8e83_m00wn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_32/bd_8e83_m00wn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_33/bd_8e83_m00bn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_33/bd_8e83_m00bn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_34/bd_8e83_m00e_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_34/bd_8e83_m00e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_35/bd_8e83_m01s2a_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_35/bd_8e83_m01s2a_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_36/bd_8e83_m01arn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_36/bd_8e83_m01arn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_37/bd_8e83_m01rn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_37/bd_8e83_m01rn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_38/bd_8e83_m01awn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_38/bd_8e83_m01awn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_39/bd_8e83_m01wn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_39/bd_8e83_m01wn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_40/bd_8e83_m01bn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_40/bd_8e83_m01bn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_41/bd_8e83_m01e_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_41/bd_8e83_m01e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_42/bd_8e83_m02s2a_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_42/bd_8e83_m02s2a_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_43/bd_8e83_m02arn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_43/bd_8e83_m02arn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_44/bd_8e83_m02rn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_44/bd_8e83_m02rn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_45/bd_8e83_m02awn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_45/bd_8e83_m02awn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_46/bd_8e83_m02wn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_46/bd_8e83_m02wn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_47/bd_8e83_m02bn_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_47/bd_8e83_m02bn_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_48/bd_8e83_m02e_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_49/bd_8e83_m03s2a_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_50/bd_8e83_m03arn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_51/bd_8e83_m03rn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_52/bd_8e83_m03awn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_53/bd_8e83_m03wn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_54/bd_8e83_m03bn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_55/bd_8e83_m03e_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_56/bd_8e83_m04s2a_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_57/bd_8e83_m04arn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_58/bd_8e83_m04rn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_59/bd_8e83_m04awn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_60/bd_8e83_m04wn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_61/bd_8e83_m04bn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_62/bd_8e83_m04e_0.xci
+# IP: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_48/bd_8e83_m02e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
 # IP: bd/Exercice2_bd/ip/Exercice2_bd_myColorRegister_1_1/Exercice2_bd_myColorRegister_1_1.xci
@@ -407,322 +365,257 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Exercice2_b
 # IP: bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Exercice2_bd_axi_gpio_0_0 || ORIG_REF_NAME==Exercice2_bd_axi_gpio_0_0} -quiet] -quiet
 
-# IP: bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/Exercice2_bd_PmodJSTK2_0_2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Exercice2_bd_PmodJSTK2_0_2 || ORIG_REF_NAME==Exercice2_bd_PmodJSTK2_0_2} -quiet] -quiet
-
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_quad_spi_0_0/PmodJSTK2_axi_quad_spi_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PmodJSTK2_axi_quad_spi_0_0 || ORIG_REF_NAME==PmodJSTK2_axi_quad_spi_0_0} -quiet] -quiet
-
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_pmod_bridge_0_0/PmodJSTK2_pmod_bridge_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PmodJSTK2_pmod_bridge_0_0 || ORIG_REF_NAME==PmodJSTK2_pmod_bridge_0_0} -quiet] -quiet
-
-# IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_gpio_0_0/PmodJSTK2_axi_gpio_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PmodJSTK2_axi_gpio_0_0 || ORIG_REF_NAME==PmodJSTK2_axi_gpio_0_0} -quiet] -quiet
-
 # IP: bd/Exercice2_bd/ip/Exercice2_bd_testPatternGenerator_0_0/Exercice2_bd_testPatternGenerator_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Exercice2_bd_testPatternGenerator_0_0 || ORIG_REF_NAME==Exercice2_bd_testPatternGenerator_0_0} -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_processing_system7_0_0/Exercice2_bd_processing_system7_0_0.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_processing_system7_0_0/Exercice2_bd_processing_system7_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==Exercice2_bd_processing_system7_0_0 || ORIG_REF_NAME==Exercice2_bd_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_clk_wiz_0_0/Exercice2_bd_clk_wiz_0_0_board.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_clk_wiz_0_0/Exercice2_bd_clk_wiz_0_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==Exercice2_bd_clk_wiz_0_0 || ORIG_REF_NAME==Exercice2_bd_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_clk_wiz_0_0/Exercice2_bd_clk_wiz_0_0.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_clk_wiz_0_0/Exercice2_bd_clk_wiz_0_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==Exercice2_bd_clk_wiz_0_0 || ORIG_REF_NAME==Exercice2_bd_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_clk_wiz_0_0/Exercice2_bd_clk_wiz_0_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_clk_wiz_0_0/Exercice2_bd_clk_wiz_0_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_proc_sys_reset_0_0/Exercice2_bd_proc_sys_reset_0_0_board.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_proc_sys_reset_0_0/Exercice2_bd_proc_sys_reset_0_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==Exercice2_bd_proc_sys_reset_0_0 || ORIG_REF_NAME==Exercice2_bd_proc_sys_reset_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_proc_sys_reset_0_0/Exercice2_bd_proc_sys_reset_0_0.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_proc_sys_reset_0_0/Exercice2_bd_proc_sys_reset_0_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==Exercice2_bd_proc_sys_reset_0_0 || ORIG_REF_NAME==Exercice2_bd_proc_sys_reset_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_tc_0_1/Exercice2_bd_v_tc_0_1_clocks.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_tc_0_1/Exercice2_bd_v_tc_0_1_clocks.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==Exercice2_bd_v_tc_0_1 || ORIG_REF_NAME==Exercice2_bd_v_tc_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_axi4s_vid_out_0_0/Exercice2_bd_v_axi4s_vid_out_0_0_clocks.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_axi4s_vid_out_0_0/Exercice2_bd_v_axi4s_vid_out_0_0_clocks.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==Exercice2_bd_v_axi4s_vid_out_0_0 || ORIG_REF_NAME==Exercice2_bd_v_axi4s_vid_out_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_rgb2dvi_0_0/src/rgb2dvi.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_rgb2dvi_0_0/src/rgb2dvi.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==Exercice2_bd_rgb2dvi_0_0 || ORIG_REF_NAME==Exercice2_bd_rgb2dvi_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_rgb2dvi_0_0/src/rgb2dvi_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_rgb2dvi_0_0/src/rgb2dvi_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==Exercice2_bd_rgb2dvi_0_0 || ORIG_REF_NAME==Exercice2_bd_rgb2dvi_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_1/bd_c788_psr_aclk_0_board.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_1/bd_c788_psr_aclk_0_board.xdc
 # DONT_TOUCH constraint suppressed by parent sub-design file.
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_1/bd_c788_psr_aclk_0.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_1/bd_c788_psr_aclk_0.xdc
 # DONT_TOUCH constraint suppressed by parent sub-design file.
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_2/bd_c788_arinsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_2/bd_c788_arinsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_3/bd_c788_rinsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_3/bd_c788_rinsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_4/bd_c788_awinsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_4/bd_c788_awinsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_5/bd_c788_winsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_5/bd_c788_winsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_6/bd_c788_binsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_6/bd_c788_binsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_7/bd_c788_aroutsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_7/bd_c788_aroutsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_8/bd_c788_routsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_8/bd_c788_routsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_9/bd_c788_awoutsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_9/bd_c788_awoutsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_10/bd_c788_woutsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_10/bd_c788_woutsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_11/bd_c788_boutsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_11/bd_c788_boutsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_12/bd_c788_arni_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_12/bd_c788_arni_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_13/bd_c788_rni_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_13/bd_c788_rni_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_14/bd_c788_awni_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_14/bd_c788_awni_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_15/bd_c788_wni_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_15/bd_c788_wni_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_16/bd_c788_bni_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_16/bd_c788_bni_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_20/bd_c788_s00a2s_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_20/bd_c788_s00a2s_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_21/bd_c788_sarn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_21/bd_c788_sarn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_22/bd_c788_srn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_22/bd_c788_srn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_23/bd_c788_sawn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_23/bd_c788_sawn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_24/bd_c788_swn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_24/bd_c788_swn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_25/bd_c788_sbn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_25/bd_c788_sbn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_26/bd_c788_m00s2a_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_26/bd_c788_m00s2a_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_27/bd_c788_m00arn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_27/bd_c788_m00arn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_28/bd_c788_m00rn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_28/bd_c788_m00rn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_29/bd_c788_m00awn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_29/bd_c788_m00awn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_30/bd_c788_m00wn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_30/bd_c788_m00wn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_31/bd_c788_m00bn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_31/bd_c788_m00bn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_33/bd_c788_m01s2a_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_33/bd_c788_m01s2a_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_34/bd_c788_m01arn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_34/bd_c788_m01arn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_35/bd_c788_m01rn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_35/bd_c788_m01rn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_36/bd_c788_m01awn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_36/bd_c788_m01awn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_37/bd_c788_m01wn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_37/bd_c788_m01wn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_38/bd_c788_m01bn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_38/bd_c788_m01bn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_40/bd_c788_m02s2a_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_40/bd_c788_m02s2a_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_41/bd_c788_m02arn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_41/bd_c788_m02arn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_42/bd_c788_m02rn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_42/bd_c788_m02rn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_43/bd_c788_m02awn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_43/bd_c788_m02awn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_44/bd_c788_m02wn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_44/bd_c788_m02wn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_45/bd_c788_m02bn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_45/bd_c788_m02bn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_0/ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_0/ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_1/bd_f134_vsc_0.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_1/bd_f134_vsc_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_f134_vsc_0 || ORIG_REF_NAME==bd_f134_vsc_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_2/bd_f134_hsc_0.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_2/bd_f134_hsc_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_f134_hsc_0 || ORIG_REF_NAME==bd_f134_hsc_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_3/bd_f134_input_size_set_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_3/bd_f134_input_size_set_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_4/bd_f134_rst_axis_0_board.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_4/bd_f134_rst_axis_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_f134_rst_axis_0 || ORIG_REF_NAME==bd_f134_rst_axis_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_4/bd_f134_rst_axis_0.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_4/bd_f134_rst_axis_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_f134_rst_axis_0 || ORIG_REF_NAME==bd_f134_rst_axis_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_5/bd_f134_reset_sel_axis_0_board.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_5/bd_f134_reset_sel_axis_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_f134_reset_sel_axis_0 || ORIG_REF_NAME==bd_f134_reset_sel_axis_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_5/bd_f134_reset_sel_axis_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_5/bd_f134_reset_sel_axis_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_5/bd_f134_reset_sel_axis_0.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_5/bd_f134_reset_sel_axis_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_f134_reset_sel_axis_0 || ORIG_REF_NAME==bd_f134_reset_sel_axis_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_6/bd_f134_axis_register_slice_0_0_clocks.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_6/bd_f134_axis_register_slice_0_0_clocks.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_f134_axis_register_slice_0_0 || ORIG_REF_NAME==bd_f134_axis_register_slice_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/bd_f134_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/bd_f134_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_1/bd_8e83_psr0_0_board.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_1/bd_8e83_psr0_0_board.xdc
 # DONT_TOUCH constraint suppressed by parent sub-design file.
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_1/bd_8e83_psr0_0.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_1/bd_8e83_psr0_0.xdc
 # DONT_TOUCH constraint suppressed by parent sub-design file.
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_2/bd_8e83_psr_aclk_0_board.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_2/bd_8e83_psr_aclk_0_board.xdc
 # DONT_TOUCH constraint suppressed by parent sub-design file.
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_2/bd_8e83_psr_aclk_0.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_2/bd_8e83_psr_aclk_0.xdc
 # DONT_TOUCH constraint suppressed by parent sub-design file.
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_3/bd_8e83_psr_aclk1_0_board.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_3/bd_8e83_psr_aclk1_0_board.xdc
 # DONT_TOUCH constraint suppressed by parent sub-design file.
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_3/bd_8e83_psr_aclk1_0.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_3/bd_8e83_psr_aclk1_0.xdc
 # DONT_TOUCH constraint suppressed by parent sub-design file.
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_4/bd_8e83_arinsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_4/bd_8e83_arinsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_5/bd_8e83_rinsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_5/bd_8e83_rinsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_6/bd_8e83_awinsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_6/bd_8e83_awinsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_7/bd_8e83_winsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_7/bd_8e83_winsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_8/bd_8e83_binsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_8/bd_8e83_binsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_9/bd_8e83_aroutsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_9/bd_8e83_aroutsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_10/bd_8e83_routsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_10/bd_8e83_routsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_11/bd_8e83_awoutsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_11/bd_8e83_awoutsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_12/bd_8e83_woutsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_12/bd_8e83_woutsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_13/bd_8e83_boutsw_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_13/bd_8e83_boutsw_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_14/bd_8e83_arni_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_14/bd_8e83_arni_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_15/bd_8e83_rni_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_15/bd_8e83_rni_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_16/bd_8e83_awni_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_16/bd_8e83_awni_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_17/bd_8e83_wni_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_17/bd_8e83_wni_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_18/bd_8e83_bni_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_18/bd_8e83_bni_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_22/bd_8e83_s00a2s_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_22/bd_8e83_s00a2s_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_23/bd_8e83_sarn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_23/bd_8e83_sarn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_24/bd_8e83_srn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_24/bd_8e83_srn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_25/bd_8e83_sawn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_25/bd_8e83_sawn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_26/bd_8e83_swn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_26/bd_8e83_swn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_27/bd_8e83_sbn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_27/bd_8e83_sbn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_28/bd_8e83_m00s2a_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_28/bd_8e83_m00s2a_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_29/bd_8e83_m00arn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_29/bd_8e83_m00arn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_30/bd_8e83_m00rn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_30/bd_8e83_m00rn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_31/bd_8e83_m00awn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_31/bd_8e83_m00awn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_32/bd_8e83_m00wn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_32/bd_8e83_m00wn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_33/bd_8e83_m00bn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_33/bd_8e83_m00bn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_35/bd_8e83_m01s2a_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_35/bd_8e83_m01s2a_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_36/bd_8e83_m01arn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_36/bd_8e83_m01arn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_37/bd_8e83_m01rn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_37/bd_8e83_m01rn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_38/bd_8e83_m01awn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_38/bd_8e83_m01awn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_39/bd_8e83_m01wn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_39/bd_8e83_m01wn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_40/bd_8e83_m01bn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_40/bd_8e83_m01bn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_42/bd_8e83_m02s2a_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_42/bd_8e83_m02s2a_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_43/bd_8e83_m02arn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_43/bd_8e83_m02arn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_44/bd_8e83_m02rn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_44/bd_8e83_m02rn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_45/bd_8e83_m02awn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_45/bd_8e83_m02awn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_46/bd_8e83_m02wn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_46/bd_8e83_m02wn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_47/bd_8e83_m02bn_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_47/bd_8e83_m02bn_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_49/bd_8e83_m03s2a_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_50/bd_8e83_m03arn_0_ooc.xdc
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_51/bd_8e83_m03rn_0_ooc.xdc
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_52/bd_8e83_m03awn_0_ooc.xdc
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_53/bd_8e83_m03wn_0_ooc.xdc
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_54/bd_8e83_m03bn_0_ooc.xdc
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_56/bd_8e83_m04s2a_0_ooc.xdc
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_57/bd_8e83_m04arn_0_ooc.xdc
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_58/bd_8e83_m04rn_0_ooc.xdc
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_59/bd_8e83_m04awn_0_ooc.xdc
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_60/bd_8e83_m04wn_0_ooc.xdc
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_61/bd_8e83_m04bn_0_ooc.xdc
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/ooc.xdc
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0_board.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==Exercice2_bd_axi_gpio_0_0 || ORIG_REF_NAME==Exercice2_bd_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0_ooc.xdc
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==Exercice2_bd_axi_gpio_0_0 || ORIG_REF_NAME==Exercice2_bd_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_quad_spi_0_0/PmodJSTK2_axi_quad_spi_0_0_board.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PmodJSTK2_axi_quad_spi_0_0 || ORIG_REF_NAME==PmodJSTK2_axi_quad_spi_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_quad_spi_0_0/PmodJSTK2_axi_quad_spi_0_0.xdc
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PmodJSTK2_axi_quad_spi_0_0 || ORIG_REF_NAME==PmodJSTK2_axi_quad_spi_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_quad_spi_0_0/PmodJSTK2_axi_quad_spi_0_0_ooc.xdc
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_quad_spi_0_0/PmodJSTK2_axi_quad_spi_0_0_clocks.xdc
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PmodJSTK2_axi_quad_spi_0_0 || ORIG_REF_NAME==PmodJSTK2_axi_quad_spi_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_pmod_bridge_0_0/PmodJSTK2_pmod_bridge_0_0_board.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PmodJSTK2_pmod_bridge_0_0 || ORIG_REF_NAME==PmodJSTK2_pmod_bridge_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_pmod_bridge_0_0/src/pmod_concat_ooc.xdc
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_gpio_0_0/PmodJSTK2_axi_gpio_0_0_board.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PmodJSTK2_axi_gpio_0_0 || ORIG_REF_NAME==PmodJSTK2_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_gpio_0_0/PmodJSTK2_axi_gpio_0_0_ooc.xdc
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_gpio_0_0/PmodJSTK2_axi_gpio_0_0.xdc
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PmodJSTK2_axi_gpio_0_0 || ORIG_REF_NAME==PmodJSTK2_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/Exercice2_bd_PmodJSTK2_0_2_board.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==Exercice2_bd_PmodJSTK2_0_2 || ORIG_REF_NAME==Exercice2_bd_PmodJSTK2_0_2} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_ooc.xdc
-
-# XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/Exercice2_bd_ooc.xdc
+# XDC: c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/Exercice2_bd_ooc.xdc

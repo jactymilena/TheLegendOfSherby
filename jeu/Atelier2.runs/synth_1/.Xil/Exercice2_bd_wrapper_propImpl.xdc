@@ -1,22 +1,13 @@
-set_property SRC_FILE_INFO {cfile:c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_processing_system7_0_0/Exercice2_bd_processing_system7_0_0.xdc rfile:../../../Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_processing_system7_0_0/Exercice2_bd_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:Exercice2_bd_i/processing_system7_0/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_clk_wiz_0_0/Exercice2_bd_clk_wiz_0_0.xdc rfile:../../../Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_clk_wiz_0_0/Exercice2_bd_clk_wiz_0_0.xdc id:2 order:EARLY scoped_inst:Exercice2_bd_i/clk_wiz_0/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0_board.xdc rfile:../../../Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0_board.xdc id:3 order:EARLY used_in_board:yes scoped_inst:Exercice2_bd_i/axi_gpio_0/U0 prop_thru_buffer:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/Exercice2_bd_PmodJSTK2_0_2_board.xdc rfile:../../../Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/Exercice2_bd_PmodJSTK2_0_2_board.xdc id:4 order:EARLY used_in_board:yes scoped_inst:Exercice2_bd_i/PmodJSTK2_0/inst prop_thru_buffer:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/GitHub/TheLegendOfSherby/jeu/Atelier2.srcs/constrs_1/imports/new/atelier4Constraints.xdc rfile:../../../Atelier2.srcs/constrs_1/imports/new/atelier4Constraints.xdc id:5} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/GitHub/TheLegendOfSherby/jeu/Atelier2.srcs/constrs_1/new/Zybo-Z7-master.xdc rfile:../../../Atelier2.srcs/constrs_1/new/Zybo-Z7-master.xdc id:6} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:7 order:LATE scoped_inst:Exercice2_bd_i/PmodJSTK2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:8 order:LATE scoped_inst:Exercice2_bd_i/PmodJSTK2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:9 order:LATE scoped_inst:Exercice2_bd_i/PmodJSTK2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:10 order:LATE scoped_inst:Exercice2_bd_i/PmodJSTK2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:11 order:LATE scoped_inst:Exercice2_bd_i/PmodJSTK2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:12 order:LATE scoped_inst:Exercice2_bd_i/PmodJSTK2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:13 order:LATE scoped_inst:Exercice2_bd_i/PmodJSTK2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl rfile:../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl id:14 order:LATE scoped_inst:Exercice2_bd_i/PmodJSTK2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl rfile:../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl id:15 order:LATE scoped_inst:{Exercice2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake} unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl rfile:../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl id:16 order:LATE scoped_inst:{Exercice2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake} unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl rfile:../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl id:17 order:LATE scoped_inst:{Exercice2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake} unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl rfile:../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl id:18 order:LATE scoped_inst:{Exercice2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake} unmanaged:yes} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl rfile:../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl id:19 order:LATE scoped_inst:{Exercice2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake} unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_processing_system7_0_0/Exercice2_bd_processing_system7_0_0.xdc rfile:../../../Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_processing_system7_0_0/Exercice2_bd_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:Exercice2_bd_i/processing_system7_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_clk_wiz_0_0/Exercice2_bd_clk_wiz_0_0.xdc rfile:../../../Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_clk_wiz_0_0/Exercice2_bd_clk_wiz_0_0.xdc id:2 order:EARLY scoped_inst:Exercice2_bd_i/clk_wiz_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/github/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0_board.xdc rfile:../../../Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/Exercice2_bd_axi_gpio_0_0_board.xdc id:3 order:EARLY used_in_board:yes scoped_inst:Exercice2_bd_i/axi_gpio_0/U0 prop_thru_buffer:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/github/TheLegendOfSherby/jeu/Atelier2.srcs/constrs_1/imports/new/atelier4Constraints.xdc rfile:../../../Atelier2.srcs/constrs_1/imports/new/atelier4Constraints.xdc id:4} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/github/TheLegendOfSherby/jeu/Atelier2.srcs/constrs_1/new/Zybo-Z7-master.xdc rfile:../../../Atelier2.srcs/constrs_1/new/Zybo-Z7-master.xdc id:5} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl rfile:../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl id:6 order:LATE scoped_inst:{Exercice2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake} unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl rfile:../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl id:7 order:LATE scoped_inst:{Exercice2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake} unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl rfile:../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl id:8 order:LATE scoped_inst:{Exercice2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake} unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl rfile:../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl id:9 order:LATE scoped_inst:{Exercice2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake} unmanaged:yes} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl rfile:../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl id:10 order:LATE scoped_inst:{Exercice2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake} unmanaged:yes} [current_design]
 current_instance Exercice2_bd_i/processing_system7_0/inst
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_0 0.6
@@ -297,108 +288,58 @@ set_property BOARD_PIN {sws_4bits_tri_i_2} [get_ports gpio_io_i[2]]
 set_property src_info {type:SCOPED_XDC file:3 line:9 export:INPUT save:INPUT read:READ} [current_design]
 set_property BOARD_PIN {sws_4bits_tri_i_3} [get_ports gpio_io_i[3]]
 current_instance
-current_instance Exercice2_bd_i/PmodJSTK2_0/inst
-set_property src_info {type:SCOPED_XDC file:4 line:3 export:INPUT save:INPUT read:READ} [current_design]
-set_property BOARD_PIN {JC1} [get_ports Pmod_out_pin1_t]
-set_property src_info {type:SCOPED_XDC file:4 line:4 export:INPUT save:INPUT read:READ} [current_design]
-set_property BOARD_PIN {JC2} [get_ports Pmod_out_pin2_t]
-set_property src_info {type:SCOPED_XDC file:4 line:5 export:INPUT save:INPUT read:READ} [current_design]
-set_property BOARD_PIN {JC3} [get_ports Pmod_out_pin3_t]
-set_property src_info {type:SCOPED_XDC file:4 line:6 export:INPUT save:INPUT read:READ} [current_design]
-set_property BOARD_PIN {JC4} [get_ports Pmod_out_pin4_t]
-set_property src_info {type:SCOPED_XDC file:4 line:7 export:INPUT save:INPUT read:READ} [current_design]
-set_property BOARD_PIN {JC7} [get_ports Pmod_out_pin7_t]
-set_property src_info {type:SCOPED_XDC file:4 line:8 export:INPUT save:INPUT read:READ} [current_design]
-set_property BOARD_PIN {JC8} [get_ports Pmod_out_pin8_t]
-set_property src_info {type:SCOPED_XDC file:4 line:9 export:INPUT save:INPUT read:READ} [current_design]
-set_property BOARD_PIN {JC9} [get_ports Pmod_out_pin9_t]
-set_property src_info {type:SCOPED_XDC file:4 line:10 export:INPUT save:INPUT read:READ} [current_design]
-set_property BOARD_PIN {JC10} [get_ports Pmod_out_pin10_t]
-current_instance
-set_property src_info {type:XDC file:5 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:4 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN K18   IOSTANDARD LVCMOS33 } [get_ports { reset_rtl }];
-set_property src_info {type:XDC file:5 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:4 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN K17   IOSTANDARD LVCMOS33 } [get_ports { sys_clk }];
-set_property src_info {type:XDC file:5 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:4 line:5 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN H17  IOSTANDARD TMDS_33  } [get_ports { hdmi_out_clk_n      }]; #IO_L13N_T2_MRCC_35 Sch=hdmi_tx_clk_n
-set_property src_info {type:XDC file:5 line:6 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:4 line:6 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN H16  IOSTANDARD TMDS_33  } [get_ports { hdmi_out_clk_p      }]; #IO_L13P_T2_MRCC_35 Sch=hdmi_tx_clk_p
-set_property src_info {type:XDC file:5 line:7 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:4 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN D20  IOSTANDARD TMDS_33  } [get_ports { hdmi_out_data_n[0]  }]; #IO_L4N_T0_35 Sch=hdmi_tx_n[0]
-set_property src_info {type:XDC file:5 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:4 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN D19  IOSTANDARD TMDS_33  } [get_ports { hdmi_out_data_p[0]  }]; #IO_L4P_T0_35 Sch=hdmi_tx_p[0]
-set_property src_info {type:XDC file:5 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:4 line:9 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN B20  IOSTANDARD TMDS_33  } [get_ports { hdmi_out_data_n[1]  }]; #IO_L1N_T0_AD0N_35 Sch=hdmi_tx_n[1]
-set_property src_info {type:XDC file:5 line:10 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:4 line:10 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN C20  IOSTANDARD TMDS_33  } [get_ports { hdmi_out_data_p[1]  }]; #IO_L1P_T0_AD0P_35 Sch=hdmi_tx_p[1]
-set_property src_info {type:XDC file:5 line:11 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:4 line:11 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN A20  IOSTANDARD TMDS_33  } [get_ports { hdmi_out_data_n[2]  }]; #IO_L2N_T0_AD8N_35 Sch=hdmi_tx_n[2]
-set_property src_info {type:XDC file:5 line:12 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:4 line:12 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN B19  IOSTANDARD TMDS_33  } [get_ports { hdmi_out_data_p[2]  }]; #IO_L2P_T0_AD8P_35 Sch=hdmi_tx_p[2]
-set_property src_info {type:XDC file:6 line:126 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:5 line:126 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN V15   IOSTANDARD LVCMOS33     } [get_ports { jc_pin1_io }];#IO_L10P_T1_34 Sch=jc_p[1]
-set_property src_info {type:XDC file:6 line:127 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:5 line:127 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN W15   IOSTANDARD LVCMOS33     } [get_ports { jc_pin2_io }]; #IO_L10N_T1_34 Sch=jc_n[1]
-set_property src_info {type:XDC file:6 line:128 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:5 line:128 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN T11   IOSTANDARD LVCMOS33     } [get_ports { jc_pin3_io }]; #IO_L1P_T0_34 Sch=jc_p[2]
-set_property src_info {type:XDC file:6 line:129 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:5 line:129 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN T10   IOSTANDARD LVCMOS33     } [get_ports { jc_pin4_io }]; #IO_L1N_T0_34 Sch=jc_n[2]
-set_property src_info {type:XDC file:6 line:130 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:5 line:130 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN W14   IOSTANDARD LVCMOS33     } [get_ports { jc_pin7_io }]; #IO_L8P_T1_34 Sch=jc_p[3]
-set_property src_info {type:XDC file:6 line:131 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:5 line:131 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN Y14   IOSTANDARD LVCMOS33     } [get_ports { jc_pin8_io }]; #IO_L8N_T1_34 Sch=jc_n[3]
-set_property src_info {type:XDC file:6 line:132 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:5 line:132 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN T12   IOSTANDARD LVCMOS33     } [get_ports { jc_pin9_io }]; #IO_L2P_T0_34 Sch=jc_p[4]
-set_property src_info {type:XDC file:6 line:133 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:5 line:133 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN U12   IOSTANDARD LVCMOS33     } [get_ports { jc_pin10_io }]; #IO_L2N_T0_34 Sch=jc_n[4]
-current_instance Exercice2_bd_i/PmodJSTK2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst
-set_property src_info {type:SCOPED_XDC file:7 line:23 export:INPUT save:NONE read:READ} [current_design]
-create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
-current_instance
-current_instance Exercice2_bd_i/PmodJSTK2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst
-set_property src_info {type:SCOPED_XDC file:8 line:23 export:INPUT save:NONE read:READ} [current_design]
-create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
-current_instance
-current_instance Exercice2_bd_i/PmodJSTK2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst
-set_property src_info {type:SCOPED_XDC file:9 line:23 export:INPUT save:NONE read:READ} [current_design]
-create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
-current_instance
-current_instance Exercice2_bd_i/PmodJSTK2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst
-set_property src_info {type:SCOPED_XDC file:10 line:23 export:INPUT save:NONE read:READ} [current_design]
-create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
-current_instance
-current_instance Exercice2_bd_i/PmodJSTK2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst
-set_property src_info {type:SCOPED_XDC file:11 line:23 export:INPUT save:NONE read:READ} [current_design]
-create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
-current_instance
-current_instance Exercice2_bd_i/PmodJSTK2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst
-set_property src_info {type:SCOPED_XDC file:12 line:23 export:INPUT save:NONE read:READ} [current_design]
-create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
-current_instance
-current_instance Exercice2_bd_i/PmodJSTK2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst
-set_property src_info {type:SCOPED_XDC file:13 line:23 export:INPUT save:NONE read:READ} [current_design]
-create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
-current_instance
-current_instance Exercice2_bd_i/PmodJSTK2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst
-set_property src_info {type:SCOPED_XDC file:14 line:23 export:INPUT save:NONE read:READ} [current_design]
-create_waiver -internal -scoped -type CDC -id {CDC-6} -user "xpm_cdc" -tags "1009444" -desc "The CDC-6 warning is waived as it is safe in the context of XPM_CDC_GRAY." -from [get_pins -quiet {src_gray_ff_reg*/C}] -to [get_pins -quiet {dest_graysync_ff_reg*/D}]
-current_instance
 current_instance {Exercice2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake}
-set_property src_info {type:SCOPED_XDC file:15 line:30 export:INPUT save:NONE read:READ} [current_design]
+set_property src_info {type:SCOPED_XDC file:6 line:30 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-15} -user "xpm_cdc" -tags "1009444" -desc "The CDC-15 warning is waived as it is safe in the context of XPM_CDC_HANDSHAKE." -from [get_pins -quiet {src_hsdata_ff_reg*/C}] -to [get_pins -quiet {dest_hsdata_ff_reg*/D}]
 current_instance
 current_instance {Exercice2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake}
-set_property src_info {type:SCOPED_XDC file:16 line:30 export:INPUT save:NONE read:READ} [current_design]
+set_property src_info {type:SCOPED_XDC file:7 line:30 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-15} -user "xpm_cdc" -tags "1009444" -desc "The CDC-15 warning is waived as it is safe in the context of XPM_CDC_HANDSHAKE." -from [get_pins -quiet {src_hsdata_ff_reg*/C}] -to [get_pins -quiet {dest_hsdata_ff_reg*/D}]
 current_instance
 current_instance {Exercice2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake}
-set_property src_info {type:SCOPED_XDC file:17 line:30 export:INPUT save:NONE read:READ} [current_design]
+set_property src_info {type:SCOPED_XDC file:8 line:30 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-15} -user "xpm_cdc" -tags "1009444" -desc "The CDC-15 warning is waived as it is safe in the context of XPM_CDC_HANDSHAKE." -from [get_pins -quiet {src_hsdata_ff_reg*/C}] -to [get_pins -quiet {dest_hsdata_ff_reg*/D}]
 current_instance
 current_instance {Exercice2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake}
-set_property src_info {type:SCOPED_XDC file:18 line:30 export:INPUT save:NONE read:READ} [current_design]
+set_property src_info {type:SCOPED_XDC file:9 line:30 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-15} -user "xpm_cdc" -tags "1009444" -desc "The CDC-15 warning is waived as it is safe in the context of XPM_CDC_HANDSHAKE." -from [get_pins -quiet {src_hsdata_ff_reg*/C}] -to [get_pins -quiet {dest_hsdata_ff_reg*/D}]
 current_instance
 current_instance {Exercice2_bd_i/smartconnect_0/inst/switchboards/i_nodes/i_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_reg_fifo_async.inst_reg_fifo_async/gen_xpm_cdc_handshake_array[0].inst_cdc_handshake}
-set_property src_info {type:SCOPED_XDC file:19 line:30 export:INPUT save:NONE read:READ} [current_design]
+set_property src_info {type:SCOPED_XDC file:10 line:30 export:INPUT save:NONE read:READ} [current_design]
 create_waiver -internal -scoped -type CDC -id {CDC-15} -user "xpm_cdc" -tags "1009444" -desc "The CDC-15 warning is waived as it is safe in the context of XPM_CDC_HANDSHAKE." -from [get_pins -quiet {src_hsdata_ff_reg*/C}] -to [get_pins -quiet {dest_hsdata_ff_reg*/D}]

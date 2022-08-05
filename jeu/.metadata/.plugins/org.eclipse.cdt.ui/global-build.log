@@ -1,6 +1,6 @@
-Nothing to build in platform 'Exercice2_bd_wrapper_slow'
+Nothing to build in platform 'Exercice2_bd_wrapper_map16'
 
-03:24:47 **** Incremental Build of configuration Debug for project pain12 ****
+07:32:13 **** Build of configuration Debug for project pain16 ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -8,12 +8,12 @@ a9-linaro-pre-build-step
 make --no-print-directory main-build
 'Building file: ../src/actor.cpp'
 'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/actor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper_slow/export/Exercice2_bd_wrapper_slow/sw/Exercice2_bd_wrapper_slow/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/actor.d" -MT"src/actor.o" -o "src/actor.o" "../src/actor.cpp"
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/actor.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/github/TheLegendOfSherby/jeu/Exercice2_bd_wrapper_map16/export/Exercice2_bd_wrapper_map16/sw/Exercice2_bd_wrapper_map16/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/actor.d" -MT"src/actor.o" -o "src/actor.o" "../src/actor.cpp"
 'Finished building: ../src/actor.cpp'
 ' '
 'Building file: ../src/api.cpp'
 'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/api.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper_slow/export/Exercice2_bd_wrapper_slow/sw/Exercice2_bd_wrapper_slow/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/api.d" -MT"src/api.o" -o "src/api.o" "../src/api.cpp"
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/api.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/github/TheLegendOfSherby/jeu/Exercice2_bd_wrapper_map16/export/Exercice2_bd_wrapper_map16/sw/Exercice2_bd_wrapper_map16/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/api.d" -MT"src/api.o" -o "src/api.o" "../src/api.cpp"
 ../src/api.cpp:35:13: warning: 'void sendActorGlobalOpCode(int, int, bool, int, int)' defined but not used [-Wunused-function]
    35 | static void sendActorGlobalOpCode(int opcode, int actor_id, bool active, int global_x, int global_y)
       |             ^~~~~~~~~~~~~~~~~~~~~
@@ -21,17 +21,17 @@ arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/api.o" -mcpu=corte
 ' '
 'Building file: ../src/background.cpp'
 'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/background.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper_slow/export/Exercice2_bd_wrapper_slow/sw/Exercice2_bd_wrapper_slow/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/background.d" -MT"src/background.o" -o "src/background.o" "../src/background.cpp"
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/background.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/github/TheLegendOfSherby/jeu/Exercice2_bd_wrapper_map16/export/Exercice2_bd_wrapper_map16/sw/Exercice2_bd_wrapper_map16/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/background.d" -MT"src/background.o" -o "src/background.o" "../src/background.cpp"
 'Finished building: ../src/background.cpp'
 ' '
 'Building file: ../src/character.cpp'
 'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/character.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper_slow/export/Exercice2_bd_wrapper_slow/sw/Exercice2_bd_wrapper_slow/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/character.d" -MT"src/character.o" -o "src/character.o" "../src/character.cpp"
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/character.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/github/TheLegendOfSherby/jeu/Exercice2_bd_wrapper_map16/export/Exercice2_bd_wrapper_map16/sw/Exercice2_bd_wrapper_map16/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/character.d" -MT"src/character.o" -o "src/character.o" "../src/character.cpp"
 'Finished building: ../src/character.cpp'
 ' '
 'Building file: ../src/main.cpp'
 'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper_slow/export/Exercice2_bd_wrapper_slow/sw/Exercice2_bd_wrapper_slow/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/github/TheLegendOfSherby/jeu/Exercice2_bd_wrapper_map16/export/Exercice2_bd_wrapper_map16/sw/Exercice2_bd_wrapper_map16/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
 ../src/main.cpp: In function 'int main()':
 ../src/main.cpp:27:10: warning: unused variable 'tick' [-Wunused-variable]
    27 |     long tick = time ;//* 667000000;
@@ -46,22 +46,22 @@ arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cort
 ' '
 'Building file: ../src/scaler.c'
 'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/scaler.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper_slow/export/Exercice2_bd_wrapper_slow/sw/Exercice2_bd_wrapper_slow/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/scaler.d" -MT"src/scaler.o" -o "src/scaler.o" "../src/scaler.c"
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/scaler.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/github/TheLegendOfSherby/jeu/Exercice2_bd_wrapper_map16/export/Exercice2_bd_wrapper_map16/sw/Exercice2_bd_wrapper_map16/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/scaler.d" -MT"src/scaler.o" -o "src/scaler.o" "../src/scaler.c"
 'Finished building: ../src/scaler.c'
 ' '
 'Building file: ../src/vdma.c'
 'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vdma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper_slow/export/Exercice2_bd_wrapper_slow/sw/Exercice2_bd_wrapper_slow/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/vdma.d" -MT"src/vdma.o" -o "src/vdma.o" "../src/vdma.c"
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vdma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/github/TheLegendOfSherby/jeu/Exercice2_bd_wrapper_map16/export/Exercice2_bd_wrapper_map16/sw/Exercice2_bd_wrapper_map16/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/vdma.d" -MT"src/vdma.o" -o "src/vdma.o" "../src/vdma.c"
 'Finished building: ../src/vdma.c'
 ' '
-'Building target: pain12.elf'
+'Building target: pain16.elf'
 'Invoking: ARM v7 g++ linker'
-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/GitHub/TheLegendOfSherby/jeu/Exercice2_bd_wrapper_slow/export/Exercice2_bd_wrapper_slow/sw/Exercice2_bd_wrapper_slow/standalone_ps7_cortexa9_0/bsplib/lib -o "pain12.elf"  ./src/actor.o ./src/api.o ./src/background.o ./src/character.o ./src/main.o ./src/scaler.o ./src/vdma.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-'Finished building target: pain12.elf'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/github/TheLegendOfSherby/jeu/Exercice2_bd_wrapper_map16/export/Exercice2_bd_wrapper_map16/sw/Exercice2_bd_wrapper_map16/standalone_ps7_cortexa9_0/bsplib/lib -o "pain16.elf"  ./src/actor.o ./src/api.o ./src/background.o ./src/character.o ./src/main.o ./src/scaler.o ./src/vdma.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: pain16.elf'
 ' '
 'Invoking: ARM v7 Print Size'
-arm-none-eabi-size pain12.elf  |tee "pain12.elf.size"
+arm-none-eabi-size pain16.elf  |tee "pain16.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 238888	 232152	 160960	 632000	  9a4c0	pain12.elf
-'Finished building: pain12.elf.size'
+ 238888	 232152	 160960	 632000	  9a4c0	pain16.elf
+'Finished building: pain16.elf.size'
 ' '

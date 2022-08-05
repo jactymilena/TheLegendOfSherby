@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Aug  5 04:46:41 2022
-# Process ID: 6216
-# Current directory: C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1
+# Start of session at: Fri Aug  5 07:02:12 2022
+# Process ID: 20856
+# Current directory: C:/github/TheLegendOfSherby/jeu/Atelier2.runs/synth_1
 # Command line: vivado.exe -log Exercice2_bd_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Exercice2_bd_wrapper.tcl
-# Log file: C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/Exercice2_bd_wrapper.vds
-# Journal file: C:/GitHub/TheLegendOfSherby/jeu/Atelier2.runs/synth_1\vivado.jou
+# Log file: C:/github/TheLegendOfSherby/jeu/Atelier2.runs/synth_1/Exercice2_bd_wrapper.vds
+# Journal file: C:/github/TheLegendOfSherby/jeu/Atelier2.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Exercice2_bd_wrapper.tcl -notrace

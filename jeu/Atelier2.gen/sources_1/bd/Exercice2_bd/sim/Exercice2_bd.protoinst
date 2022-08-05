@@ -3,54 +3,6 @@
 	"modules": {
 		"Exercice2_bd": {
 			"proto_instances": {
-				"/PmodJSTK2_0/AXI_LITE_GPIO": {
-					"interface": "xilinx.com:interface:aximm:1.0",
-					"ports": {
-						"ACLK": { "actual": "s_axi_aclk"},
-						"ARADDR": { "actual": "AXI_LITE_GPIO_araddr[8:0]"},
-						"ARESETN": { "actual": "s_axi_aresetn"},
-						"ARREADY": { "actual": "AXI_LITE_GPIO_arready"},
-						"ARVALID": { "actual": "AXI_LITE_GPIO_arvalid"},
-						"AWADDR": { "actual": "AXI_LITE_GPIO_awaddr[8:0]"},
-						"AWREADY": { "actual": "AXI_LITE_GPIO_awready"},
-						"AWVALID": { "actual": "AXI_LITE_GPIO_awvalid"},
-						"BREADY": { "actual": "AXI_LITE_GPIO_bready"},
-						"BRESP": { "actual": "AXI_LITE_GPIO_bresp[1:0]"},
-						"BVALID": { "actual": "AXI_LITE_GPIO_bvalid"},
-						"RDATA": { "actual": "AXI_LITE_GPIO_rdata[31:0]"},
-						"RREADY": { "actual": "AXI_LITE_GPIO_rready"},
-						"RRESP": { "actual": "AXI_LITE_GPIO_rresp[1:0]"},
-						"RVALID": { "actual": "AXI_LITE_GPIO_rvalid"},
-						"WDATA": { "actual": "AXI_LITE_GPIO_wdata[31:0]"},
-						"WREADY": { "actual": "AXI_LITE_GPIO_wready"},
-						"WSTRB": { "actual": "AXI_LITE_GPIO_wstrb[3:0]"},
-						"WVALID": { "actual": "AXI_LITE_GPIO_wvalid"}
-					}
-				},
-				"/PmodJSTK2_0/AXI_LITE_SPI": {
-					"interface": "xilinx.com:interface:aximm:1.0",
-					"ports": {
-						"ACLK": { "actual": "s_axi_aclk"},
-						"ARADDR": { "actual": "AXI_LITE_SPI_araddr[6:0]"},
-						"ARESETN": { "actual": "s_axi_aresetn"},
-						"ARREADY": { "actual": "AXI_LITE_SPI_arready"},
-						"ARVALID": { "actual": "AXI_LITE_SPI_arvalid"},
-						"AWADDR": { "actual": "AXI_LITE_SPI_awaddr[6:0]"},
-						"AWREADY": { "actual": "AXI_LITE_SPI_awready"},
-						"AWVALID": { "actual": "AXI_LITE_SPI_awvalid"},
-						"BREADY": { "actual": "AXI_LITE_SPI_bready"},
-						"BRESP": { "actual": "AXI_LITE_SPI_bresp[1:0]"},
-						"BVALID": { "actual": "AXI_LITE_SPI_bvalid"},
-						"RDATA": { "actual": "AXI_LITE_SPI_rdata[31:0]"},
-						"RREADY": { "actual": "AXI_LITE_SPI_rready"},
-						"RRESP": { "actual": "AXI_LITE_SPI_rresp[1:0]"},
-						"RVALID": { "actual": "AXI_LITE_SPI_rvalid"},
-						"WDATA": { "actual": "AXI_LITE_SPI_wdata[31:0]"},
-						"WREADY": { "actual": "AXI_LITE_SPI_wready"},
-						"WSTRB": { "actual": "AXI_LITE_SPI_wstrb[3:0]"},
-						"WVALID": { "actual": "AXI_LITE_SPI_wvalid"}
-					}
-				},
 				"/axi_gpio_0/S_AXI": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
@@ -218,56 +170,6 @@
 						"WREADY": { "actual": "M02_AXI_wready"},
 						"WSTRB": { "actual": "M02_AXI_wstrb"},
 						"WVALID": { "actual": "M02_AXI_wvalid"}
-					}
-				},
-				"/smartconnect_0/M03_AXI": {
-					"interface": "xilinx.com:interface:aximm:1.0",
-					"ports": {
-						"ACLK": { "actual": "aclk1"},
-						"ARADDR": { "actual": "M03_AXI_araddr"},
-						"ARPROT": { "actual": "M03_AXI_arprot"},
-						"ARREADY": { "actual": "M03_AXI_arready"},
-						"ARVALID": { "actual": "M03_AXI_arvalid"},
-						"AWADDR": { "actual": "M03_AXI_awaddr"},
-						"AWPROT": { "actual": "M03_AXI_awprot"},
-						"AWREADY": { "actual": "M03_AXI_awready"},
-						"AWVALID": { "actual": "M03_AXI_awvalid"},
-						"BREADY": { "actual": "M03_AXI_bready"},
-						"BRESP": { "actual": "M03_AXI_bresp"},
-						"BVALID": { "actual": "M03_AXI_bvalid"},
-						"RDATA": { "actual": "M03_AXI_rdata"},
-						"RREADY": { "actual": "M03_AXI_rready"},
-						"RRESP": { "actual": "M03_AXI_rresp"},
-						"RVALID": { "actual": "M03_AXI_rvalid"},
-						"WDATA": { "actual": "M03_AXI_wdata"},
-						"WREADY": { "actual": "M03_AXI_wready"},
-						"WSTRB": { "actual": "M03_AXI_wstrb"},
-						"WVALID": { "actual": "M03_AXI_wvalid"}
-					}
-				},
-				"/smartconnect_0/M04_AXI": {
-					"interface": "xilinx.com:interface:aximm:1.0",
-					"ports": {
-						"ACLK": { "actual": "aclk1"},
-						"ARADDR": { "actual": "M04_AXI_araddr"},
-						"ARPROT": { "actual": "M04_AXI_arprot"},
-						"ARREADY": { "actual": "M04_AXI_arready"},
-						"ARVALID": { "actual": "M04_AXI_arvalid"},
-						"AWADDR": { "actual": "M04_AXI_awaddr"},
-						"AWPROT": { "actual": "M04_AXI_awprot"},
-						"AWREADY": { "actual": "M04_AXI_awready"},
-						"AWVALID": { "actual": "M04_AXI_awvalid"},
-						"BREADY": { "actual": "M04_AXI_bready"},
-						"BRESP": { "actual": "M04_AXI_bresp"},
-						"BVALID": { "actual": "M04_AXI_bvalid"},
-						"RDATA": { "actual": "M04_AXI_rdata"},
-						"RREADY": { "actual": "M04_AXI_rready"},
-						"RRESP": { "actual": "M04_AXI_rresp"},
-						"RVALID": { "actual": "M04_AXI_rvalid"},
-						"WDATA": { "actual": "M04_AXI_wdata"},
-						"WREADY": { "actual": "M04_AXI_wready"},
-						"WSTRB": { "actual": "M04_AXI_wstrb"},
-						"WVALID": { "actual": "M04_AXI_wvalid"}
 					}
 				},
 				"/smartconnect_0/S00_AXI": {

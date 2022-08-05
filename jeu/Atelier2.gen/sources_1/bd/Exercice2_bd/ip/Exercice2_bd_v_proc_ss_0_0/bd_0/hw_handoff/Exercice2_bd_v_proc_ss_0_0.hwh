@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Aug  5 04:01:56 2022" VIVADOVERSION="2020.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Aug  5 07:01:49 2022" VIVADOVERSION="2020.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-10:part0:1.0" DEVICE="7z010" NAME="bd_f134" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -30,51 +30,6 @@
     <PORT DIR="O" LEFT="0" NAME="aresetn_io_axis" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="rst" SIGNAME="xlslice_0_Dout">
       <CONNECTIONS>
         <CONNECTION INSTANCE="xlslice_0" PORT="Dout"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="23" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="hsc_m_axis_video_TDATA">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="hsc" PORT="m_axis_video_TDATA"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="m_axis_tdest" RIGHT="0" SIGIS="undef" SIGNAME="hsc_m_axis_video_TDEST">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="hsc" PORT="m_axis_video_TDEST"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="m_axis_tid" RIGHT="0" SIGIS="undef" SIGNAME="hsc_m_axis_video_TID">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="hsc" PORT="m_axis_video_TID"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="2" NAME="m_axis_tkeep" RIGHT="0" SIGIS="undef" SIGNAME="hsc_m_axis_video_TKEEP">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="hsc" PORT="m_axis_video_TKEEP"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="m_axis_tlast" RIGHT="0" SIGIS="undef" SIGNAME="hsc_m_axis_video_TLAST">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="hsc" PORT="m_axis_video_TLAST"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="hsc_m_axis_video_TREADY">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="hsc" PORT="m_axis_video_TREADY"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="2" NAME="m_axis_tstrb" RIGHT="0" SIGIS="undef" SIGNAME="hsc_m_axis_video_TSTRB">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="hsc" PORT="m_axis_video_TSTRB"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="m_axis_tuser" RIGHT="0" SIGIS="undef" SIGNAME="hsc_m_axis_video_TUSER">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="hsc" PORT="m_axis_video_TUSER"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="hsc_m_axis_video_TVALID">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="hsc" PORT="m_axis_video_TVALID"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="23" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="input_size_set_s_axis_tdata">
@@ -215,6 +170,51 @@
     <PORT DIR="I" LEFT="0" NAME="s_axi_ctrl_rready" RIGHT="0" SIGIS="undef" SIGNAME="smartconnect_0_S00_AXI_rready">
       <CONNECTIONS>
         <CONNECTION INSTANCE="smartconnect_0" PORT="S00_AXI_rready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="23" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="hsc_m_axis_video_TDATA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hsc" PORT="m_axis_video_TDATA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="m_axis_tdest" RIGHT="0" SIGIS="undef" SIGNAME="hsc_m_axis_video_TDEST">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hsc" PORT="m_axis_video_TDEST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="m_axis_tid" RIGHT="0" SIGIS="undef" SIGNAME="hsc_m_axis_video_TID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hsc" PORT="m_axis_video_TID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="m_axis_tkeep" RIGHT="0" SIGIS="undef" SIGNAME="hsc_m_axis_video_TKEEP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hsc" PORT="m_axis_video_TKEEP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="m_axis_tlast" RIGHT="0" SIGIS="undef" SIGNAME="hsc_m_axis_video_TLAST">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hsc" PORT="m_axis_video_TLAST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="hsc_m_axis_video_TREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hsc" PORT="m_axis_video_TREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="m_axis_tstrb" RIGHT="0" SIGIS="undef" SIGNAME="hsc_m_axis_video_TSTRB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hsc" PORT="m_axis_video_TSTRB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="m_axis_tuser" RIGHT="0" SIGIS="undef" SIGNAME="hsc_m_axis_video_TUSER">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hsc" PORT="m_axis_video_TUSER"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="hsc_m_axis_video_TVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hsc" PORT="m_axis_video_TVALID"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>

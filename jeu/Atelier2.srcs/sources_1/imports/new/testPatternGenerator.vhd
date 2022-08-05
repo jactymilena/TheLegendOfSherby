@@ -48,7 +48,7 @@ end testPatternGenerator;
 architecture Behavioral of testPatternGenerator is
 
 type state_videostr is (WAITING, STREAMING, EOL);
-signal lineCpt : unsigned(11 downto 0) := (others => '0');
+signal lineCpt : unsigned(10 downto 0) := (others => '0');
 signal columnCpt : unsigned(11 downto 0) := (others => '0');
 signal pixelXCpt : unsigned(3 downto 0) := (others => '0');
 signal pixelYCpt : unsigned(3 downto 0) := (others => '0');
@@ -99,38 +99,16 @@ begin
     elsif(rising_edge(clk)) then
         current_state <= next_state;
         if(m_axis_tready = '1') then             
-             if(columnCpt = "000100000000") then
+             if(columnCpt = "00011111111") then
                     columnCpt <= "000000000000";
-                    -- pixelXCpt <= "0000";               
-                    
-                    if(lineCpt = "000011100000") then
-                        lineCpt  <= "000000000000";
-                        -- pixelYCpt <= "0000";
---                        if(s_timer = "0001111111111111") then
---                            s_timer <= "0000000000000000";
---                            if(s_tileId_index = "00011001") then
---                                s_tileId_index <= "00000000";
---                            else
---                                s_tileId_index <= s_tileId_index + "1";
---                            end if;
---                        else
---                            s_timer <= s_timer + "1";
---                        end if;
+                    if(lineCpt = "00011011111") then
+                        lineCpt  <= "00000000000";
                     else
---                        if(pixelYCpt = "1111") then 
---                           pixelYCpt <= "0000";
---                        else
---                           pixelYCpt <= pixelYCpt + "1";
---                        end if;
                         lineCpt <= lineCpt + "1";
                     end if;
+                   
              else
---                 if(pixelXCpt = "1111") then 
---                    pixelXCpt <= "0000";
---                 else
---                    pixelXCpt <= pixelXCpt + "1";
---                 end if;
-                columnCpt <= columnCpt + "1";
+                    columnCpt <= columnCpt + "1";
              end if;
          end if;
     end if;

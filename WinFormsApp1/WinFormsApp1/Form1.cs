@@ -38,9 +38,9 @@ namespace WinFormsApp1
         {
             using (Bitmap img = new Bitmap(txtFilePath.Text)) {
                 string output = "";
-                for (int i = 0; i < img.Width; i++)
+                for (int i = 0; i < 224; i++)
                 {
-                    for (int j = 0; j < img.Height; j++)
+                    for (int j = 0; j < 256; j++)
                     {
                         Color pixel = img.GetPixel(j, i);
                         string color;
@@ -53,46 +53,49 @@ namespace WinFormsApp1
                             switch (color)
                             {
                                 case "000000":
-                                    output += ", NOIR_CC";
+                                    output += ", x\"1\"";
                                     break;
                                 case "ffffff":
-                                    output += ", BLANC_CC";
+                                    output += ", x\"2\"";
                                     break;
                                 case "00a2e8":
-                                    output += ", BLEU1_CC";
+                                    output += ", x\"3\"";
                                     break;
                                 case "ed1a2c":
-                                    output += ", ROUGE_CC";
+                                    output += ", x\"4\"";
                                     break;
                                 case "c85086":
-                                    output += ", ROSE_CC";
+                                    output += ", x\"5\"";
                                     break;
                                 case "f7ab79":
-                                    output += ", BEIGE_CC";
+                                    output += ", x\"6\"";
                                     break;
                                 case "b4e61d":
-                                    output += ", LIME_CC";
+                                    output += ", x\"7\"";
                                     break;
                                 case "0c6624":
-                                    output += ", VERT2_CC";
+                                    output += ", x\"8\"";
                                     break;
                                 case "22b14d":
-                                    output += ", VERT1_CC";
+                                    output += ", x\"9\"";
                                     break;
                                 case "8a5132":
-                                    output += ", BRUN_CC";
+                                    output += ", x\"A\"";
                                     break;
                                 case "ff7f2f":
-                                    output += ", ORANGE_CC";
+                                    output += ", x\"B\"";
                                     break;
                                 case "fff200":
-                                    output += ", JAUNE_CC";
+                                    output += ", x\"C\"";
                                     break;
-                                case "66696b":
-                                    output += ", GRIS_CC";
+                                case "7a767a":
+                                    output += ", x\"D\"";
+                                    break;
+                                case "2121B8":
+                                    output += ", x\"E\"";
                                     break;
                                 default:
-                                    output += ", x\"1\"";
+                                    output += ", x\"F\"";
                                     break;
                             }
                         }

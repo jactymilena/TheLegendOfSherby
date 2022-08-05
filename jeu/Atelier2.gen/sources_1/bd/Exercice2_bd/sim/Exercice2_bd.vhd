@@ -1,8 +1,8 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Fri Aug  5 04:01:43 2022
---Host        : DESKTOP-NHSH7S2 running 64-bit major release  (build 9200)
+--Date        : Fri Aug  5 07:01:36 2022
+--Host        : DESKTOP-D593BJC running 64-bit major release  (build 9200)
 --Command     : generate_target Exercice2_bd.bd
 --Design      : Exercice2_bd
 --Purpose     : IP block netlist
@@ -39,35 +39,11 @@ entity Exercice2_bd is
     hdmi_out_clk_p : out STD_LOGIC;
     hdmi_out_data_n : out STD_LOGIC_VECTOR ( 2 downto 0 );
     hdmi_out_data_p : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    jc_pin10_i : in STD_LOGIC;
-    jc_pin10_o : out STD_LOGIC;
-    jc_pin10_t : out STD_LOGIC;
-    jc_pin1_i : in STD_LOGIC;
-    jc_pin1_o : out STD_LOGIC;
-    jc_pin1_t : out STD_LOGIC;
-    jc_pin2_i : in STD_LOGIC;
-    jc_pin2_o : out STD_LOGIC;
-    jc_pin2_t : out STD_LOGIC;
-    jc_pin3_i : in STD_LOGIC;
-    jc_pin3_o : out STD_LOGIC;
-    jc_pin3_t : out STD_LOGIC;
-    jc_pin4_i : in STD_LOGIC;
-    jc_pin4_o : out STD_LOGIC;
-    jc_pin4_t : out STD_LOGIC;
-    jc_pin7_i : in STD_LOGIC;
-    jc_pin7_o : out STD_LOGIC;
-    jc_pin7_t : out STD_LOGIC;
-    jc_pin8_i : in STD_LOGIC;
-    jc_pin8_o : out STD_LOGIC;
-    jc_pin8_t : out STD_LOGIC;
-    jc_pin9_i : in STD_LOGIC;
-    jc_pin9_o : out STD_LOGIC;
-    jc_pin9_t : out STD_LOGIC;
     reset_rtl : in STD_LOGIC;
     sys_clock : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of Exercice2_bd : entity is "Exercice2_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Exercice2_bd,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=12,numReposBlks=12,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=7,da_board_cnt=3,da_ps7_cnt=1,synth_mode=Global}";
+  attribute CORE_GENERATION_INFO of Exercice2_bd : entity is "Exercice2_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Exercice2_bd,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=11,numReposBlks=11,numNonXlnxBlks=1,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=7,da_board_cnt=3,da_ps7_cnt=1,synth_mode=Global}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of Exercice2_bd : entity is "Exercice2_bd.hwdef";
 end Exercice2_bd;
@@ -464,71 +440,6 @@ architecture STRUCTURE of Exercice2_bd is
     gpio_io_i : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component Exercice2_bd_axi_gpio_0_0;
-  component Exercice2_bd_PmodJSTK2_0_2 is
-  port (
-    AXI_LITE_GPIO_araddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
-    AXI_LITE_GPIO_arready : out STD_LOGIC;
-    AXI_LITE_GPIO_arvalid : in STD_LOGIC;
-    AXI_LITE_GPIO_awaddr : in STD_LOGIC_VECTOR ( 8 downto 0 );
-    AXI_LITE_GPIO_awready : out STD_LOGIC;
-    AXI_LITE_GPIO_awvalid : in STD_LOGIC;
-    AXI_LITE_GPIO_bready : in STD_LOGIC;
-    AXI_LITE_GPIO_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    AXI_LITE_GPIO_bvalid : out STD_LOGIC;
-    AXI_LITE_GPIO_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    AXI_LITE_GPIO_rready : in STD_LOGIC;
-    AXI_LITE_GPIO_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    AXI_LITE_GPIO_rvalid : out STD_LOGIC;
-    AXI_LITE_GPIO_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    AXI_LITE_GPIO_wready : out STD_LOGIC;
-    AXI_LITE_GPIO_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    AXI_LITE_GPIO_wvalid : in STD_LOGIC;
-    AXI_LITE_SPI_araddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
-    AXI_LITE_SPI_arready : out STD_LOGIC;
-    AXI_LITE_SPI_arvalid : in STD_LOGIC;
-    AXI_LITE_SPI_awaddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
-    AXI_LITE_SPI_awready : out STD_LOGIC;
-    AXI_LITE_SPI_awvalid : in STD_LOGIC;
-    AXI_LITE_SPI_bready : in STD_LOGIC;
-    AXI_LITE_SPI_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    AXI_LITE_SPI_bvalid : out STD_LOGIC;
-    AXI_LITE_SPI_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    AXI_LITE_SPI_rready : in STD_LOGIC;
-    AXI_LITE_SPI_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    AXI_LITE_SPI_rvalid : out STD_LOGIC;
-    AXI_LITE_SPI_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    AXI_LITE_SPI_wready : out STD_LOGIC;
-    AXI_LITE_SPI_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    AXI_LITE_SPI_wvalid : in STD_LOGIC;
-    Pmod_out_pin10_i : in STD_LOGIC;
-    Pmod_out_pin10_o : out STD_LOGIC;
-    Pmod_out_pin10_t : out STD_LOGIC;
-    Pmod_out_pin1_i : in STD_LOGIC;
-    Pmod_out_pin1_o : out STD_LOGIC;
-    Pmod_out_pin1_t : out STD_LOGIC;
-    Pmod_out_pin2_i : in STD_LOGIC;
-    Pmod_out_pin2_o : out STD_LOGIC;
-    Pmod_out_pin2_t : out STD_LOGIC;
-    Pmod_out_pin3_i : in STD_LOGIC;
-    Pmod_out_pin3_o : out STD_LOGIC;
-    Pmod_out_pin3_t : out STD_LOGIC;
-    Pmod_out_pin4_i : in STD_LOGIC;
-    Pmod_out_pin4_o : out STD_LOGIC;
-    Pmod_out_pin4_t : out STD_LOGIC;
-    Pmod_out_pin7_i : in STD_LOGIC;
-    Pmod_out_pin7_o : out STD_LOGIC;
-    Pmod_out_pin7_t : out STD_LOGIC;
-    Pmod_out_pin8_i : in STD_LOGIC;
-    Pmod_out_pin8_o : out STD_LOGIC;
-    Pmod_out_pin8_t : out STD_LOGIC;
-    Pmod_out_pin9_i : in STD_LOGIC;
-    Pmod_out_pin9_o : out STD_LOGIC;
-    Pmod_out_pin9_t : out STD_LOGIC;
-    ext_spi_clk : in STD_LOGIC;
-    s_axi_aclk : in STD_LOGIC;
-    s_axi_aresetn : in STD_LOGIC
-  );
-  end component Exercice2_bd_PmodJSTK2_0_2;
   component Exercice2_bd_testPatternGenerator_0_0 is
   port (
     clk : in STD_LOGIC;
@@ -542,30 +453,6 @@ architecture STRUCTURE of Exercice2_bd is
     i_colorDataB : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component Exercice2_bd_testPatternGenerator_0_0;
-  signal PmodJSTK2_0_Pmod_out_PIN10_I : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN10_O : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN10_T : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN1_I : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN1_O : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN1_T : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN2_I : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN2_O : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN2_T : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN3_I : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN3_O : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN3_T : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN4_I : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN4_O : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN4_T : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN7_I : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN7_O : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN7_T : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN8_I : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN8_O : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN8_T : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN9_I : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN9_O : STD_LOGIC;
-  signal PmodJSTK2_0_Pmod_out_PIN9_T : STD_LOGIC;
   signal axi_gpio_0_GPIO_TRI_I : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal clk_wiz_0_clk_out1 : STD_LOGIC;
   signal clk_wiz_0_locked : STD_LOGIC;
@@ -588,7 +475,6 @@ architecture STRUCTURE of Exercice2_bd is
   signal processing_system7_0_DDR_RESET_N : STD_LOGIC;
   signal processing_system7_0_DDR_WE_N : STD_LOGIC;
   signal processing_system7_0_FCLK_CLK0 : STD_LOGIC;
-  signal processing_system7_0_FCLK_CLK1 : STD_LOGIC;
   signal processing_system7_0_FCLK_RESET0_N : STD_LOGIC;
   signal processing_system7_0_FIXED_IO_DDR_VRN : STD_LOGIC;
   signal processing_system7_0_FIXED_IO_DDR_VRP : STD_LOGIC;
@@ -694,40 +580,6 @@ architecture STRUCTURE of Exercice2_bd is
   signal smartconnect_0_M02_AXI_WREADY : STD_LOGIC;
   signal smartconnect_0_M02_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal smartconnect_0_M02_AXI_WVALID : STD_LOGIC;
-  signal smartconnect_0_M03_AXI_ARADDR : STD_LOGIC_VECTOR ( 8 downto 0 );
-  signal smartconnect_0_M03_AXI_ARREADY : STD_LOGIC;
-  signal smartconnect_0_M03_AXI_ARVALID : STD_LOGIC;
-  signal smartconnect_0_M03_AXI_AWADDR : STD_LOGIC_VECTOR ( 8 downto 0 );
-  signal smartconnect_0_M03_AXI_AWREADY : STD_LOGIC;
-  signal smartconnect_0_M03_AXI_AWVALID : STD_LOGIC;
-  signal smartconnect_0_M03_AXI_BREADY : STD_LOGIC;
-  signal smartconnect_0_M03_AXI_BRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal smartconnect_0_M03_AXI_BVALID : STD_LOGIC;
-  signal smartconnect_0_M03_AXI_RDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal smartconnect_0_M03_AXI_RREADY : STD_LOGIC;
-  signal smartconnect_0_M03_AXI_RRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal smartconnect_0_M03_AXI_RVALID : STD_LOGIC;
-  signal smartconnect_0_M03_AXI_WDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal smartconnect_0_M03_AXI_WREADY : STD_LOGIC;
-  signal smartconnect_0_M03_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal smartconnect_0_M03_AXI_WVALID : STD_LOGIC;
-  signal smartconnect_0_M04_AXI_ARADDR : STD_LOGIC_VECTOR ( 6 downto 0 );
-  signal smartconnect_0_M04_AXI_ARREADY : STD_LOGIC;
-  signal smartconnect_0_M04_AXI_ARVALID : STD_LOGIC;
-  signal smartconnect_0_M04_AXI_AWADDR : STD_LOGIC_VECTOR ( 6 downto 0 );
-  signal smartconnect_0_M04_AXI_AWREADY : STD_LOGIC;
-  signal smartconnect_0_M04_AXI_AWVALID : STD_LOGIC;
-  signal smartconnect_0_M04_AXI_BREADY : STD_LOGIC;
-  signal smartconnect_0_M04_AXI_BRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal smartconnect_0_M04_AXI_BVALID : STD_LOGIC;
-  signal smartconnect_0_M04_AXI_RDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal smartconnect_0_M04_AXI_RREADY : STD_LOGIC;
-  signal smartconnect_0_M04_AXI_RRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal smartconnect_0_M04_AXI_RVALID : STD_LOGIC;
-  signal smartconnect_0_M04_AXI_WDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal smartconnect_0_M04_AXI_WREADY : STD_LOGIC;
-  signal smartconnect_0_M04_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal smartconnect_0_M04_AXI_WVALID : STD_LOGIC;
   signal sys_clock_1 : STD_LOGIC;
   signal testPatternGenerator_0_m_axis_TDATA : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal testPatternGenerator_0_m_axis_TLAST : STD_LOGIC;
@@ -754,14 +606,33 @@ architecture STRUCTURE of Exercice2_bd is
   signal NLW_proc_sys_reset_0_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_proc_sys_reset_0_interconnect_aresetn_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_proc_sys_reset_0_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_processing_system7_0_FCLK_CLK1_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_USB0_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_smartconnect_0_M03_AXI_arvalid_UNCONNECTED : STD_LOGIC;
+  signal NLW_smartconnect_0_M03_AXI_awvalid_UNCONNECTED : STD_LOGIC;
+  signal NLW_smartconnect_0_M03_AXI_bready_UNCONNECTED : STD_LOGIC;
+  signal NLW_smartconnect_0_M03_AXI_rready_UNCONNECTED : STD_LOGIC;
+  signal NLW_smartconnect_0_M03_AXI_wvalid_UNCONNECTED : STD_LOGIC;
+  signal NLW_smartconnect_0_M04_AXI_arvalid_UNCONNECTED : STD_LOGIC;
+  signal NLW_smartconnect_0_M04_AXI_awvalid_UNCONNECTED : STD_LOGIC;
+  signal NLW_smartconnect_0_M04_AXI_bready_UNCONNECTED : STD_LOGIC;
+  signal NLW_smartconnect_0_M04_AXI_rready_UNCONNECTED : STD_LOGIC;
+  signal NLW_smartconnect_0_M04_AXI_wvalid_UNCONNECTED : STD_LOGIC;
   signal NLW_smartconnect_0_M02_AXI_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_smartconnect_0_M02_AXI_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_smartconnect_0_M03_AXI_araddr_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
   signal NLW_smartconnect_0_M03_AXI_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_smartconnect_0_M03_AXI_awaddr_UNCONNECTED : STD_LOGIC_VECTOR ( 8 downto 0 );
   signal NLW_smartconnect_0_M03_AXI_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_smartconnect_0_M03_AXI_wdata_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_smartconnect_0_M03_AXI_wstrb_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_smartconnect_0_M04_AXI_araddr_UNCONNECTED : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal NLW_smartconnect_0_M04_AXI_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_smartconnect_0_M04_AXI_awaddr_UNCONNECTED : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal NLW_smartconnect_0_M04_AXI_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_smartconnect_0_M04_AXI_wdata_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_smartconnect_0_M04_AXI_wstrb_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_v_axi4s_vid_out_0_locked_UNCONNECTED : STD_LOGIC;
   signal NLW_v_axi4s_vid_out_0_overflow_UNCONNECTED : STD_LOGIC;
   signal NLW_v_axi4s_vid_out_0_underflow_UNCONNECTED : STD_LOGIC;
@@ -795,30 +666,6 @@ architecture STRUCTURE of Exercice2_bd is
   attribute X_INTERFACE_INFO of FIXED_IO_ps_srstb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
   attribute X_INTERFACE_INFO of hdmi_out_clk_n : signal is "digilentinc.com:interface:tmds:1.0 hdmi_out CLK_N";
   attribute X_INTERFACE_INFO of hdmi_out_clk_p : signal is "digilentinc.com:interface:tmds:1.0 hdmi_out CLK_P";
-  attribute X_INTERFACE_INFO of jc_pin10_i : signal is "digilentinc.com:interface:pmod:1.0 jc PIN10_I";
-  attribute X_INTERFACE_INFO of jc_pin10_o : signal is "digilentinc.com:interface:pmod:1.0 jc PIN10_O";
-  attribute X_INTERFACE_INFO of jc_pin10_t : signal is "digilentinc.com:interface:pmod:1.0 jc PIN10_T";
-  attribute X_INTERFACE_INFO of jc_pin1_i : signal is "digilentinc.com:interface:pmod:1.0 jc PIN1_I";
-  attribute X_INTERFACE_INFO of jc_pin1_o : signal is "digilentinc.com:interface:pmod:1.0 jc PIN1_O";
-  attribute X_INTERFACE_INFO of jc_pin1_t : signal is "digilentinc.com:interface:pmod:1.0 jc PIN1_T";
-  attribute X_INTERFACE_INFO of jc_pin2_i : signal is "digilentinc.com:interface:pmod:1.0 jc PIN2_I";
-  attribute X_INTERFACE_INFO of jc_pin2_o : signal is "digilentinc.com:interface:pmod:1.0 jc PIN2_O";
-  attribute X_INTERFACE_INFO of jc_pin2_t : signal is "digilentinc.com:interface:pmod:1.0 jc PIN2_T";
-  attribute X_INTERFACE_INFO of jc_pin3_i : signal is "digilentinc.com:interface:pmod:1.0 jc PIN3_I";
-  attribute X_INTERFACE_INFO of jc_pin3_o : signal is "digilentinc.com:interface:pmod:1.0 jc PIN3_O";
-  attribute X_INTERFACE_INFO of jc_pin3_t : signal is "digilentinc.com:interface:pmod:1.0 jc PIN3_T";
-  attribute X_INTERFACE_INFO of jc_pin4_i : signal is "digilentinc.com:interface:pmod:1.0 jc PIN4_I";
-  attribute X_INTERFACE_INFO of jc_pin4_o : signal is "digilentinc.com:interface:pmod:1.0 jc PIN4_O";
-  attribute X_INTERFACE_INFO of jc_pin4_t : signal is "digilentinc.com:interface:pmod:1.0 jc PIN4_T";
-  attribute X_INTERFACE_INFO of jc_pin7_i : signal is "digilentinc.com:interface:pmod:1.0 jc PIN7_I";
-  attribute X_INTERFACE_INFO of jc_pin7_o : signal is "digilentinc.com:interface:pmod:1.0 jc PIN7_O";
-  attribute X_INTERFACE_INFO of jc_pin7_t : signal is "digilentinc.com:interface:pmod:1.0 jc PIN7_T";
-  attribute X_INTERFACE_INFO of jc_pin8_i : signal is "digilentinc.com:interface:pmod:1.0 jc PIN8_I";
-  attribute X_INTERFACE_INFO of jc_pin8_o : signal is "digilentinc.com:interface:pmod:1.0 jc PIN8_O";
-  attribute X_INTERFACE_INFO of jc_pin8_t : signal is "digilentinc.com:interface:pmod:1.0 jc PIN8_T";
-  attribute X_INTERFACE_INFO of jc_pin9_i : signal is "digilentinc.com:interface:pmod:1.0 jc PIN9_I";
-  attribute X_INTERFACE_INFO of jc_pin9_o : signal is "digilentinc.com:interface:pmod:1.0 jc PIN9_O";
-  attribute X_INTERFACE_INFO of jc_pin9_t : signal is "digilentinc.com:interface:pmod:1.0 jc PIN9_T";
   attribute X_INTERFACE_INFO of reset_rtl : signal is "xilinx.com:signal:reset:1.0 RST.RESET_RTL RST";
   attribute X_INTERFACE_PARAMETER of reset_rtl : signal is "XIL_INTERFACENAME RST.RESET_RTL, INSERT_VIP 0, POLARITY ACTIVE_HIGH";
   attribute X_INTERFACE_INFO of sys_clock : signal is "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK";
@@ -835,101 +682,13 @@ architecture STRUCTURE of Exercice2_bd is
   attribute X_INTERFACE_INFO of hdmi_out_data_n : signal is "digilentinc.com:interface:tmds:1.0 hdmi_out DATA_N";
   attribute X_INTERFACE_INFO of hdmi_out_data_p : signal is "digilentinc.com:interface:tmds:1.0 hdmi_out DATA_P";
 begin
-  PmodJSTK2_0_Pmod_out_PIN10_I <= jc_pin10_i;
-  PmodJSTK2_0_Pmod_out_PIN1_I <= jc_pin1_i;
-  PmodJSTK2_0_Pmod_out_PIN2_I <= jc_pin2_i;
-  PmodJSTK2_0_Pmod_out_PIN3_I <= jc_pin3_i;
-  PmodJSTK2_0_Pmod_out_PIN4_I <= jc_pin4_i;
-  PmodJSTK2_0_Pmod_out_PIN7_I <= jc_pin7_i;
-  PmodJSTK2_0_Pmod_out_PIN8_I <= jc_pin8_i;
-  PmodJSTK2_0_Pmod_out_PIN9_I <= jc_pin9_i;
   axi_gpio_0_GPIO_TRI_I(3 downto 0) <= btns_4bits_tri_i(3 downto 0);
   hdmi_out_clk_n <= rgb2dvi_0_TMDS_CLK_N;
   hdmi_out_clk_p <= rgb2dvi_0_TMDS_CLK_P;
   hdmi_out_data_n(2 downto 0) <= rgb2dvi_0_TMDS_DATA_N(2 downto 0);
   hdmi_out_data_p(2 downto 0) <= rgb2dvi_0_TMDS_DATA_P(2 downto 0);
-  jc_pin10_o <= PmodJSTK2_0_Pmod_out_PIN10_O;
-  jc_pin10_t <= PmodJSTK2_0_Pmod_out_PIN10_T;
-  jc_pin1_o <= PmodJSTK2_0_Pmod_out_PIN1_O;
-  jc_pin1_t <= PmodJSTK2_0_Pmod_out_PIN1_T;
-  jc_pin2_o <= PmodJSTK2_0_Pmod_out_PIN2_O;
-  jc_pin2_t <= PmodJSTK2_0_Pmod_out_PIN2_T;
-  jc_pin3_o <= PmodJSTK2_0_Pmod_out_PIN3_O;
-  jc_pin3_t <= PmodJSTK2_0_Pmod_out_PIN3_T;
-  jc_pin4_o <= PmodJSTK2_0_Pmod_out_PIN4_O;
-  jc_pin4_t <= PmodJSTK2_0_Pmod_out_PIN4_T;
-  jc_pin7_o <= PmodJSTK2_0_Pmod_out_PIN7_O;
-  jc_pin7_t <= PmodJSTK2_0_Pmod_out_PIN7_T;
-  jc_pin8_o <= PmodJSTK2_0_Pmod_out_PIN8_O;
-  jc_pin8_t <= PmodJSTK2_0_Pmod_out_PIN8_T;
-  jc_pin9_o <= PmodJSTK2_0_Pmod_out_PIN9_O;
-  jc_pin9_t <= PmodJSTK2_0_Pmod_out_PIN9_T;
   reset_rtl_1 <= reset_rtl;
   sys_clock_1 <= sys_clock;
-PmodJSTK2_0: component Exercice2_bd_PmodJSTK2_0_2
-     port map (
-      AXI_LITE_GPIO_araddr(8 downto 0) => smartconnect_0_M03_AXI_ARADDR(8 downto 0),
-      AXI_LITE_GPIO_arready => smartconnect_0_M03_AXI_ARREADY,
-      AXI_LITE_GPIO_arvalid => smartconnect_0_M03_AXI_ARVALID,
-      AXI_LITE_GPIO_awaddr(8 downto 0) => smartconnect_0_M03_AXI_AWADDR(8 downto 0),
-      AXI_LITE_GPIO_awready => smartconnect_0_M03_AXI_AWREADY,
-      AXI_LITE_GPIO_awvalid => smartconnect_0_M03_AXI_AWVALID,
-      AXI_LITE_GPIO_bready => smartconnect_0_M03_AXI_BREADY,
-      AXI_LITE_GPIO_bresp(1 downto 0) => smartconnect_0_M03_AXI_BRESP(1 downto 0),
-      AXI_LITE_GPIO_bvalid => smartconnect_0_M03_AXI_BVALID,
-      AXI_LITE_GPIO_rdata(31 downto 0) => smartconnect_0_M03_AXI_RDATA(31 downto 0),
-      AXI_LITE_GPIO_rready => smartconnect_0_M03_AXI_RREADY,
-      AXI_LITE_GPIO_rresp(1 downto 0) => smartconnect_0_M03_AXI_RRESP(1 downto 0),
-      AXI_LITE_GPIO_rvalid => smartconnect_0_M03_AXI_RVALID,
-      AXI_LITE_GPIO_wdata(31 downto 0) => smartconnect_0_M03_AXI_WDATA(31 downto 0),
-      AXI_LITE_GPIO_wready => smartconnect_0_M03_AXI_WREADY,
-      AXI_LITE_GPIO_wstrb(3 downto 0) => smartconnect_0_M03_AXI_WSTRB(3 downto 0),
-      AXI_LITE_GPIO_wvalid => smartconnect_0_M03_AXI_WVALID,
-      AXI_LITE_SPI_araddr(6 downto 0) => smartconnect_0_M04_AXI_ARADDR(6 downto 0),
-      AXI_LITE_SPI_arready => smartconnect_0_M04_AXI_ARREADY,
-      AXI_LITE_SPI_arvalid => smartconnect_0_M04_AXI_ARVALID,
-      AXI_LITE_SPI_awaddr(6 downto 0) => smartconnect_0_M04_AXI_AWADDR(6 downto 0),
-      AXI_LITE_SPI_awready => smartconnect_0_M04_AXI_AWREADY,
-      AXI_LITE_SPI_awvalid => smartconnect_0_M04_AXI_AWVALID,
-      AXI_LITE_SPI_bready => smartconnect_0_M04_AXI_BREADY,
-      AXI_LITE_SPI_bresp(1 downto 0) => smartconnect_0_M04_AXI_BRESP(1 downto 0),
-      AXI_LITE_SPI_bvalid => smartconnect_0_M04_AXI_BVALID,
-      AXI_LITE_SPI_rdata(31 downto 0) => smartconnect_0_M04_AXI_RDATA(31 downto 0),
-      AXI_LITE_SPI_rready => smartconnect_0_M04_AXI_RREADY,
-      AXI_LITE_SPI_rresp(1 downto 0) => smartconnect_0_M04_AXI_RRESP(1 downto 0),
-      AXI_LITE_SPI_rvalid => smartconnect_0_M04_AXI_RVALID,
-      AXI_LITE_SPI_wdata(31 downto 0) => smartconnect_0_M04_AXI_WDATA(31 downto 0),
-      AXI_LITE_SPI_wready => smartconnect_0_M04_AXI_WREADY,
-      AXI_LITE_SPI_wstrb(3 downto 0) => smartconnect_0_M04_AXI_WSTRB(3 downto 0),
-      AXI_LITE_SPI_wvalid => smartconnect_0_M04_AXI_WVALID,
-      Pmod_out_pin10_i => PmodJSTK2_0_Pmod_out_PIN10_I,
-      Pmod_out_pin10_o => PmodJSTK2_0_Pmod_out_PIN10_O,
-      Pmod_out_pin10_t => PmodJSTK2_0_Pmod_out_PIN10_T,
-      Pmod_out_pin1_i => PmodJSTK2_0_Pmod_out_PIN1_I,
-      Pmod_out_pin1_o => PmodJSTK2_0_Pmod_out_PIN1_O,
-      Pmod_out_pin1_t => PmodJSTK2_0_Pmod_out_PIN1_T,
-      Pmod_out_pin2_i => PmodJSTK2_0_Pmod_out_PIN2_I,
-      Pmod_out_pin2_o => PmodJSTK2_0_Pmod_out_PIN2_O,
-      Pmod_out_pin2_t => PmodJSTK2_0_Pmod_out_PIN2_T,
-      Pmod_out_pin3_i => PmodJSTK2_0_Pmod_out_PIN3_I,
-      Pmod_out_pin3_o => PmodJSTK2_0_Pmod_out_PIN3_O,
-      Pmod_out_pin3_t => PmodJSTK2_0_Pmod_out_PIN3_T,
-      Pmod_out_pin4_i => PmodJSTK2_0_Pmod_out_PIN4_I,
-      Pmod_out_pin4_o => PmodJSTK2_0_Pmod_out_PIN4_O,
-      Pmod_out_pin4_t => PmodJSTK2_0_Pmod_out_PIN4_T,
-      Pmod_out_pin7_i => PmodJSTK2_0_Pmod_out_PIN7_I,
-      Pmod_out_pin7_o => PmodJSTK2_0_Pmod_out_PIN7_O,
-      Pmod_out_pin7_t => PmodJSTK2_0_Pmod_out_PIN7_T,
-      Pmod_out_pin8_i => PmodJSTK2_0_Pmod_out_PIN8_I,
-      Pmod_out_pin8_o => PmodJSTK2_0_Pmod_out_PIN8_O,
-      Pmod_out_pin8_t => PmodJSTK2_0_Pmod_out_PIN8_T,
-      Pmod_out_pin9_i => PmodJSTK2_0_Pmod_out_PIN9_I,
-      Pmod_out_pin9_o => PmodJSTK2_0_Pmod_out_PIN9_O,
-      Pmod_out_pin9_t => PmodJSTK2_0_Pmod_out_PIN9_T,
-      ext_spi_clk => processing_system7_0_FCLK_CLK1,
-      s_axi_aclk => clk_wiz_0_clk_out1,
-      s_axi_aresetn => proc_sys_reset_0_peripheral_aresetn(0)
-    );
 axi_gpio_0: component Exercice2_bd_axi_gpio_0_0
      port map (
       gpio_io_i(3 downto 0) => axi_gpio_0_GPIO_TRI_I(3 downto 0),
@@ -1019,7 +778,7 @@ processing_system7_0: component Exercice2_bd_processing_system7_0_0
       DDR_VRP => FIXED_IO_ddr_vrp,
       DDR_WEB => DDR_we_n,
       FCLK_CLK0 => processing_system7_0_FCLK_CLK0,
-      FCLK_CLK1 => processing_system7_0_FCLK_CLK1,
+      FCLK_CLK1 => NLW_processing_system7_0_FCLK_CLK1_UNCONNECTED,
       FCLK_RESET0_N => processing_system7_0_FCLK_RESET0_N,
       MIO(53 downto 0) => FIXED_IO_mio(53 downto 0),
       M_AXI_GP0_ACLK => processing_system7_0_FCLK_CLK0,
@@ -1140,44 +899,44 @@ smartconnect_0: component Exercice2_bd_smartconnect_0_0
       M02_AXI_wready => smartconnect_0_M02_AXI_WREADY,
       M02_AXI_wstrb(3 downto 0) => smartconnect_0_M02_AXI_WSTRB(3 downto 0),
       M02_AXI_wvalid => smartconnect_0_M02_AXI_WVALID,
-      M03_AXI_araddr(8 downto 0) => smartconnect_0_M03_AXI_ARADDR(8 downto 0),
+      M03_AXI_araddr(8 downto 0) => NLW_smartconnect_0_M03_AXI_araddr_UNCONNECTED(8 downto 0),
       M03_AXI_arprot(2 downto 0) => NLW_smartconnect_0_M03_AXI_arprot_UNCONNECTED(2 downto 0),
-      M03_AXI_arready => smartconnect_0_M03_AXI_ARREADY,
-      M03_AXI_arvalid => smartconnect_0_M03_AXI_ARVALID,
-      M03_AXI_awaddr(8 downto 0) => smartconnect_0_M03_AXI_AWADDR(8 downto 0),
+      M03_AXI_arready => '0',
+      M03_AXI_arvalid => NLW_smartconnect_0_M03_AXI_arvalid_UNCONNECTED,
+      M03_AXI_awaddr(8 downto 0) => NLW_smartconnect_0_M03_AXI_awaddr_UNCONNECTED(8 downto 0),
       M03_AXI_awprot(2 downto 0) => NLW_smartconnect_0_M03_AXI_awprot_UNCONNECTED(2 downto 0),
-      M03_AXI_awready => smartconnect_0_M03_AXI_AWREADY,
-      M03_AXI_awvalid => smartconnect_0_M03_AXI_AWVALID,
-      M03_AXI_bready => smartconnect_0_M03_AXI_BREADY,
-      M03_AXI_bresp(1 downto 0) => smartconnect_0_M03_AXI_BRESP(1 downto 0),
-      M03_AXI_bvalid => smartconnect_0_M03_AXI_BVALID,
-      M03_AXI_rdata(31 downto 0) => smartconnect_0_M03_AXI_RDATA(31 downto 0),
-      M03_AXI_rready => smartconnect_0_M03_AXI_RREADY,
-      M03_AXI_rresp(1 downto 0) => smartconnect_0_M03_AXI_RRESP(1 downto 0),
-      M03_AXI_rvalid => smartconnect_0_M03_AXI_RVALID,
-      M03_AXI_wdata(31 downto 0) => smartconnect_0_M03_AXI_WDATA(31 downto 0),
-      M03_AXI_wready => smartconnect_0_M03_AXI_WREADY,
-      M03_AXI_wstrb(3 downto 0) => smartconnect_0_M03_AXI_WSTRB(3 downto 0),
-      M03_AXI_wvalid => smartconnect_0_M03_AXI_WVALID,
-      M04_AXI_araddr(6 downto 0) => smartconnect_0_M04_AXI_ARADDR(6 downto 0),
+      M03_AXI_awready => '0',
+      M03_AXI_awvalid => NLW_smartconnect_0_M03_AXI_awvalid_UNCONNECTED,
+      M03_AXI_bready => NLW_smartconnect_0_M03_AXI_bready_UNCONNECTED,
+      M03_AXI_bresp(1 downto 0) => B"00",
+      M03_AXI_bvalid => '0',
+      M03_AXI_rdata(31 downto 0) => B"00000000000000000000000000000000",
+      M03_AXI_rready => NLW_smartconnect_0_M03_AXI_rready_UNCONNECTED,
+      M03_AXI_rresp(1 downto 0) => B"00",
+      M03_AXI_rvalid => '0',
+      M03_AXI_wdata(31 downto 0) => NLW_smartconnect_0_M03_AXI_wdata_UNCONNECTED(31 downto 0),
+      M03_AXI_wready => '0',
+      M03_AXI_wstrb(3 downto 0) => NLW_smartconnect_0_M03_AXI_wstrb_UNCONNECTED(3 downto 0),
+      M03_AXI_wvalid => NLW_smartconnect_0_M03_AXI_wvalid_UNCONNECTED,
+      M04_AXI_araddr(6 downto 0) => NLW_smartconnect_0_M04_AXI_araddr_UNCONNECTED(6 downto 0),
       M04_AXI_arprot(2 downto 0) => NLW_smartconnect_0_M04_AXI_arprot_UNCONNECTED(2 downto 0),
-      M04_AXI_arready => smartconnect_0_M04_AXI_ARREADY,
-      M04_AXI_arvalid => smartconnect_0_M04_AXI_ARVALID,
-      M04_AXI_awaddr(6 downto 0) => smartconnect_0_M04_AXI_AWADDR(6 downto 0),
+      M04_AXI_arready => '0',
+      M04_AXI_arvalid => NLW_smartconnect_0_M04_AXI_arvalid_UNCONNECTED,
+      M04_AXI_awaddr(6 downto 0) => NLW_smartconnect_0_M04_AXI_awaddr_UNCONNECTED(6 downto 0),
       M04_AXI_awprot(2 downto 0) => NLW_smartconnect_0_M04_AXI_awprot_UNCONNECTED(2 downto 0),
-      M04_AXI_awready => smartconnect_0_M04_AXI_AWREADY,
-      M04_AXI_awvalid => smartconnect_0_M04_AXI_AWVALID,
-      M04_AXI_bready => smartconnect_0_M04_AXI_BREADY,
-      M04_AXI_bresp(1 downto 0) => smartconnect_0_M04_AXI_BRESP(1 downto 0),
-      M04_AXI_bvalid => smartconnect_0_M04_AXI_BVALID,
-      M04_AXI_rdata(31 downto 0) => smartconnect_0_M04_AXI_RDATA(31 downto 0),
-      M04_AXI_rready => smartconnect_0_M04_AXI_RREADY,
-      M04_AXI_rresp(1 downto 0) => smartconnect_0_M04_AXI_RRESP(1 downto 0),
-      M04_AXI_rvalid => smartconnect_0_M04_AXI_RVALID,
-      M04_AXI_wdata(31 downto 0) => smartconnect_0_M04_AXI_WDATA(31 downto 0),
-      M04_AXI_wready => smartconnect_0_M04_AXI_WREADY,
-      M04_AXI_wstrb(3 downto 0) => smartconnect_0_M04_AXI_WSTRB(3 downto 0),
-      M04_AXI_wvalid => smartconnect_0_M04_AXI_WVALID,
+      M04_AXI_awready => '0',
+      M04_AXI_awvalid => NLW_smartconnect_0_M04_AXI_awvalid_UNCONNECTED,
+      M04_AXI_bready => NLW_smartconnect_0_M04_AXI_bready_UNCONNECTED,
+      M04_AXI_bresp(1 downto 0) => B"00",
+      M04_AXI_bvalid => '0',
+      M04_AXI_rdata(31 downto 0) => B"00000000000000000000000000000000",
+      M04_AXI_rready => NLW_smartconnect_0_M04_AXI_rready_UNCONNECTED,
+      M04_AXI_rresp(1 downto 0) => B"00",
+      M04_AXI_rvalid => '0',
+      M04_AXI_wdata(31 downto 0) => NLW_smartconnect_0_M04_AXI_wdata_UNCONNECTED(31 downto 0),
+      M04_AXI_wready => '0',
+      M04_AXI_wstrb(3 downto 0) => NLW_smartconnect_0_M04_AXI_wstrb_UNCONNECTED(3 downto 0),
+      M04_AXI_wvalid => NLW_smartconnect_0_M04_AXI_wvalid_UNCONNECTED,
       S00_AXI_araddr(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),
       S00_AXI_arburst(1 downto 0) => processing_system7_0_M_AXI_GP0_ARBURST(1 downto 0),
       S00_AXI_arcache(3 downto 0) => processing_system7_0_M_AXI_GP0_ARCACHE(3 downto 0),

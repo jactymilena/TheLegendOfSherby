@@ -1,6 +1,0 @@
-Exercice2_bd_v_proc_ss_0_0: Exercice2_bd_v_proc_ss_0_0, 
-Exercice2_bd_smartconnect_0_0: bd_8e83, 
-bd_8e83: bd_8e83__GC0, s00_entry_pipeline_imp_10M9RRE, 
-s00_entry_pipeline_imp_10M9RRE: s00_entry_pipeline_imp_10M9RRE__GC0, bd_8e83_s00mmu_0, 
-bd_8e83_s00mmu_0: sc_mmu_v1_0_10_top, 
-sc_mmu_v1_0_10_top: sc_mmu_v1_0_10_top__GB1, sc_mmu_v1_0_10_top__GB0, 
