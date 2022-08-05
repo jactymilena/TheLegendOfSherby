@@ -1,0 +1,36 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Atelier2.srcs/sources_1/imports/composante_vhdl/tuile_package.vhd" \
+"../../../../Atelier2.srcs/sources_1/imports/composante_vhdl/Background/BackgroundManager.vhd" \
+"../../../../Atelier2.srcs/sources_1/imports/composante_vhdl/color_converter.vhd" \
+"../../../../Atelier2.srcs/sources_1/imports/composante_vhdl/Background/tileBgBuffer.vhd" \
+"../../../../Atelier2.srcs/sources_1/imports/new/testPatternGenerator.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/ip/Exercice2_bd_proc_sys_reset_0_0/sim/Exercice2_bd_proc_sys_reset_0_0.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/ip/Exercice2_bd_v_tc_0_1/sim/Exercice2_bd_v_tc_0_1.vhd" \
+"../../../../Atelier2.gen/sources_1/bd/Exercice2_bd/ipshared/d57c/src/ClockGen.vhd" \
+"../../../../Atelier2.gen/sources_1/bd/Exercice2_bd/ipshared/d57c/src/SyncAsync.vhd" \
+"../../../../Atelier2.gen/sources_1/bd/Exercice2_bd/ipshared/d57c/src/SyncAsyncReset.vhd" \
+"../../../../Atelier2.gen/sources_1/bd/Exercice2_bd/ipshared/d57c/src/DVI_Constants.vhd" \
+"../../../../Atelier2.gen/sources_1/bd/Exercice2_bd/ipshared/d57c/src/OutputSERDES.vhd" \
+"../../../../Atelier2.gen/sources_1/bd/Exercice2_bd/ipshared/d57c/src/TMDS_Encoder.vhd" \
+"../../../../Atelier2.gen/sources_1/bd/Exercice2_bd/ipshared/d57c/src/rgb2dvi.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/ip/Exercice2_bd_rgb2dvi_0_0/sim/Exercice2_bd_rgb2dvi_0_0.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_1/ip/ip_1/sim/bd_c788_psr_aclk_0.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_4/sim/bd_f134_rst_axis_0.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/ip/ip_5/sim/bd_f134_reset_sel_axis_0.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/bd_0/sim/bd_f134.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/ip/Exercice2_bd_v_proc_ss_0_0/sim/Exercice2_bd_v_proc_ss_0_0.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_8e83_psr0_0.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_8e83_psr_aclk_0.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_3/sim/bd_8e83_psr_aclk1_0.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/ipshared/e88b/src/mycolorRegister_v1_0_S00_AXI.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/ipshared/e88b/src/mycolorRegister_v1_0.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/ip/Exercice2_bd_myColorRegister_1_1/sim/Exercice2_bd_myColorRegister_1_1.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/ip/Exercice2_bd_axi_gpio_0_0/sim/Exercice2_bd_axi_gpio_0_0.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_gpio_0_0/sim/PmodJSTK2_axi_gpio_0_0.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_quad_spi_0_0/sim/PmodJSTK2_axi_quad_spi_0_0.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/ip/Exercice2_bd_testPatternGenerator_0_0/sim/Exercice2_bd_testPatternGenerator_0_0.vhd" \
+"../../../../Atelier2.ip_user_files/bd/Exercice2_bd/sim/Exercice2_bd.vhd" \
+
+# Do not sort compile order
+nosort

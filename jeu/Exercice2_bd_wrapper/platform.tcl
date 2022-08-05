@@ -15,8 +15,9 @@ platform create -name {Exercice2_bd_wrapper}\
 platform write
 domain create -name {standalone_ps7_cortexa9_0} -display-name {standalone_ps7_cortexa9_0} -os {standalone} -proc {ps7_cortexa9_0} -runtime {cpp} -arch {32-bit} -support-app {empty_application}
 platform generate -domains 
-platform active {Exercice2_bd_wrapper}
+platform write
 domain active {zynq_fsbl}
 domain active {standalone_ps7_cortexa9_0}
 platform generate -quick
 platform generate
+platform write

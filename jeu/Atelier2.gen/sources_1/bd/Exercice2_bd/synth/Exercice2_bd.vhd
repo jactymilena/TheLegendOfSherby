@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Thu Aug  4 15:55:41 2022
+--Date        : Fri Aug  5 04:01:43 2022
 --Host        : DESKTOP-NHSH7S2 running 64-bit major release  (build 9200)
 --Command     : generate_target Exercice2_bd.bd
 --Design      : Exercice2_bd

@@ -1813,34 +1813,16 @@
       }
     },
     "interface_nets": {
-      "smartconnect_0_M03_AXI": {
+      "v_tc_0_vtiming_out": {
         "interface_ports": [
-          "smartconnect_0/M03_AXI",
-          "PmodJSTK2_0/AXI_LITE_GPIO"
+          "v_tc_0/vtiming_out",
+          "v_axi4s_vid_out_0/vtiming_in"
         ]
       },
-      "testPatternGenerator_0_m_axis": {
+      "v_proc_ss_0_m_axis": {
         "interface_ports": [
-          "testPatternGenerator_0/m_axis",
-          "v_proc_ss_0/s_axis"
-        ]
-      },
-      "processing_system7_0_DDR": {
-        "interface_ports": [
-          "DDR",
-          "processing_system7_0/DDR"
-        ]
-      },
-      "v_axi4s_vid_out_0_vid_io_out": {
-        "interface_ports": [
-          "v_axi4s_vid_out_0/vid_io_out",
-          "rgb2dvi_0/RGB"
-        ]
-      },
-      "processing_system7_0_M_AXI_GP0": {
-        "interface_ports": [
-          "processing_system7_0/M_AXI_GP0",
-          "smartconnect_0/S00_AXI"
+          "v_proc_ss_0/m_axis",
+          "v_axi4s_vid_out_0/video_in"
         ]
       },
       "smartconnect_0_M00_AXI": {
@@ -1855,34 +1837,34 @@
           "axi_gpio_0/GPIO"
         ]
       },
-      "smartconnect_0_M01_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M01_AXI",
-          "myColorRegister_1/S00_AXI"
-        ]
-      },
-      "smartconnect_0_M04_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M04_AXI",
-          "PmodJSTK2_0/AXI_LITE_SPI"
-        ]
-      },
-      "processing_system7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
-        ]
-      },
       "PmodJSTK2_0_Pmod_out": {
         "interface_ports": [
           "jc",
           "PmodJSTK2_0/Pmod_out"
         ]
       },
-      "v_tc_0_vtiming_out": {
+      "rgb2dvi_0_TMDS": {
         "interface_ports": [
-          "v_tc_0/vtiming_out",
-          "v_axi4s_vid_out_0/vtiming_in"
+          "hdmi_out",
+          "rgb2dvi_0/TMDS"
+        ]
+      },
+      "smartconnect_0_M01_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M01_AXI",
+          "myColorRegister_1/S00_AXI"
+        ]
+      },
+      "smartconnect_0_M03_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M03_AXI",
+          "PmodJSTK2_0/AXI_LITE_GPIO"
+        ]
+      },
+      "testPatternGenerator_0_m_axis": {
+        "interface_ports": [
+          "testPatternGenerator_0/m_axis",
+          "v_proc_ss_0/s_axis"
         ]
       },
       "smartconnect_0_M02_AXI": {
@@ -1891,16 +1873,34 @@
           "axi_gpio_0/S_AXI"
         ]
       },
-      "v_proc_ss_0_m_axis": {
+      "processing_system7_0_M_AXI_GP0": {
         "interface_ports": [
-          "v_proc_ss_0/m_axis",
-          "v_axi4s_vid_out_0/video_in"
+          "processing_system7_0/M_AXI_GP0",
+          "smartconnect_0/S00_AXI"
         ]
       },
-      "rgb2dvi_0_TMDS": {
+      "processing_system7_0_FIXED_IO": {
         "interface_ports": [
-          "hdmi_out",
-          "rgb2dvi_0/TMDS"
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
+        ]
+      },
+      "smartconnect_0_M04_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M04_AXI",
+          "PmodJSTK2_0/AXI_LITE_SPI"
+        ]
+      },
+      "v_axi4s_vid_out_0_vid_io_out": {
+        "interface_ports": [
+          "v_axi4s_vid_out_0/vid_io_out",
+          "rgb2dvi_0/RGB"
+        ]
+      },
+      "processing_system7_0_DDR": {
+        "interface_ports": [
+          "DDR",
+          "processing_system7_0/DDR"
         ]
       }
     },

@@ -401,9 +401,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Exercice2_b
 # IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_smartconnect_0_0/bd_0/ip/ip_62/bd_8e83_m04e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: bd/Exercice2_bd/ip/Exercice2_bd_testPatternGenerator_0_0/Exercice2_bd_testPatternGenerator_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Exercice2_bd_testPatternGenerator_0_0 || ORIG_REF_NAME==Exercice2_bd_testPatternGenerator_0_0} -quiet] -quiet
-
 # IP: bd/Exercice2_bd/ip/Exercice2_bd_myColorRegister_1_1/Exercice2_bd_myColorRegister_1_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Exercice2_bd_myColorRegister_1_1 || ORIG_REF_NAME==Exercice2_bd_myColorRegister_1_1} -quiet] -quiet
 
@@ -421,6 +418,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PmodJSTK2_p
 
 # IP: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_PmodJSTK2_0_2/src/PmodJSTK2_axi_gpio_0_0/PmodJSTK2_axi_gpio_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PmodJSTK2_axi_gpio_0_0 || ORIG_REF_NAME==PmodJSTK2_axi_gpio_0_0} -quiet] -quiet
+
+# IP: bd/Exercice2_bd/ip/Exercice2_bd_testPatternGenerator_0_0/Exercice2_bd_testPatternGenerator_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Exercice2_bd_testPatternGenerator_0_0 || ORIG_REF_NAME==Exercice2_bd_testPatternGenerator_0_0} -quiet] -quiet
 
 # XDC: c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_processing_system7_0_0/Exercice2_bd_processing_system7_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==Exercice2_bd_processing_system7_0_0 || ORIG_REF_NAME==Exercice2_bd_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet

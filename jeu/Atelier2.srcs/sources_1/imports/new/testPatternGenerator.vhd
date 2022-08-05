@@ -48,12 +48,49 @@ end testPatternGenerator;
 architecture Behavioral of testPatternGenerator is
 
 type state_videostr is (WAITING, STREAMING, EOL);
-signal lineCpt : unsigned(10 downto 0) := (others => '0');
+signal lineCpt : unsigned(11 downto 0) := (others => '0');
 signal columnCpt : unsigned(11 downto 0) := (others => '0');
+signal pixelXCpt : unsigned(3 downto 0) := (others => '0');
+signal pixelYCpt : unsigned(3 downto 0) := (others => '0');
 signal current_state : state_videostr := WAITING;
 signal next_state : state_videostr := WAITING;
 
+component tileBgBuffer is
+    Port ( 
+            clk : in std_logic;
+            pixel_X : in STD_LOGIC_VECTOR (7 downto 0);
+            pixel_Y : in STD_LOGIC_VECTOR (7 downto 0);
+            tileId : in STD_LOGIC_VECTOR (7 downto 0);
+            colorCode : out STD_ULOGIC_VECTOR (3 downto 0));
+           
+end component;
+
+component color_converter is
+    Port ( code     : in STD_ULOGIC_VECTOR (3 downto 0);
+           color    : out STD_LOGIC_VECTOR (23 downto 0));
+end component;
+
+signal s_code : std_Ulogic_vector (3 downto 0);
+signal s_color: std_logic_vector (23 downto 0);
+signal s_tileId_index: unsigned(7 downto 0) := (others => '0');
+signal s_timer: unsigned(15 downto 0) := (others => '0');
+
 begin
+
+inst_color_converter: color_converter
+    port map(
+        code => s_code,
+        color => m_axis_tdata
+    );
+    
+inst_buffer: tileBgBuffer 
+Port map(
+ clk         => clk,
+ pixel_X     => std_logic_vector(columnCpt(7 downto 0)),
+ pixel_Y     => std_logic_vector(lineCpt(7 downto 0)),
+ tileId      => std_logic_vector(s_tileId_index),
+colorCode    => s_code
+);
 
 process(clk)
 begin
@@ -61,16 +98,39 @@ begin
         current_state <= WAITING;
     elsif(rising_edge(clk)) then
         current_state <= next_state;
-        if(m_axis_tready = '1') then
-             if(columnCpt = "00011111111") then
+        if(m_axis_tready = '1') then             
+             if(columnCpt = "000100000000") then
                     columnCpt <= "000000000000";
-                    if(lineCpt = "00011011111") then
-                        lineCpt  <= "00000000000";
+                    -- pixelXCpt <= "0000";               
+                    
+                    if(lineCpt = "000011100000") then
+                        lineCpt  <= "000000000000";
+                        -- pixelYCpt <= "0000";
+--                        if(s_timer = "0001111111111111") then
+--                            s_timer <= "0000000000000000";
+--                            if(s_tileId_index = "00011001") then
+--                                s_tileId_index <= "00000000";
+--                            else
+--                                s_tileId_index <= s_tileId_index + "1";
+--                            end if;
+--                        else
+--                            s_timer <= s_timer + "1";
+--                        end if;
                     else
+--                        if(pixelYCpt = "1111") then 
+--                           pixelYCpt <= "0000";
+--                        else
+--                           pixelYCpt <= pixelYCpt + "1";
+--                        end if;
                         lineCpt <= lineCpt + "1";
                     end if;
              else
-                    columnCpt <= columnCpt + "1";
+--                 if(pixelXCpt = "1111") then 
+--                    pixelXCpt <= "0000";
+--                 else
+--                    pixelXCpt <= pixelXCpt + "1";
+--                 end if;
+                columnCpt <= columnCpt + "1";
              end if;
          end if;
     end if;
@@ -123,12 +183,10 @@ begin
      --   m_axis_tdata <= i_colorDataB(23 downto 0);
      --end if;         
 end process;     
-
-process(clk, i_colorDataA)
-begin
-    if(rising_edge(clk)) then
-    m_axis_tdata <= i_colorDataB(23 downto 0);
-    end if;
-end process;
+--process(clk, i_colorDataB)
+--begin
+--    if(clk) then
+--    end if;
+--end process;
 
 end Behavioral;

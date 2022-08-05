@@ -70,7 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 1
+set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -99,7 +99,12 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib C:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/hdl/Exercice2_bd_wrapper.v
-read_vhdl -library xil_defaultlib C:/GitHub/TheLegendOfSherby/jeu/Atelier2.srcs/sources_1/imports/new/testPatternGenerator.vhd
+read_vhdl -library xil_defaultlib {
+  C:/GitHub/TheLegendOfSherby/jeu/Atelier2.srcs/sources_1/imports/composante_vhdl/tuile_package.vhd
+  C:/GitHub/TheLegendOfSherby/jeu/Atelier2.srcs/sources_1/imports/composante_vhdl/color_converter.vhd
+  C:/GitHub/TheLegendOfSherby/jeu/Atelier2.srcs/sources_1/imports/composante_vhdl/Background/tileBgBuffer.vhd
+  C:/GitHub/TheLegendOfSherby/jeu/Atelier2.srcs/sources_1/imports/new/testPatternGenerator.vhd
+}
 add_files C:/GitHub/TheLegendOfSherby/jeu/Atelier2.srcs/sources_1/bd/Exercice2_bd/Exercice2_bd.bd
 set_property used_in_implementation false [get_files -all c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_processing_system7_0_0/Exercice2_bd_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/GitHub/TheLegendOfSherby/jeu/Atelier2.gen/sources_1/bd/Exercice2_bd/ip/Exercice2_bd_clk_wiz_0_0/Exercice2_bd_clk_wiz_0_0_board.xdc]

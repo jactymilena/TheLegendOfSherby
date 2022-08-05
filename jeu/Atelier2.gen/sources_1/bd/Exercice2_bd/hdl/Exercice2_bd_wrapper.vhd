@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Thu Aug  4 15:55:41 2022
+--Date        : Fri Aug  5 04:01:43 2022
 --Host        : DESKTOP-NHSH7S2 running 64-bit major release  (build 9200)
 --Command     : generate_target Exercice2_bd_wrapper.bd
 --Design      : Exercice2_bd_wrapper
@@ -57,6 +57,10 @@ architecture STRUCTURE of Exercice2_bd_wrapper is
   port (
     sys_clock : in STD_LOGIC;
     reset_rtl : in STD_LOGIC;
+    hdmi_out_clk_p : out STD_LOGIC;
+    hdmi_out_clk_n : out STD_LOGIC;
+    hdmi_out_data_p : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    hdmi_out_data_n : out STD_LOGIC_VECTOR ( 2 downto 0 );
     jc_pin1_o : out STD_LOGIC;
     jc_pin7_i : in STD_LOGIC;
     jc_pin2_o : out STD_LOGIC;
@@ -81,10 +85,6 @@ architecture STRUCTURE of Exercice2_bd_wrapper is
     jc_pin7_o : out STD_LOGIC;
     jc_pin3_t : out STD_LOGIC;
     jc_pin8_o : out STD_LOGIC;
-    hdmi_out_clk_p : out STD_LOGIC;
-    hdmi_out_clk_n : out STD_LOGIC;
-    hdmi_out_data_p : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    hdmi_out_data_n : out STD_LOGIC_VECTOR ( 2 downto 0 );
     btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ddr_vrn : inout STD_LOGIC;

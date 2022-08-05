@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="bd_f134" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1659642950"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1659642950"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1659642950"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1659642950"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1659686516"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1659686516"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1659686516"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1659686516"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth\bd_f134.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
@@ -23,11 +23,6 @@
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="OUT_OF_CONTEXT"/>
-      </File>
-      <File Name="sim\bd_f134.protoinst">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="hw_handoff\Exercice2_bd_v_proc_ss_0_0.hwh" Type="HwHandoff">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>

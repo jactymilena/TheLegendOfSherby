@@ -134,3 +134,37 @@ timestamp=[2022-08-04 16:38:25], mode=BUILD, duration=0:00:01.434, duration_ms=1
 timestamp=[2022-08-04 16:38:54], mode=BUILD, duration=0:00:01.384, duration_ms=1384, data={name=pain3, configuration=Debug, clean_build=false}
 timestamp=[2022-08-04 16:39:52], mode=BUILD, duration=0:00:01.403, duration_ms=1403, data={name=pain3, configuration=Debug, clean_build=false}
 timestamp=[2022-08-04 16:40:47], mode=BUILD, duration=0:00:01.356, duration_ms=1356, data={name=pain3, configuration=Debug, clean_build=false}
+timestamp=[2022-08-04 18:52:25], mode=BUILD, duration=0:00:02.698, duration_ms=2698, data={name=pain3, configuration=Debug, clean_build=false}
+timestamp=[2022-08-04 19:41:34], mode=BUILD, duration=0:00:04.107, duration_ms=4107, data={name=pain3, configuration=Debug, clean_build=false}
+timestamp=[2022-08-04 19:42:32], mode=BUILD, duration=0:00:02.531, duration_ms=2531, data={name=pain3, configuration=Debug, clean_build=false}
+timestamp=[2022-08-04 21:19:10], mode=WORKBENCH_START, duration=0:00:07.898, duration_ms=7898, data={}
+timestamp=[2022-08-04 21:19:11], mode=WORKBENCH_UI_INIT, duration=0:00:01.303, duration_ms=1303, data={editors_count=3, platform_editors_count=0, projects_count=7, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles,pain,pain2,pain2_system,pain3,pain3_system,pain_system}
+timestamp=[2022-08-04 21:19:16], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:05.423, duration_ms=5423, data={}
+timestamp=[2022-08-04 21:20:34], mode=APP_CREATION, duration=0:00:30.261, duration_ms=30261, data={name=pain4, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=Exercice2_bd_wrapper, application_type=application}
+timestamp=[2022-08-04 21:24:48], mode=PLATFORM_GENERATION, duration=0:00:47.061, duration_ms=47061, data={name=Exercice2_bd_wrapper}
+timestamp=[2022-08-04 21:25:22], mode=BUILD, duration=0:00:04.412, duration_ms=4412, data={name=pain4, configuration=Debug, clean_build=false}
+timestamp=[2022-08-04 21:51:10], mode=APP_CREATION, duration=0:00:24.493, duration_ms=24493, data={name=pain5, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=Exercice2_bd_wrapper, application_type=application}
+timestamp=[2022-08-04 21:53:54], mode=PLATFORM_GENERATION, duration=0:00:46.311, duration_ms=46311, data={name=Exercice2_bd_wrapper}
+timestamp=[2022-08-04 21:54:17], mode=BUILD, duration=0:00:03.885, duration_ms=3885, data={name=pain5, configuration=Debug, clean_build=false}
+timestamp=[2022-08-04 22:23:08], mode=APP_CREATION, duration=0:00:24.731, duration_ms=24731, data={name=pain6, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=Exercice2_bd_wrapper, application_type=application}
+timestamp=[2022-08-04 22:25:00], mode=PLATFORM_GENERATION, duration=0:00:43.310, duration_ms=43310, data={name=Exercice2_bd_wrapper}
+timestamp=[2022-08-04 22:26:23], mode=BUILD, duration=0:00:03.995, duration_ms=3995, data={name=pain6, configuration=Debug, clean_build=false}
+timestamp=[2022-08-04 22:53:51], mode=BUILD, duration=0:00:02.933, duration_ms=2933, data={name=pain6, configuration=Debug, clean_build=false}
+timestamp=[2022-08-04 22:59:51], mode=APP_CREATION, duration=0:00:22.548, duration_ms=22548, data={name=pain7, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=Exercice2_bd_wrapper, application_type=application}
+timestamp=[2022-08-04 23:02:51], mode=BUILD, duration=0:00:04.390, duration_ms=4390, data={name=pain7, configuration=Debug, clean_build=false}
+timestamp=[2022-08-04 23:27:13], mode=APP_CREATION, duration=0:00:25.234, duration_ms=25234, data={name=pain8, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=Exercice2_bd_wrapper, application_type=application}
+timestamp=[2022-08-04 23:28:55], mode=PLATFORM_GENERATION, duration=0:00:52.853, duration_ms=52853, data={name=Exercice2_bd_wrapper}
+timestamp=[2022-08-04 23:29:32], mode=BUILD, duration=0:00:04.011, duration_ms=4011, data={name=pain8, configuration=Debug, clean_build=false}
+timestamp=[2022-08-05 00:57:04], mode=APP_CREATION, duration=0:00:23.865, duration_ms=23865, data={name=pain9, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=Exercice2_bd_wrapper, application_type=application}
+timestamp=[2022-08-05 01:01:25], mode=PLATFORM_GENERATION, duration=0:00:50.479, duration_ms=50479, data={name=Exercice2_bd_wrapper}
+timestamp=[2022-08-05 01:02:07], mode=BUILD, duration=0:00:04.021, duration_ms=4021, data={name=pain9, configuration=Debug, clean_build=false}
+timestamp=[2022-08-05 01:45:05], mode=APP_CREATION, duration=0:00:24.579, duration_ms=24579, data={name=pain10, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=Exercice2_bd_wrapper, application_type=application}
+timestamp=[2022-08-05 01:48:37], mode=PLATFORM_GENERATION, duration=0:00:50.614, duration_ms=50614, data={name=Exercice2_bd_wrapper}
+timestamp=[2022-08-05 01:49:12], mode=BUILD, duration=0:00:04.067, duration_ms=4067, data={name=pain10, configuration=Debug, clean_build=false}
+timestamp=[2022-08-05 01:49:20], mode=BUILD, duration=0:00:07.545, duration_ms=7545, data={name=pain10_system, configuration=Debug, clean_build=false}
+timestamp=[2022-08-05 02:31:09], mode=APP_CREATION, duration=0:00:29.444, duration_ms=29444, data={name=pain11, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=Exercice2_bd_wrapper, application_type=application}
+timestamp=[2022-08-05 02:33:56], mode=PLATFORM_GENERATION, duration=0:00:47.448, duration_ms=47448, data={name=Exercice2_bd_wrapper}
+timestamp=[2022-08-05 02:34:57], mode=BUILD, duration=0:00:04.573, duration_ms=4573, data={name=pain11, configuration=Debug, clean_build=false}
+timestamp=[2022-08-05 03:21:55], mode=APP_CREATION, duration=0:00:30.325, duration_ms=30325, data={name=pain12, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=Exercice2_bd_wrapper_slow, application_type=application}
+timestamp=[2022-08-05 03:23:54], mode=PLATFORM_GENERATION, duration=0:00:51.984, duration_ms=51984, data={name=Exercice2_bd_wrapper_slow}
+timestamp=[2022-08-05 03:24:53], mode=BUILD, duration=0:00:05.243, duration_ms=5243, data={name=pain12, configuration=Debug, clean_build=false}

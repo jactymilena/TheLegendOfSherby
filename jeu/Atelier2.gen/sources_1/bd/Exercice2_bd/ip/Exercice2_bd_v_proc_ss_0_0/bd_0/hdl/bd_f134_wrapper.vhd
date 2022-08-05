@@ -70,6 +70,15 @@ architecture STRUCTURE of bd_f134_wrapper is
     s_axis_tstrb : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axis_tuser : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_tvalid : in STD_LOGIC;
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    m_axis_tdest : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_tid : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_tkeep : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axis_tlast : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_tready : in STD_LOGIC;
+    m_axis_tstrb : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axis_tuser : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_tvalid : out STD_LOGIC;
     s_axi_ctrl_awaddr : in STD_LOGIC_VECTOR ( 17 downto 0 );
     s_axi_ctrl_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_ctrl_awvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -88,16 +97,7 @@ architecture STRUCTURE of bd_f134_wrapper is
     s_axi_ctrl_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axi_ctrl_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_ctrl_rvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axi_ctrl_rready : in STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
-    m_axis_tdest : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_tid : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_tkeep : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    m_axis_tlast : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_tready : in STD_LOGIC;
-    m_axis_tstrb : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    m_axis_tuser : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_tvalid : out STD_LOGIC
+    s_axi_ctrl_rready : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component bd_f134;
 begin
