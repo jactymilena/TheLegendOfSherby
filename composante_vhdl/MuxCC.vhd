@@ -21,6 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use work.tuile_package.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -116,7 +117,8 @@ begin
         );
        
        -- MUX 
-       o_color_code <= s_cc_bg when s_actor_actif = '0' else
+       o_color_code <= s_cc_bg when (s_actor_actif = '0') or (s_cc_actor = TRANS_CC) else
                        s_cc_actor;
+       
   
 end Behavioral;

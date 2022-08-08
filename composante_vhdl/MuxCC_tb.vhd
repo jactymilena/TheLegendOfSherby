@@ -126,6 +126,7 @@ begin
                  test_actorSetActive_we  <= '1'; 
                  
                  wait for PERIOD;
+                 wait for PERIOD;
                  test_actorSetActive_we  <= '0';
                  
                  wait for PERIOD;
